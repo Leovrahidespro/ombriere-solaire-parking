@@ -1,0 +1,388 @@
+[
+ {
+  "slug": "calculer-surface-parking-loi-aper",
+  "sujet": "Surface de parking et loi APER : comment la calculer",
+  "mot_cle": "surface parking loi APER",
+  "categorie": "Réglementation",
+  "angle": "Article de lancement du blog.",
+  "liens": [
+   "/obligation-ombriere-parking",
+   "/financement-ombriere-solaire"
+  ],
+  "statut": "publié",
+  "date": "2026-10-16"
+ },
+ {
+  "slug": "prix-ombriere-photovoltaique-parking",
+  "sujet": "Prix d'une ombrière photovoltaïque : ce qui fait le budget",
+  "mot_cle": "prix ombrière photovoltaïque",
+  "categorie": "Financement",
+  "angle": "Article de lancement du blog.",
+  "liens": [
+   "/financement-ombriere-solaire",
+   "/obligation-ombriere-parking"
+  ],
+  "statut": "publié",
+  "date": "2026-10-16"
+ },
+ {
+  "slug": "loi-aper-parking-echeance-2028",
+  "sujet": "Parking de 1 500 à 10 000 m² : préparer l'échéance de 2028",
+  "mot_cle": "loi APER parking 2028",
+  "categorie": "Réglementation",
+  "angle": "Rétroplanning concret (étude, autorisations, raccordement, chantier) pour une échéance au 1er juillet 2028, sans durée chiffrée inventée ; pourquoi commencer dès maintenant.",
+  "liens": [
+   "/obligation-ombriere-parking",
+   "/devis-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "tiers-investissement-ombriere-parking",
+  "sujet": "Tiers-investissement pour une ombrière de parking : fonctionnement et vigilance",
+  "mot_cle": "tiers investissement ombrière",
+  "categorie": "Financement",
+  "angle": "Principe, répartition des rôles, contreparties (loyer ou électricité), clauses à vérifier (durée, entretien, fin de contrat, assurance), conseil de faire relire.",
+  "liens": [
+   "/financement-ombriere-solaire",
+   "/obligation-ombriere-parking"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "exemption-loi-aper-parking",
+  "sujet": "Exemptions à la loi APER : dans quels cas votre parking peut y échapper",
+  "mot_cle": "exemption loi APER parking",
+  "categorie": "Réglementation",
+  "angle": "Détailler chaque cas d'exemption de la fiche, comment le justifier (études, preuves), pourquoi une exemption ne se présume pas.",
+  "liens": [
+   "/obligation-ombriere-parking",
+   "/devis-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombrage-vegetal-loi-huwart-parking",
+  "sujet": "Ombrage végétal et ombrières : ce que change la loi Huwart pour les parkings",
+  "mot_cle": "ombrage végétal parking loi Huwart",
+  "categorie": "Réglementation",
+  "angle": "Expliquer la combinaison photovoltaïque + ombrage végétal, intérêts et limites (temps de pousse, entretien, production), sans pourcentage chiffré.",
+  "liens": [
+   "/obligation-ombriere-parking",
+   "/ombriere-solaire-collectivite"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-solaire-borne-recharge",
+  "sujet": "Ombrière solaire et bornes de recharge : bien coupler les deux",
+  "mot_cle": "ombrière solaire borne de recharge",
+  "categorie": "Technique",
+  "angle": "Intérêt du couplage, dimensionnement, pilotage de la recharge, anticipation des fourreaux, usages salariés, clients, flotte.",
+  "liens": [
+   "/ombriere-solaire-entreprise",
+   "/ombriere-solaire-supermarche"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "autoconsommation-ombriere-entreprise",
+  "sujet": "Autoconsommation avec une ombrière : est-ce intéressant pour votre site ?",
+  "mot_cle": "autoconsommation ombrière photovoltaïque",
+  "categorie": "Financement",
+  "angle": "Profils de consommation favorables, méthode d'analyse des factures et courbes de charge, surplus, comparaison avec la vente totale.",
+  "liens": [
+   "/financement-ombriere-solaire",
+   "/ombriere-solaire-entreprise"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "raccordement-ombriere-photovoltaique",
+  "sujet": "Raccordement d'une ombrière photovoltaïque : étapes et délais à anticiper",
+  "mot_cle": "raccordement ombrière photovoltaïque",
+  "categorie": "Technique",
+  "angle": "Étapes de la demande de raccordement, ce qui allonge les délais, rôle du gestionnaire de réseau, pourquoi lancer tôt ; sans délai chiffré.",
+  "liens": [
+   "/obligation-ombriere-parking",
+   "/financement-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "autorisation-urbanisme-ombriere-parking",
+  "sujet": "Autorisation d'urbanisme pour une ombrière de parking : quelles démarches ?",
+  "mot_cle": "autorisation urbanisme ombrière",
+  "categorie": "Réglementation",
+  "angle": "Déclaration préalable ou permis selon le projet (rester prudent et renvoyer à la mairie), pièces du dossier, secteurs protégés, apport de la loi Huwart sur les PLU.",
+  "liens": [
+   "/obligation-ombriere-parking",
+   "/ombriere-solaire-collectivite"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-parking-supermarche-loi-aper",
+  "sujet": "Ombrières sur parking de supermarché : les questions à se poser",
+  "mot_cle": "ombrière parking supermarché",
+  "categorie": "Commerce",
+  "angle": "Propriétaire ou exploitant, bail commercial, phasage des travaux, autoconsommation pour le froid, bornes pour les clients.",
+  "liens": [
+   "/ombriere-solaire-supermarche",
+   "/financement-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-retail-park-centre-commercial",
+  "sujet": "Retail park et centre commercial : qui porte le projet d'ombrières ?",
+  "mot_cle": "ombrière retail park",
+  "categorie": "Commerce",
+  "angle": "Parkings partagés, rôle du propriétaire et des enseignes, règlement de zone ou de copropriété, mutualisation, gouvernance du projet.",
+  "liens": [
+   "/ombriere-solaire-supermarche",
+   "/obligation-ombriere-parking"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-parking-logistique",
+  "sujet": "Ombrières sur plateforme logistique : contraintes et opportunités",
+  "mot_cle": "ombrière plateforme logistique",
+  "categorie": "Entreprise",
+  "angle": "Circulation poids lourds, hauteur libre, ICPE, parkings VL et PL, consommation du site, toitures vs ombrières.",
+  "liens": [
+   "/ombriere-solaire-entreprise",
+   "/obligation-ombriere-parking"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-site-icpe",
+  "sujet": "Site ICPE et ombrières de parking : ce qu'il faut savoir",
+  "mot_cle": "ombrière parking ICPE",
+  "categorie": "Entreprise",
+  "angle": "Règles de distance et de sécurité, effet sur la surface prise en compte, coordination avec les autorisations du site, prudence et renvoi aux textes.",
+  "liens": [
+   "/ombriere-solaire-entreprise",
+   "/obligation-ombriere-parking"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-parking-collectivite-marche-public",
+  "sujet": "Ombrières sur parking public : marché public ou mise à disposition ?",
+  "mot_cle": "ombrière parking public marché public",
+  "categorie": "Collectivité",
+  "angle": "Montages possibles pour une collectivité, mise en concurrence, préparer le besoin, rôle d'un assistant à maîtrise d'ouvrage.",
+  "liens": [
+   "/ombriere-solaire-collectivite",
+   "/financement-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "autoconsommation-collective-ombriere",
+  "sujet": "Autoconsommation collective : partager l'électricité d'une ombrière",
+  "mot_cle": "autoconsommation collective ombrière",
+  "categorie": "Collectivité",
+  "angle": "Principe, acteurs, intérêt pour zones d'activités et collectivités, organisation, sans chiffres réglementaires inventés.",
+  "liens": [
+   "/ombriere-solaire-collectivite",
+   "/financement-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-parking-hopital-etablissement-sante",
+  "sujet": "Ombrières sur parking d'hôpital ou de clinique : spécificités",
+  "mot_cle": "ombrière parking hôpital",
+  "categorie": "Collectivité",
+  "angle": "Continuité de service, sécurité, circulation des urgences, usagers et personnels, montage public ou privé.",
+  "liens": [
+   "/ombriere-solaire-collectivite",
+   "/ombriere-solaire-entreprise"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-parking-copropriete-bailleur",
+  "sujet": "Copropriété et bailleur : l'obligation d'ombrières sur votre parking",
+  "mot_cle": "ombrière parking copropriété",
+  "categorie": "Réglementation",
+  "angle": "Qui est responsable, décision en assemblée générale, répartition des coûts et revenus, rôle du syndic, tiers-investissement.",
+  "liens": [
+   "/obligation-ombriere-parking",
+   "/financement-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "location-parking-ombriere-loyer",
+  "sujet": "Louer son parking pour des ombrières : comment fonctionne le loyer ?",
+  "mot_cle": "location parking ombrière",
+  "categorie": "Financement",
+  "angle": "Bail de longue durée, contreparties, engagements du propriétaire, clauses de fin de contrat, sans montant de loyer.",
+  "liens": [
+   "/financement-ombriere-solaire",
+   "/obligation-ombriere-parking"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "maintenance-ombriere-photovoltaique",
+  "sujet": "Entretien et maintenance d'une ombrière photovoltaïque",
+  "mot_cle": "maintenance ombrière photovoltaïque",
+  "categorie": "Technique",
+  "angle": "Nettoyage, contrôles électriques et structurels, suivi de production, responsabilité selon le montage, assurance.",
+  "liens": [
+   "/financement-ombriere-solaire",
+   "/ombriere-solaire-entreprise"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "structure-ombriere-acier-bois",
+  "sujet": "Ombrière en acier ou en bois : comment choisir la structure",
+  "mot_cle": "structure ombrière acier bois",
+  "categorie": "Technique",
+  "angle": "Comparer les structures (portée, durabilité, esthétique, empreinte carbone, coût relatif sans chiffres), simple ou double pente.",
+  "liens": [
+   "/obligation-ombriere-parking",
+   "/ombriere-solaire-collectivite"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "etude-faisabilite-ombriere-parking",
+  "sujet": "Étude de faisabilité d'une ombrière : ce qu'elle doit contenir",
+  "mot_cle": "étude faisabilité ombrière",
+  "categorie": "Technique",
+  "angle": "Contenu attendu (surface, implantation, production, raccordement, sol, autorisations, financement), documents à fournir.",
+  "liens": [
+   "/devis-ombriere-solaire",
+   "/obligation-ombriere-parking"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-parking-sanction-retard",
+  "sujet": "Retard de mise en conformité loi APER : quels risques ?",
+  "mot_cle": "sanction loi APER parking",
+  "categorie": "Réglementation",
+  "angle": "Principe de l'amende annuelle (sans montant), délais supplémentaires sous conditions pour les projets engagés, intérêt d'agir tôt.",
+  "liens": [
+   "/obligation-ombriere-parking",
+   "/devis-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-parking-concession-dsp",
+  "sujet": "Parking en concession ou DSP : quand s'applique l'obligation d'ombrières ?",
+  "mot_cle": "ombrière parking concession",
+  "categorie": "Collectivité",
+  "angle": "Règle du renouvellement ou de la conclusion du contrat, clauses à prévoir, relation autorité concédante et délégataire.",
+  "liens": [
+   "/ombriere-solaire-collectivite",
+   "/obligation-ombriere-parking"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "choisir-installateur-ombriere",
+  "sujet": "Comment choisir son installateur d'ombrières photovoltaïques",
+  "mot_cle": "installateur ombrière photovoltaïque",
+  "categorie": "Guide",
+  "angle": "Critères (références vérifiables, qualifications, assurance décennale, bureau d'études, maintenance), questions à poser, signaux d'alerte.",
+  "liens": [
+   "/devis-ombriere-solaire",
+   "/financement-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-parking-salaries-entreprise",
+  "sujet": "Parking salariés : pourquoi installer des ombrières solaires",
+  "mot_cle": "ombrière parking salariés",
+  "categorie": "Entreprise",
+  "angle": "Confort, recharge, RSE, autoconsommation des bureaux, communication interne, conformité.",
+  "liens": [
+   "/ombriere-solaire-entreprise",
+   "/financement-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-parking-hotel-restaurant",
+  "sujet": "Ombrières pour parking d'hôtel ou de restaurant",
+  "mot_cle": "ombrière parking hôtel",
+  "categorie": "Commerce",
+  "angle": "Confort client, recharge pour la clientèle, image, saisonnalité de la consommation, financement.",
+  "liens": [
+   "/ombriere-solaire-supermarche",
+   "/financement-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-parking-neige-vent-montagne",
+  "sujet": "Ombrière en zone de montagne ou de vent fort : ce qui change",
+  "mot_cle": "ombrière neige vent",
+  "categorie": "Technique",
+  "angle": "Charges climatiques, dimensionnement, déneigement, implications sur le budget (qualitatif) et le choix de structure.",
+  "liens": [
+   "/obligation-ombriere-parking",
+   "/financement-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-eclairage-parking",
+  "sujet": "Éclairage de parking intégré aux ombrières : avantages et conseils",
+  "mot_cle": "éclairage ombrière parking",
+  "categorie": "Technique",
+  "angle": "Remplacer l'éclairage existant, sécurité, pilotage, alimentation par la production, coordination avec l'extinction nocturne locale.",
+  "liens": [
+   "/ombriere-solaire-entreprise",
+   "/ombriere-solaire-supermarche"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "assurance-ombriere-photovoltaique",
+  "sujet": "Assurer une ombrière photovoltaïque : qui assure quoi ?",
+  "mot_cle": "assurance ombrière photovoltaïque",
+  "categorie": "Financement",
+  "angle": "Assurances de l'installateur, du propriétaire, de l'exploitant, responsabilité civile, sinistres (grêle, choc de véhicule), selon le montage.",
+  "liens": [
+   "/financement-ombriere-solaire",
+   "/devis-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-parking-ecole-universite",
+  "sujet": "Ombrières sur parking d'école, de lycée ou d'université",
+  "mot_cle": "ombrière parking établissement scolaire",
+  "categorie": "Collectivité",
+  "angle": "Acteurs (collectivité propriétaire, établissement), usages pédagogiques, autoconsommation des bâtiments, calendrier scolaire des travaux.",
+  "liens": [
+   "/ombriere-solaire-collectivite",
+   "/financement-ombriere-solaire"
+  ],
+  "statut": "à faire"
+ },
+ {
+  "slug": "ombriere-parking-recyclage-fin-de-vie",
+  "sujet": "Fin de vie d'une ombrière photovoltaïque : démontage et recyclage",
+  "mot_cle": "fin de vie ombrière photovoltaïque",
+  "categorie": "Technique",
+  "angle": "Durée de vie, filière de recyclage des modules, démantèlement en fin de contrat, clauses à prévoir.",
+  "liens": [
+   "/financement-ombriere-solaire",
+   "/obligation-ombriere-parking"
+  ],
+  "statut": "à faire"
+ }
+]

@@ -1,0 +1,60 @@
+{
+ "slug": "calculer-surface-parking-loi-aper",
+ "date": "2026-10-16",
+ "category": "Réglementation",
+ "keyword": "surface parking loi APER",
+ "title": "Surface de parking et loi APER : comment la calculer",
+ "meta_description": "Loi APER : comment calculer la surface de votre parking, ce qui est inclus ou exclu, et pourquoi elle diffère de la surface cadastrale. Méthode pas à pas.",
+ "h1": "Surface de parking et loi APER : comment savoir si votre parking dépasse le seuil",
+ "excerpt": "Places, voies, zones exclues, sites ICPE : la méthode pour calculer la surface réglementaire de votre parking et savoir si la loi APER s'applique.",
+ "intro_html": "<p>La loi APER impose des ombrières sur les parkings extérieurs de plus de 1 500 m². Tout dépend donc d'un chiffre : la surface de votre parking. Mais la surface qui compte pour la loi n'est pas forcément celle de votre titre de propriété ni celle que vous avez en tête.</p>\n<p>Voici comment se calcule la surface d'un parking au sens de la loi APER, quels espaces sont inclus ou exclus, et comment obtenir un chiffre fiable avant de prendre une décision.</p>",
+ "sections": [
+  {
+   "h2": "Pourquoi la surface est le point de départ",
+   "html": "<p>La surface conditionne trois choses :</p>\n<ul>\n<li><strong>l'application même de l'obligation</strong> : en dessous du seuil de 1 500 m², votre parking n'est pas concerné ;</li>\n<li><strong>l'échéance</strong> : 1er juillet 2026 au-delà de 10 000 m² pour les parkings non concédés, 1er juillet 2028 entre 1 500 et 10 000 m² ;</li>\n<li><strong>la surface à ombrager</strong> : au moins la moitié de la surface retenue.</li>\n</ul>\n<p>Une erreur de calcul peut donc vous faire changer de catégorie, dans un sens comme dans l'autre. C'est pourquoi il vaut mieux partir d'une mesure précise plutôt que d'une estimation. Pour une vue d'ensemble de l'obligation, consultez notre guide de la <a href=\"/obligation-ombriere-parking\">loi APER</a>.</p>"
+  },
+  {
+   "h2": "Ce qui est compté dans la surface",
+   "html": "<p>Selon les textes d'application, la surface du parc de stationnement comprend en principe :</p>\n<ul>\n<li>les <strong>emplacements de stationnement</strong> eux-mêmes, pour les voitures, les deux-roues ou les véhicules utilitaires ;</li>\n<li>les <strong>voies de circulation</strong> internes qui desservent ces emplacements ;</li>\n<li>les <strong>zones d'accès</strong>, comme les entrées, les sorties et les zones de péage lorsqu'il y en a.</li>\n</ul>\n<p>Autrement dit, ce n'est pas seulement la somme des places : les allées entre les rangées pèsent souvent autant que les places elles-mêmes. Un parking qui « ne compte que » quelques dizaines de places peut ainsi dépasser le seuil une fois les voies intégrées.</p>"
+  },
+  {
+   "h2": "Ce qui peut être exclu",
+   "html": "<p>Certains espaces ne sont pas pris en compte, ce qui peut faire passer un parking sous un seuil :</p>\n<ul>\n<li>les <strong>espaces verts</strong> et zones plantées ;</li>\n<li>certaines <strong>zones de stockage</strong> ou de manutention, qui ne servent pas au stationnement ;</li>\n<li>les zones réservées à certains <strong>véhicules transportant des marchandises dangereuses</strong>.</li>\n</ul>\n<p>Sur les sites industriels classés pour la protection de l'environnement (ICPE), des règles de distance autour des bâtiments et des installations techniques peuvent aussi réduire la surface prise en compte. Ces exclusions se justifient : il faut pouvoir les documenter sur un plan.</p>\n<blockquote><p>La surface réglementaire n'est pas la surface cadastrale. Deux parkings de même emprise foncière peuvent avoir des obligations différentes selon leur aménagement.</p></blockquote>"
+  },
+  {
+   "h2": "La méthode pas à pas",
+   "html": "<ol>\n<li><strong>Récupérez un plan à jour</strong> du site : plan de masse, plan de géomètre ou, à défaut, une vue aérienne récente.</li>\n<li><strong>Délimitez le parc de stationnement extérieur</strong> : excluez les parkings couverts ou souterrains, qui ne relèvent pas de la même logique.</li>\n<li><strong>Additionnez les emplacements, les voies et les accès</strong>, en mesurant les surfaces sur le plan.</li>\n<li><strong>Retirez les espaces exclus</strong>, en notant pour chacun la raison de l'exclusion.</li>\n<li><strong>Comparez le résultat aux seuils</strong> de 1 500 m² et de 10 000 m².</li>\n<li><strong>Conservez le calcul</strong> : il pourra vous être demandé, notamment si vous êtes proche d'un seuil.</li>\n</ol>\n<p>Les outils de cartographie en ligne permettent une première estimation, mais pour une décision, un relevé ou une étude par un professionnel reste plus sûr. Pensez aussi à vérifier que le plan correspond bien à l'état actuel du parking : un réaménagement récent, l'ajout de places ou la création d'une nouvelle voie modifient la surface.</p>"
+  },
+  {
+   "h2": "Cas particuliers à surveiller",
+   "html": "<h3>Plusieurs parkings sur un même site</h3>\n<p>Un site peut comporter plusieurs zones de stationnement séparées. La façon de les regrouper ou non a une incidence sur le calcul : c'est un point à faire vérifier, surtout si l'une des zones est proche d'un seuil.</p>\n<h3>Parking partagé entre plusieurs occupants</h3>\n<p>Dans un retail park ou une zone d'activités, le parking peut être commun à plusieurs enseignes. Il faut alors identifier le propriétaire ou le gestionnaire responsable, ce que les baux et les règlements de copropriété ou de zone précisent généralement.</p>\n<h3>Parking en concession</h3>\n<p>Pour un parking exploité en concession ou en délégation de service public, l'obligation s'applique lors de la conclusion ou du renouvellement du contrat. Les collectivités trouveront des précisions sur notre page <a href=\"/ombriere-solaire-collectivite\">ombrières pour collectivités</a>.</p>"
+  },
+  {
+   "h2": "Une fois la surface connue",
+   "html": "<p>Si votre parking dépasse le seuil, la suite logique est une étude de faisabilité : implantation des ombrières, production attendue, raccordement, autorisations et calendrier. C'est aussi le moment de comparer les modes de financement, avec ou sans investissement de votre part, détaillés sur notre page <a href=\"/financement-ombriere-solaire\">financement des ombrières</a>.</p>\n<p>Si votre parking est proche d'un seuil, ne tranchez pas seul : quelques dizaines de mètres carrés d'écart peuvent changer votre échéance. Une vérification par un installateur, à partir de votre plan, permet de lever le doute, et l'étude gratuite proposée sur ce site peut commencer par là.</p>\n<p>Enfin, gardez en tête que ces textes sont récents et ont déjà été modifiés : vérifiez toujours votre situation au regard de la version en vigueur.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "La surface d'un parking souterrain compte-t-elle ?",
+   "a": "Non, l'obligation d'ombrières de la loi APER vise les parcs de stationnement extérieurs. Un site qui combine parking souterrain et parking extérieur ne prend en compte que la partie extérieure."
+  },
+  {
+   "q": "Les places pour deux-roues sont-elles incluses ?",
+   "a": "Les emplacements de stationnement sont en principe comptés, quel que soit le type de véhicule, ainsi que les voies qui les desservent. Les règles de détail figurent dans les textes d'application : faites vérifier votre cas."
+  },
+  {
+   "q": "Puis-je faire le calcul moi-même ?",
+   "a": "Oui pour une première estimation, à partir d'un plan ou d'une vue aérienne. Pour une décision, surtout près d'un seuil, mieux vaut un relevé précis et une vérification des exclusions par un professionnel."
+  },
+  {
+   "q": "Que faire si mon parking est juste sous le seuil ?",
+   "a": "Documentez votre calcul et conservez-le. Pensez aussi aux évolutions futures : un agrandissement du parking peut faire franchir le seuil et déclencher l'obligation."
+  }
+ ],
+ "related": [
+  "/obligation-ombriere-parking",
+  "/financement-ombriere-solaire",
+  "/ombriere-solaire-collectivite"
+ ]
+}

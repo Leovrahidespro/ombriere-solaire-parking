@@ -1,0 +1,54 @@
+name: Article du lundi
+
+on:
+  # GitHub saute parfois des lancements planifiés : plusieurs tentatives le lundi,
+  # une de secours le mardi. Le script ne publie qu'un article par semaine.
+  schedule:
+    - cron: '17 6 * * 1'    # lundi vers 8 h (heure de Paris en été, 7 h en hiver)
+    - cron: '43 8 * * 1'    # lundi, tentative de rattrapage
+    - cron: '23 11 * * 1'   # lundi, tentative de rattrapage
+    - cron: '37 14 * * 1'   # lundi, tentative de rattrapage
+    - cron: '13 7 * * 2'    # mardi matin, secours
+  workflow_dispatch:        # bouton « Run workflow » pour publier à la demande
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blog
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Rédiger et construire l'article
+        id: article
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODEL: ${{ vars.CLAUDE_MODEL }}
+        run: python scripts/generate_article.py
+
+      - name: Publier sur le site
+        env:
+          TITLE: ${{ steps.article.outputs.title }}
+        run: |
+          git config user.name "Leovrahidespro"
+          git config user.email "297181866+Leovrahidespro@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Rien à publier"; exit 0; fi
+          git commit -m "Blog : $TITLE"
+          git push
+
+      - name: Signaler la page à Bing (IndexNow)
+        if: steps.article.outputs.slug != ''
+        env:
+          SLUG: ${{ steps.article.outputs.slug }}
+        run: sleep 90 && python scripts/indexnow.py
