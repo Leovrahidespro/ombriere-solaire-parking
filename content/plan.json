@@ -35,7 +35,8 @@
    "/obligation-ombriere-parking",
    "/devis-ombriere-solaire"
   ],
-  "statut": "à faire"
+  "statut": "publié",
+  "date": "2026-10-16"
  },
  {
   "slug": "tiers-investissement-ombriere-parking",
