@@ -40,7 +40,7 @@ VILLES = [
         faq=[("Mon parking souterrain à Lyon est-il concerné ?", "Non. L'obligation d'ombrières de la loi APER vise les parcs de stationnement extérieurs. Si votre site combine un niveau souterrain et une partie en surface, seule la partie extérieure est prise en compte."),
              ("Faut-il un permis pour une ombrière dans la Métropole ?", "Une autorisation d'urbanisme est en général nécessaire, déclaration préalable ou permis selon la taille du projet. Le dossier doit respecter le PLU-H et, en secteur protégé, recueillir l'avis de l'architecte des Bâtiments de France."),
              ("Intervenez-vous dans toutes les communes de la Métropole ?", "Oui : Villeurbanne, Vénissieux, Vaulx-en-Velin, Bron, Saint-Priest, Écully, Rillieux-la-Pape et les autres communes de la Métropole. Indiquez le code postal du parking dans le formulaire.")],
-        voisins=['saint-priest', 'limonest', 'saint-quentin-fallavier', 'plaine-de-l-ain'],
+        voisins=['saint-priest', 'limonest', 'villefranche-sur-saone', 'vienne', 'saint-quentin-fallavier', 'plaine-de-l-ain'],
     ),
     dict(
         slug='saint-etienne', groupe='ville', nom='Saint-Étienne', a='à Saint-Étienne', dept='Loire (42)', cp='42000',
@@ -65,7 +65,7 @@ VILLES = [
         faq=[("Un parking en pente peut-il recevoir des ombrières ?", "Oui, dans la plupart des cas. La structure s'adapte au dénivelé, mais cela influe sur les fondations et le budget. L'installateur l'évalue lors de la visite du site."),
              ("Les sites industriels de la vallée du Gier sont-ils concernés ?", "Oui, si leur parking extérieur dépasse 1 500 m². Pour un site classé ICPE, des règles spécifiques s'appliquent et doivent être intégrées dès l'étude."),
              ("Intervenez-vous dans la plaine du Forez ?", "Oui : Andrézieux-Bouthéon, Montbrison, Saint-Just-Saint-Rambert et les communes voisines. Indiquez le code postal du parking dans le formulaire.")],
-        voisins=['lyon', 'clermont-ferrand', 'valence', 'saint-priest'],
+        voisins=['lyon', 'roanne', 'clermont-ferrand', 'valence'],
     ),
     dict(
         slug='grenoble', groupe='ville', nom='Grenoble', a='à Grenoble', dept='Isère (38)', cp='38000',
@@ -140,7 +140,7 @@ VILLES = [
         faq=[("Les zones commerciales de Dijon sont-elles concernées ?", "Très souvent, oui : la plupart des parkings de grandes surfaces dépassent 1 500 m². L'échéance dépend de la surface, d'où l'intérêt de faire vérifier la surface réglementaire."),
              ("Peut-on garder la circulation des poids lourds sous les ombrières ?", "Oui, avec une hauteur libre et un plan d'implantation adaptés. Sur une plateforme logistique, on couvre généralement en priorité les parkings véhicules légers."),
              ("Intervenez-vous dans toute la Côte-d'Or ?", "Oui : Dijon, Chenôve, Quetigny, Longvic, Beaune et le reste du département. Indiquez le code postal du parking dans le formulaire.")],
-        voisins=['lyon', 'clermont-ferrand', 'plaine-de-l-ain', 'annecy'],
+        voisins=['chalon-sur-saone', 'besancon', 'macon', 'lyon'],
     ),
     dict(
         slug='annecy', groupe='ville', nom='Annecy', a='à Annecy', dept='Haute-Savoie (74)', cp='74000',
@@ -165,7 +165,7 @@ VILLES = [
         faq=[("Faut-il déneiger les ombrières ?", "En général non : la structure est dimensionnée pour supporter la neige de votre zone et la pente des panneaux aide à son évacuation. Il faut en revanche prévoir où tombe la neige, pour ne pas gêner la circulation et le déneigement du parking."),
              ("Un parking proche du lac peut-il être équipé ?", "Souvent oui, mais l'instruction est plus exigeante sur l'insertion paysagère. Une impossibilité avérée liée à des règles de protection peut aussi relever d'une exemption, à justifier."),
              ("Intervenez-vous dans toute la Haute-Savoie ?", "Oui : bassin annécien, Genevois, vallée de l'Arve et Chablais. Indiquez le code postal du parking dans le formulaire.")],
-        voisins=['chambery', 'grenoble', 'lyon', 'plaine-de-l-ain'],
+        voisins=['annemasse', 'chambery', 'grenoble', 'lyon'],
     ),
     dict(
         slug='chambery', groupe='ville', nom='Chambéry', a='à Chambéry', dept='Savoie (73)', cp='73000',
@@ -215,7 +215,7 @@ VILLES = [
         faq=[("Le vent de la vallée du Rhône est-il un problème ?", "Non, il est pris en compte dans le dimensionnement de la structure et des fondations, selon la zone de vent réglementaire de votre site. Cela peut renforcer la structure et donc influer sur le budget."),
              ("Une ombrière est-elle plus rentable à Valence qu'à Lyon ?", "À installation égale, la production est généralement plus élevée grâce au meilleur ensoleillement. La rentabilité dépend aussi du coût de la structure, du raccordement et du mode de valorisation : seule l'étude permet de comparer."),
              ("Intervenez-vous en Ardèche et dans le sud de la Drôme ?", "Oui : Valence, Romans-sur-Isère, Guilherand-Granges, Montélimar et le nord de l'Ardèche. Indiquez le code postal du parking dans le formulaire.")],
-        voisins=['grenoble', 'lyon', 'saint-etienne', 'chambery'],
+        voisins=['montelimar', 'avignon', 'grenoble', 'vienne'],
     ),
     # ------------------------------------------------------- PÔLES D'ACTIVITÉS
     dict(
@@ -291,7 +291,7 @@ VILLES = [
         faq=[("Un site industriel classé peut-il installer des ombrières ?", "Oui, dans la plupart des cas, mais des règles de distance autour de certaines installations s'appliquent. Elles peuvent aussi réduire la surface concernée par l'obligation : l'étude doit les intégrer dès le départ."),
              ("Peut-on partager l'électricité avec les entreprises voisines ?", "Oui, via l'autoconsommation collective, sous conditions de proximité. C'est une piste intéressante dans un parc d'activités, à étudier avec l'installateur."),
              ("Quelles communes couvrez-vous dans l'Ain ?", "Saint-Vulbas, Blyes, Ambérieu-en-Bugey, Lagnieu, Montluel, Miribel, Bourg-en-Bresse et le reste du département. Indiquez le code postal du parking dans le formulaire.")],
-        voisins=['saint-quentin-fallavier', 'saint-priest', 'lyon', 'annecy'],
+        voisins=['bourg-en-bresse', 'saint-quentin-fallavier', 'saint-priest', 'lyon'],
     ),
     dict(
         slug='limonest', groupe='pole', nom='Limonest et Dardilly', a='à Limonest et Dardilly', dept='Rhône (69)', cp='69760',
@@ -317,6 +317,257 @@ VILLES = [
              ("Plusieurs entreprises partagent le parking : comment faire ?", "Il faut d'abord identifier le propriétaire du parc de stationnement, souvent la copropriété ou la foncière. Le projet et le partage de l'électricité se décident ensuite entre les occupants."),
              ("Quelles communes couvrez-vous dans l'ouest lyonnais ?", "Limonest, Dardilly, Champagne-au-Mont-d'Or, Écully, Tassin-la-Demi-Lune et les communes voisines. Indiquez le code postal du parking dans le formulaire.")],
         voisins=['lyon', 'saint-priest', 'plaine-de-l-ain', 'saint-etienne'],
+    ),
+    # ------------------------------------------------------------- VAGUE 2
+    dict(
+        slug='villefranche-sur-saone', groupe='ville2', nom='Villefranche-sur-Saône', a='à Villefranche-sur-Saône', dept='Rhône (69)', cp='69400',
+        title="Ombrière Solaire Villefranche-sur-Saône : Loi APER",
+        desc="Ombrières photovoltaïques pour parkings à Villefranche-sur-Saône et dans le Beaujolais : zones d'activités, commerces, loi APER. Étude gratuite.",
+        h1="Ombrières solaires de parking <em>à Villefranche-sur-Saône</em>",
+        sub="Zones commerciales, parcs d'activités le long de l'A6, sites industriels et agroalimentaires : entre Saône et Beaujolais, de nombreux parkings dépassent le seuil de la loi APER.",
+        points=["Agglomération de Villefranche et Val de Saône", "Zones d'activités de l'axe A6", "Installateur intervenant dans le nord du Rhône"],
+        contexte="""<h2>Les parkings concernés autour de Villefranche</h2>
+<p>Capitale du Beaujolais, Villefranche-sur-Saône s'est développée le long de l'A6 et de la Saône. Ses zones d'activités et ses zones commerciales, réparties entre Villefranche, Arnas, Gleizé et Limas, comptent de nombreux parkings extérieurs de plus de 1 500 m².</p>""",
+        sites=["Les <strong>zones commerciales</strong> de l'agglomération caladoise, aux parkings clients étendus.",
+               "Les <strong>parcs d'activités</strong> d'Arnas et des abords de l'A6, avec des sites logistiques et industriels.",
+               "Les <strong>sites agroalimentaires et viticoles</strong> du Beaujolais et du Val de Saône.",
+               "L'<strong>hôpital</strong> et les équipements publics de l'agglomération."],
+        local="""<h2>Les points à anticiper dans le Beaujolais</h2>
+<ul>
+<li><strong>Zones inondables :</strong> une partie de la plaine de Saône est couverte par un plan de prévention des risques d'inondation, qui encadre l'implantation et la conception des structures.</li>
+<li><strong>Paysage :</strong> sur les coteaux du Beaujolais, l'insertion des ombrières dans le paysage viticole mérite une attention particulière.</li>
+<li><strong>Logistique :</strong> sur les sites de l'axe A6, l'implantation doit préserver la circulation des poids lourds.</li>
+<li><strong>Autoconsommation :</strong> commerces et sites de production consomment en journée, au moment où les ombrières produisent.</li>
+</ul>""",
+        faq=[("Un parking en zone inondable peut-il recevoir des ombrières ?", "Souvent oui, mais le plan de prévention des risques impose des règles : hauteur des équipements électriques, transparence hydraulique des structures, parfois des restrictions d'implantation. L'étude doit vérifier ces règles dès le départ."),
+             ("Les caves et sites viticoles sont-ils concernés ?", "Oui, si leur parking extérieur dépasse 1 500 m², ce qui arrive pour les grands sites d'accueil ou de production. Les plus petits parkings ne sont pas concernés par l'obligation."),
+             ("Quelles communes couvrez-vous autour de Villefranche ?", "Villefranche-sur-Saône, Arnas, Gleizé, Limas, Anse, Belleville-en-Beaujolais et le Val de Saône. Indiquez le code postal du parking dans le formulaire.")],
+        voisins=['macon', 'lyon', 'limonest', 'bourg-en-bresse'],
+    ),
+    dict(
+        slug='vienne', groupe='ville2', nom='Vienne', a='à Vienne', dept='Isère (38)', cp='38200',
+        title="Ombrière Solaire Vienne : Parkings et Loi APER",
+        desc="Ombrières photovoltaïques pour parkings à Vienne et dans la vallée du Rhône : sites industriels, commerces, patrimoine, loi APER. Étude gratuite.",
+        h1="Ombrières solaires de parking <em>à Vienne et dans la vallée du Rhône</em>",
+        sub="Zones commerciales, sites industriels et chimiques du couloir rhodanien, établissements de santé : autour de Vienne, les grands parkings doivent concilier loi APER, patrimoine et risques naturels.",
+        points=["Vienne Condrieu Agglomération et pays roussillonnais", "Sites industriels et chimiques", "Installateur intervenant dans le nord de l'Isère"],
+        contexte="""<h2>Les parkings concernés autour de Vienne</h2>
+<p>Au sud de Lyon, le long du Rhône et de l'A7, l'agglomération viennoise et le pays roussillonnais combinent zones commerciales, parcs d'activités et grands sites industriels. Leurs parkings salariés et clients dépassent souvent le seuil de 1 500 m².</p>""",
+        sites=["Les <strong>zones commerciales et d'activités</strong> de Vienne, Chasse-sur-Rhône et Estrablin.",
+               "Les <strong>sites industriels et chimiques</strong> du couloir rhodanien, dont la plateforme de Roussillon.",
+               "Les <strong>sites logistiques</strong> implantés le long de l'A7.",
+               "Le <strong>centre hospitalier</strong> et les équipements publics de l'agglomération."],
+        local="""<h2>Les points à anticiper autour de Vienne</h2>
+<ul>
+<li><strong>Patrimoine :</strong> Vienne possède un riche patrimoine antique et médiéval. À proximité des monuments protégés, l'avis de l'architecte des Bâtiments de France peut être requis.</li>
+<li><strong>Rhône :</strong> les zones proches du fleuve peuvent être soumises à un plan de prévention des risques d'inondation, et le couloir est exposé à des vents du nord soutenus.</li>
+<li><strong>Sites industriels :</strong> les sites classés ICPE ou Seveso imposent des règles de distance et de sécurité, qui conditionnent l'implantation et le déroulement du chantier.</li>
+<li><strong>Autoconsommation :</strong> les process industriels consomment en continu : une grande partie de la production peut être consommée sur place.</li>
+</ul>""",
+        faq=[("Un site Seveso peut-il installer des ombrières ?", "C'est possible, mais l'implantation doit respecter les règles de sécurité du site et les distances autour des installations à risque. Ces contraintes peuvent aussi modifier la surface concernée : elles s'étudient avec le service sécurité du site."),
+             ("Faut-il l'accord de l'architecte des Bâtiments de France ?", "Seulement si le parking se trouve dans le périmètre d'un monument protégé ou d'un site patrimonial remarquable. L'installateur vérifie ce point avant de déposer l'autorisation d'urbanisme."),
+             ("Quelles communes couvrez-vous autour de Vienne ?", "Vienne, Chasse-sur-Rhône, Estrablin, Pont-Évêque, Roussillon, Salaise-sur-Sanne, Condrieu et les communes voisines. Indiquez le code postal du parking dans le formulaire.")],
+        voisins=['lyon', 'saint-priest', 'saint-etienne', 'valence'],
+    ),
+    dict(
+        slug='bourg-en-bresse', groupe='ville2', nom='Bourg-en-Bresse', a='à Bourg-en-Bresse', dept='Ain (01)', cp='01000',
+        title="Ombrière Solaire Bourg-en-Bresse : Loi APER",
+        desc="Ombrières photovoltaïques pour parkings à Bourg-en-Bresse et dans l'Ain : zones commerciales, industrie, agroalimentaire, loi APER. Étude gratuite.",
+        h1="Ombrières solaires de parking <em>à Bourg-en-Bresse</em>",
+        sub="Zones commerciales de périphérie, sites industriels et agroalimentaires, établissements de santé : dans l'agglomération burgienne, de nombreux parkings sont concernés par la loi APER.",
+        points=["Grand Bourg Agglomération et Bresse", "Industrie et agroalimentaire", "Installateur intervenant dans l'Ain"],
+        contexte="""<h2>Les parkings concernés autour de Bourg-en-Bresse</h2>
+<p>Préfecture de l'Ain, Bourg-en-Bresse concentre les zones commerciales du département et un tissu industriel et agroalimentaire important. Les parkings de ces sites dépassent régulièrement le seuil de 1 500 m², et parfois celui de 10 000 m².</p>""",
+        sites=["Les <strong>zones commerciales</strong> de périphérie, à Viriat, Saint-Denis-lès-Bourg et Péronnas.",
+               "Les <strong>sites industriels</strong> de l'agglomération, aux parkings salariés étendus.",
+               "Les <strong>sites agroalimentaires</strong> de la Bresse.",
+               "Le <strong>centre hospitalier</strong>, les établissements scolaires et les équipements sportifs."],
+        local="""<h2>Les points à anticiper dans la Bresse</h2>
+<ul>
+<li><strong>Terrain :</strong> les sols argileux et humides de la Bresse influencent le choix des fondations, à vérifier par une étude de sol.</li>
+<li><strong>Climat :</strong> hivers frais, brouillards et épisodes neigeux sont intégrés au dimensionnement et à l'estimation de la production.</li>
+<li><strong>Agroalimentaire :</strong> les besoins de froid et de process en journée offrent un bon profil d'autoconsommation.</li>
+<li><strong>Commerces :</strong> sur les parkings clients, le chantier est phasé par zones pour maintenir l'accès.</li>
+</ul>""",
+        faq=[("Le sol de mon parking influence-t-il le projet ?", "Oui. La nature du sol conditionne le type et la taille des fondations, donc une partie du budget. Une étude de sol est généralement réalisée avant de finaliser la conception."),
+             ("Un site agroalimentaire a-t-il intérêt à autoconsommer ?", "Souvent oui : le froid et les process consomment beaucoup en journée, au moment où les ombrières produisent. L'étude compare autoconsommation et vente totale à partir de vos consommations réelles."),
+             ("Quelles communes couvrez-vous autour de Bourg-en-Bresse ?", "Bourg-en-Bresse, Viriat, Péronnas, Saint-Denis-lès-Bourg, Ceyzériat et toute la Bresse. Indiquez le code postal du parking dans le formulaire.")],
+        voisins=['plaine-de-l-ain', 'macon', 'lyon', 'villefranche-sur-saone'],
+    ),
+    dict(
+        slug='macon', groupe='ville2', nom='Mâcon', a='à Mâcon', dept='Saône-et-Loire (71)', cp='71000',
+        title="Ombrière Solaire Mâcon : Parkings et Loi APER",
+        desc="Ombrières photovoltaïques pour parkings à Mâcon et dans le Mâconnais : zones commerciales, logistique A6-A40, loi APER. Étude gratuite.",
+        h1="Ombrières solaires de parking <em>à Mâcon et dans le Mâconnais</em>",
+        sub="Au croisement de l'A6 et de l'A40, l'agglomération mâconnaise accueille zones commerciales, plateformes logistiques et parcs d'activités, dont les parkings sont souvent concernés par la loi APER.",
+        points=["Mâconnais Beaujolais Agglomération", "Plateformes logistiques A6-A40", "Installateur intervenant en Saône-et-Loire"],
+        contexte="""<h2>Les parkings concernés autour de Mâcon</h2>
+<p>Carrefour autoroutier entre Paris, Lyon, Genève et les Alpes, Mâcon a attiré de nombreuses activités logistiques et commerciales. Leurs parkings salariés et clients dépassent fréquemment le seuil de 1 500 m².</p>""",
+        sites=["Les <strong>zones commerciales</strong> du nord et du sud de l'agglomération, à Crêches-sur-Saône, Sancé et Charnay-lès-Mâcon.",
+               "Les <strong>plateformes logistiques et parcs d'activités</strong> proches des échangeurs de l'A6 et de l'A40.",
+               "Les <strong>caves coopératives et sites viticoles</strong> du Mâconnais.",
+               "Le <strong>centre hospitalier</strong> et les équipements publics."],
+        local="""<h2>Les points à anticiper dans le Mâconnais</h2>
+<ul>
+<li><strong>Zones inondables :</strong> les abords de la Saône peuvent être soumis à un plan de prévention des risques d'inondation, qui encadre la conception des structures.</li>
+<li><strong>Logistique :</strong> la hauteur libre et l'implantation des poteaux sont adaptées à la circulation des poids lourds.</li>
+<li><strong>Paysage viticole :</strong> sur les coteaux, l'insertion paysagère est à soigner.</li>
+<li><strong>Recharge :</strong> sur un axe de transit majeur, des bornes sous ombrières peuvent servir les clients comme les flottes.</li>
+</ul>""",
+        faq=[("Les plateformes logistiques de l'A6 sont-elles concernées ?", "Oui, dès lors que leur parking extérieur dépasse 1 500 m². On couvre généralement en priorité les parkings véhicules légers des salariés, les zones de manœuvre se prêtant moins aux ombrières."),
+             ("Un parking proche de la Saône peut-il être équipé ?", "Souvent oui, en respectant les règles du plan de prévention des risques d'inondation : position des équipements électriques, conception des structures. L'étude le vérifie dès le départ."),
+             ("Quelles communes couvrez-vous autour de Mâcon ?", "Mâcon, Charnay-lès-Mâcon, Sancé, Crêches-sur-Saône, Replonges, Tournus et le Mâconnais. Indiquez le code postal du parking dans le formulaire.")],
+        voisins=['villefranche-sur-saone', 'bourg-en-bresse', 'chalon-sur-saone', 'lyon'],
+    ),
+    dict(
+        slug='roanne', groupe='ville2', nom='Roanne', a='à Roanne', dept='Loire (42)', cp='42300',
+        title="Ombrière Solaire Roanne : Parkings et Loi APER",
+        desc="Ombrières photovoltaïques pour parkings à Roanne et dans le Roannais : industrie, zones commerciales, loi APER, financement. Étude gratuite.",
+        h1="Ombrières solaires de parking <em>à Roanne et dans le Roannais</em>",
+        sub="Sites industriels, zones commerciales, établissements de santé : dans l'agglomération roannaise, les parkings de plus de 1 500 m² doivent se préparer à l'obligation d'ombrières.",
+        points=["Roannais Agglomération", "Sites industriels et commerciaux", "Installateur intervenant dans la Loire"],
+        contexte="""<h2>Les parkings concernés autour de Roanne</h2>
+<p>Bassin industriel historique, le Roannais compte des sites de mécanique, de textile, de défense et d'agroalimentaire, ainsi que des zones commerciales qui attirent toute la clientèle du nord de la Loire. Beaucoup de leurs parkings dépassent le seuil de la loi APER.</p>""",
+        sites=["Les <strong>zones commerciales</strong> de Mably, Riorges et du Coteau.",
+               "Les <strong>sites industriels</strong> de l'agglomération, aux parkings salariés étendus.",
+               "Les <strong>parcs d'activités</strong> du Roannais.",
+               "Le <strong>centre hospitalier</strong> et les équipements publics."],
+        local="""<h2>Les points à anticiper dans le Roannais</h2>
+<ul>
+<li><strong>Sites sensibles :</strong> certains sites industriels imposent des règles strictes d'accès et de sécurité, qui organisent le chantier.</li>
+<li><strong>Climat :</strong> les épisodes neigeux et les orages sont intégrés au dimensionnement des structures.</li>
+<li><strong>Loire :</strong> les terrains proches du fleuve peuvent être soumis à un plan de prévention des risques d'inondation.</li>
+<li><strong>Autoconsommation :</strong> ateliers et sites de production consomment en journée, au moment où les ombrières produisent.</li>
+</ul>""",
+        faq=[("Un site industriel à accès réglementé peut-il être équipé ?", "Oui. Le chantier est alors organisé selon les règles du site : habilitations, horaires, zones d'accès. Ces contraintes se prévoient dès l'étude et dans le planning."),
+             ("Mon parking fait environ 1 500 m², suis-je concerné ?", "Près du seuil, quelques mètres carrés font la différence. La surface réglementaire se calcule selon des règles précises : faites-la vérifier sur plan avant de décider."),
+             ("Quelles communes couvrez-vous dans le Roannais ?", "Roanne, Mably, Riorges, Le Coteau, Charlieu et les communes voisines. Indiquez le code postal du parking dans le formulaire.")],
+        voisins=['saint-etienne', 'lyon', 'villefranche-sur-saone', 'clermont-ferrand'],
+    ),
+    dict(
+        slug='chalon-sur-saone', groupe='ville2', nom='Chalon-sur-Saône', a='à Chalon-sur-Saône', dept='Saône-et-Loire (71)', cp='71100',
+        title="Ombrière Solaire Chalon-sur-Saône : Loi APER",
+        desc="Ombrières photovoltaïques pour parkings à Chalon-sur-Saône : industrie, logistique, zones commerciales, loi APER. Étude gratuite.",
+        h1="Ombrières solaires de parking <em>à Chalon-sur-Saône</em>",
+        sub="Grands sites industriels, plateformes logistiques le long de l'A6, zones commerciales : l'agglomération chalonnaise compte de nombreux parkings concernés par la loi APER.",
+        points=["Le Grand Chalon et Bresse chalonnaise", "Industrie et logistique de l'axe A6", "Installateur intervenant en Saône-et-Loire"],
+        contexte="""<h2>Les parkings concernés autour de Chalon-sur-Saône</h2>
+<p>Pôle industriel et logistique de la Saône-et-Loire, Chalon-sur-Saône accueille des sites de production de taille importante et des plateformes implantées le long de l'A6. Leurs parkings salariés dépassent souvent le seuil de 1 500 m², parfois celui de 10 000 m².</p>""",
+        sites=["Les <strong>grands sites industriels</strong> de l'agglomération, dont ceux de Saint-Marcel.",
+               "Les <strong>plateformes logistiques</strong> du sud de l'agglomération et des abords de l'A6.",
+               "Les <strong>zones commerciales</strong> du nord et du sud de Chalon.",
+               "Le <strong>centre hospitalier</strong> et les équipements publics."],
+        local="""<h2>Les points à anticiper autour de Chalon</h2>
+<ul>
+<li><strong>Zones inondables :</strong> la plaine de la Saône est en partie couverte par un plan de prévention des risques d'inondation, à intégrer dès la conception.</li>
+<li><strong>Grands sites :</strong> pour les parkings de plusieurs hectares, le raccordement au réseau et le phasage du chantier structurent le calendrier.</li>
+<li><strong>Logistique :</strong> l'implantation des poteaux et la hauteur libre préservent la circulation des engins.</li>
+<li><strong>Autoconsommation :</strong> les sites industriels consomment en continu, un profil favorable pour consommer l'électricité produite.</li>
+</ul>""",
+        faq=[("Mon parking dépasse 10 000 m², quelle est mon échéance ?", "Pour les parkings non concédés de plus de 10 000 m², l'échéance était fixée au 1er juillet 2026, avec des délais possibles sous conditions, notamment pour les projets engagés. Faites vérifier votre situation rapidement."),
+             ("Le raccordement est-il long pour un grand parking ?", "Il peut l'être, surtout si la puissance demande des travaux sur le réseau. C'est souvent l'étape qui fixe le calendrier : la demande se prépare dès l'étude."),
+             ("Quelles communes couvrez-vous autour de Chalon ?", "Chalon-sur-Saône, Saint-Marcel, Champforgeuil, Saint-Rémy, Sevrey, Chatenoy-le-Royal et le Chalonnais. Indiquez le code postal du parking dans le formulaire.")],
+        voisins=['macon', 'dijon', 'besancon', 'bourg-en-bresse'],
+    ),
+    dict(
+        slug='annemasse', groupe='ville2', nom='Annemasse', a='à Annemasse', dept='Haute-Savoie (74)', cp='74100',
+        title="Ombrière Solaire Annemasse : Genevois et Loi APER",
+        desc="Ombrières photovoltaïques pour parkings à Annemasse et dans le Genevois français : commerces, parkings relais, loi APER. Étude gratuite.",
+        h1="Ombrières solaires de parking <em>à Annemasse et dans le Genevois français</em>",
+        sub="Zones commerciales, parcs d'activités, parkings relais des frontaliers : dans l'agglomération d'Annemasse, la pression foncière fait des grands parkings un gisement solaire précieux.",
+        points=["Annemasse Agglo et Genevois français", "Zones commerciales et parkings relais", "Installateur intervenant en Haute-Savoie"],
+        contexte="""<h2>Les parkings concernés autour d'Annemasse</h2>
+<p>Aux portes de Genève, l'agglomération d'Annemasse connaît une forte croissance et un foncier rare. Les grands parkings en surface, commerciaux ou liés aux déplacements des frontaliers, sont des sites idéaux pour produire de l'électricité sans consommer de terrain.</p>""",
+        sites=["Les <strong>zones commerciales</strong> d'Étrembières, de Ville-la-Grand et de Gaillard.",
+               "Les <strong>parcs d'activités</strong> de l'agglomération et du Genevois français.",
+               "Les <strong>parkings relais</strong> utilisés par les frontaliers.",
+               "Le <strong>centre hospitalier</strong> et les équipements publics."],
+        local="""<h2>Les spécificités d'un projet dans le Genevois</h2>
+<ul>
+<li><strong>Neige :</strong> les charges de neige de la Haute-Savoie sont intégrées au dimensionnement de la structure.</li>
+<li><strong>Usage du parking :</strong> un parking relais occupé en journée par des véhicules de frontaliers se prête bien à l'installation de bornes de recharge.</li>
+<li><strong>Foncier :</strong> la rareté du terrain rend la double fonction de l'ombrière, stationnement et production, particulièrement intéressante.</li>
+<li><strong>Urbanisme :</strong> les règles des PLU de l'agglomération encadrent hauteur et aspect des structures.</li>
+</ul>""",
+        faq=[("Un parking relais peut-il être équipé de bornes sous ombrières ?", "Oui, et c'est un usage cohérent : les véhicules restent garés toute la journée, au moment où les ombrières produisent. Le nombre de bornes et leur puissance se dimensionnent dans l'étude."),
+             ("Les ombrières résistent-elles à la neige de Haute-Savoie ?", "Oui, à condition d'être dimensionnées pour les charges de neige de votre site, qui dépendent de la zone climatique et de l'altitude. Cela peut renforcer la structure et augmenter le budget."),
+             ("Quelles communes couvrez-vous dans le Genevois ?", "Annemasse, Gaillard, Ville-la-Grand, Étrembières, Saint-Julien-en-Genevois, Thonon-les-Bains et le Chablais. Indiquez le code postal du parking dans le formulaire.")],
+        voisins=['annecy', 'chambery', 'besancon', 'plaine-de-l-ain'],
+    ),
+    dict(
+        slug='montelimar', groupe='ville2', nom='Montélimar', a='à Montélimar', dept='Drôme (26)', cp='26200',
+        title="Ombrière Solaire Montélimar : Parkings et Loi APER",
+        desc="Ombrières photovoltaïques pour parkings à Montélimar et dans le sud de la Drôme : fort ensoleillement, mistral, loi APER. Étude gratuite.",
+        h1="Ombrières solaires de parking <em>à Montélimar et dans le sud de la Drôme</em>",
+        sub="Zones commerciales, sites industriels et logistiques de la vallée du Rhône, établissements de santé : à Montélimar, l'ensoleillement provençal rend les ombrières particulièrement productives.",
+        points=["Montélimar Agglomération et Drôme provençale", "Ensoleillement très favorable", "Installateur intervenant dans la Drôme et l'Ardèche"],
+        contexte="""<h2>Les parkings concernés autour de Montélimar</h2>
+<p>Aux portes de la Provence, Montélimar bénéficie d'un ensoleillement élevé. Ses zones commerciales, ses parcs d'activités et les sites industriels de la vallée du Rhône disposent de parkings souvent supérieurs à 1 500 m², pour lesquels l'obligation de la loi APER s'accompagne d'une forte production d'électricité.</p>""",
+        sites=["Les <strong>zones commerciales</strong> du nord et du sud de Montélimar.",
+               "Les <strong>parcs d'activités</strong> de l'agglomération et des abords de l'A7.",
+               "Les <strong>sites industriels et énergétiques</strong> de la vallée du Rhône, jusqu'au Tricastin.",
+               "Le <strong>centre hospitalier</strong> et les équipements publics."],
+        local="""<h2>Les spécificités d'un projet dans le sud de la Drôme</h2>
+<ul>
+<li><strong>Mistral :</strong> les vents violents du couloir rhodanien imposent un dimensionnement rigoureux de la structure et des fondations.</li>
+<li><strong>Chaleur :</strong> l'ombrage est très apprécié en été, par les clients comme par les salariés.</li>
+<li><strong>Production :</strong> le fort ensoleillement améliore le rendement des installations.</li>
+<li><strong>Sites sensibles :</strong> autour des sites industriels et énergétiques, les règles d'accès et de sécurité organisent le chantier.</li>
+</ul>""",
+        faq=[("Le mistral est-il compatible avec des ombrières ?", "Oui, à condition que la structure et les fondations soient dimensionnées pour la zone de vent de votre site. Cela peut renforcer la structure et donc influer sur le budget."),
+             ("Une ombrière produit-elle plus à Montélimar ?", "À installation égale, la production est généralement plus élevée que dans le nord de la région grâce au meilleur ensoleillement. La rentabilité dépend aussi du coût de la structure et du mode de valorisation."),
+             ("Quelles communes couvrez-vous autour de Montélimar ?", "Montélimar, Pierrelatte, Donzère, Le Teil, Saint-Paul-Trois-Châteaux et la Drôme provençale. Indiquez le code postal du parking dans le formulaire.")],
+        voisins=['valence', 'avignon', 'grenoble', 'vienne'],
+    ),
+    dict(
+        slug='besancon', groupe='ville2', nom='Besançon', a='à Besançon', dept='Doubs (25)', cp='25000',
+        title="Ombrière Solaire Besançon : Parkings et Loi APER",
+        desc="Ombrières photovoltaïques pour parkings à Besançon et dans le Doubs : zones commerciales, microtechniques, neige, loi APER. Étude gratuite.",
+        h1="Ombrières solaires de parking <em>à Besançon et dans le Doubs</em>",
+        sub="Zones commerciales, technopole et sites industriels, CHU et campus : à Besançon, les grands parkings doivent se préparer à la loi APER en tenant compte d'un climat plus rude.",
+        points=["Grand Besançon Métropole", "Industrie et microtechniques", "Installateur intervenant en Franche-Comté"],
+        contexte="""<h2>Les parkings concernés autour de Besançon</h2>
+<p>Capitale des microtechniques et de l'horlogerie, Besançon accueille des sites industriels de pointe, des zones commerciales de périphérie, un CHU et un campus universitaire. Leurs parkings extérieurs dépassent souvent 1 500 m².</p>""",
+        sites=["Les <strong>zones commerciales</strong> de Châteaufarine et des entrées de l'agglomération.",
+               "La <strong>technopole</strong> et les sites industriels des microtechniques.",
+               "Le <strong>CHU</strong>, les cliniques et le <strong>campus universitaire</strong>.",
+               "Les <strong>parcs d'activités</strong> de la métropole."],
+        local="""<h2>Les spécificités d'un projet dans le Doubs</h2>
+<ul>
+<li><strong>Climat :</strong> hivers froids et enneigés : les charges de neige sont intégrées au dimensionnement de la structure.</li>
+<li><strong>Production :</strong> l'ensoleillement est plus modéré qu'au sud de Lyon, ce que l'étude de production prend en compte pour comparer les modes de valorisation.</li>
+<li><strong>Patrimoine :</strong> la citadelle et les fortifications de Vauban sont inscrites à l'UNESCO : les sites proches demandent une insertion soignée.</li>
+<li><strong>Relief :</strong> les parkings en pente ou en terrasses des collines bisontines demandent une structure adaptée.</li>
+</ul>""",
+        faq=[("Une ombrière est-elle intéressante avec moins de soleil ?", "Oui. L'obligation s'applique quel que soit l'ensoleillement, et la production reste significative. Le choix entre autoconsommation et vente se fait à partir de l'estimation de production propre à votre site."),
+             ("La neige pose-t-elle problème ?", "Non, si la structure est dimensionnée pour les charges de neige de votre zone. Il faut aussi prévoir où tombe la neige, pour ne pas gêner le déneigement du parking."),
+             ("Quelles communes couvrez-vous dans le Doubs ?", "Besançon, École-Valentin, Chalezeule, Pirey, Montbéliard et le reste du Doubs. Indiquez le code postal du parking dans le formulaire.")],
+        voisins=['dijon', 'chalon-sur-saone', 'annemasse', 'bourg-en-bresse'],
+    ),
+    dict(
+        slug='avignon', groupe='ville2', nom='Avignon', a='à Avignon', dept='Vaucluse (84)', cp='84000',
+        title="Ombrière Solaire Avignon : Parkings et Loi APER",
+        desc="Ombrières photovoltaïques pour parkings à Avignon et dans le Vaucluse : fort ensoleillement, mistral, zones commerciales, loi APER. Étude gratuite.",
+        h1="Ombrières solaires de parking <em>à Avignon et dans le Vaucluse</em>",
+        sub="Zones commerciales, technopole, plateformes logistiques et agroalimentaires : dans le Grand Avignon, les grands parkings combinent obligation de la loi APER et ensoleillement exceptionnel.",
+        points=["Grand Avignon et Vaucluse", "Un ensoleillement parmi les meilleurs de France", "Installateur intervenant dans le Vaucluse et le Gard"],
+        contexte="""<h2>Les parkings concernés autour d'Avignon</h2>
+<p>Avec l'un des meilleurs ensoleillements de France, le Grand Avignon est un territoire idéal pour les ombrières photovoltaïques. Ses zones commerciales, ses parcs d'activités et ses sites logistiques et agroalimentaires comptent de nombreux parkings de plus de 1 500 m².</p>""",
+        sites=["Les <strong>zones commerciales</strong> d'Avignon Nord au Pontet et du sud de l'agglomération.",
+               "La <strong>technopole Agroparc</strong> et les zones d'activités de Courtine.",
+               "Les <strong>plateformes logistiques et agroalimentaires</strong> du Vaucluse.",
+               "Le <strong>centre hospitalier</strong>, le campus et les parkings relais."],
+        local="""<h2>Les spécificités d'un projet dans le Vaucluse</h2>
+<ul>
+<li><strong>Mistral :</strong> les rafales du mistral imposent un dimensionnement rigoureux des structures et des fondations.</li>
+<li><strong>Inondations :</strong> les zones proches du Rhône et de la Durance peuvent être soumises à des plans de prévention des risques d'inondation.</li>
+<li><strong>Patrimoine :</strong> autour du centre historique inscrit à l'UNESCO, l'avis de l'architecte des Bâtiments de France peut être requis.</li>
+<li><strong>Chaleur :</strong> en été, l'ombrage des places est un vrai service pour les clients et les salariés.</li>
+</ul>""",
+        faq=[("Une ombrière est-elle très rentable à Avignon ?", "À installation égale, la production y est parmi les plus élevées de France. La rentabilité dépend aussi du coût de la structure, renforcée face au mistral, du raccordement et du mode de valorisation : seule l'étude permet de chiffrer."),
+             ("Faut-il tenir compte du risque d'inondation ?", "Oui, si le parking se trouve dans une zone couverte par un plan de prévention des risques. Il encadre la conception des structures et la position des équipements électriques."),
+             ("Quelles communes couvrez-vous autour d'Avignon ?", "Avignon, Le Pontet, Sorgues, Vedène, Cavaillon, Carpentras, Orange et les communes voisines du Gard. Indiquez le code postal du parking dans le formulaire.")],
+        voisins=['montelimar', 'valence', 'lyon', 'grenoble'],
     ),
 ]
 
@@ -369,7 +620,7 @@ def page_ville(v):
     main += final(f"Votre parking {esc(v['a'])} est concerné ?")
     extra = {'@type': 'Service', 'name': f"Étude d'ombrières photovoltaïques de parking {v['a']}",
              'serviceType': 'Ombrières photovoltaïques de parking', 'provider': {'@id': pages.ORG_ID},
-             'areaServed': {'@type': 'City' if v['groupe'] == 'ville' else 'Place', 'name': v['nom']}}
+             'areaServed': {'@type': 'Place' if v['groupe'] == 'pole' else 'City', 'name': v['nom']}}
     write(p, v['title'], v['desc'], main, crumb=f"Ombrières {v['nom']}", faqs=v['faq'], extra=extra)
 
 
@@ -386,13 +637,19 @@ def page_hub():
     ]
     main = hero("Lyon et Auvergne-Rhône-Alpes · étude gratuite",
                 "Ombrières solaires de parking <em>autour de Lyon</em>",
-                "Nos installateurs partenaires interviennent dans le Rhône, l'Isère, l'Ain, la Loire, les Savoies, la Drôme, le Puy-de-Dôme et la Côte-d'Or. Choisissez votre secteur ou décrivez directement votre parking.",
+                "Nos installateurs partenaires interviennent dans un rayon d'environ trois heures autour de Lyon : Auvergne-Rhône-Alpes, Bourgogne-Franche-Comté et nord du Vaucluse. Choisissez votre secteur ou décrivez directement votre parking.",
                 ["Métropoles et villes moyennes", "Grands pôles logistiques et industriels", "Un installateur proche de votre site"],
                 "Ombrière solaire — page zones d'intervention")
     main += f'''<section class="section">
   <div class="wrap">
     <div class="s-head"><span class="kicker">Villes</span><h2>Nos principales villes d'intervention</h2><p>Chaque page présente les sites concernés et les contraintes locales : climat, urbanisme, paysage.</p></div>
     <div class="cards">{cards('ville')}</div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="s-head"><span class="kicker">Villes moyennes</span><h2>Les autres villes où nous intervenons</h2><p>Des agglomérations aux zones d'activités importantes, de la Saône à la vallée du Rhône et aux portes de Genève.</p></div>
+    <div class="cards">{cards('ville2')}</div>
   </div>
 </section>
 <section class="section alt">
