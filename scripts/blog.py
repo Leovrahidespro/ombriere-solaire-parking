@@ -32,6 +32,7 @@ PAGES_SITE = {
     '/ombriere-solaire-entreprise': "Ombrières pour parkings d'entreprise et sites industriels",
     '/ombriere-solaire-collectivite': "Ombrières pour collectivités et parkings publics",
     '/devis-ombriere-solaire': "Demande d'étude gratuite",
+    '/zones-intervention': "Zones d'intervention : ombrières autour de Lyon, par ville",
 }
 
 

@@ -15,7 +15,7 @@ import blog  # noqa: E402
 
 BASE = blog.BASE
 ORG_ID = blog.ORG_ID
-TODAY = '2026-10-16'
+TODAY = '2026-10-19'
 WEB3FORMS_KEY = '2e53f8a9-5573-446d-98e3-cc33d5558802'
 esc = blog.esc
 
@@ -275,6 +275,15 @@ def page_home():
       <p style="margin-top:.6rem">Trouver le bon installateur, comparer les modèles de financement et comprendre la réglementation prend du temps. Nous transmettons votre demande à un professionnel qui intervient dans votre région, qui vous rappelle avec une première analyse. Le service est gratuit pour vous.</p>
       <div class="cta-row" style="margin-top:1.2rem"><a href="#devis" class="btn btn-ink btn-lg">Demander mon étude {ARROW}</a></div>
     </div>
+  </div>
+</section>
+'''
+    import villes
+    chips = ''.join(f'<a href="{villes.path(v)}" class="link-card">{esc(v["nom"])}</a>' for v in villes.VILLES)
+    main += f'''<section class="section">
+  <div class="wrap">
+    <div class="s-head"><span class="kicker">Près de chez vous</span><h2>Ombrières solaires autour de Lyon</h2><p>Nos installateurs partenaires interviennent dans toute la région. Retrouvez les sites concernés et les contraintes locales de votre secteur.</p></div>
+    <div class="links-grid" style="margin-top:1.6rem">{chips}<a href="{villes.HUB}" class="link-card">Toutes nos zones d'intervention →</a></div>
   </div>
 </section>
 '''
@@ -673,8 +682,10 @@ SITEMAP_PAGES = [('/', '1.0', 'weekly'), ('/obligation-ombriere-parking', '0.9',
 
 def sitemap_base():
     """Écrit la partie fixe du sitemap (le blog l'enrichit ensuite)."""
+    import villes
+    pages_all = SITEMAP_PAGES + [(u, '0.7', 'monthly') for u in villes.all_paths()]
     rows = ''.join(f'  <url>\n    <loc>{BASE}{u if u != "/" else "/"}</loc>\n    <lastmod>{TODAY}</lastmod>\n    <changefreq>{f}</changefreq>\n    <priority>{pr}</priority>\n  </url>\n'
-                   for u, pr, f in SITEMAP_PAGES)
+                   for u, pr, f in pages_all)
     with open(blog.p('sitemap.xml'), 'w', encoding='utf-8') as fh:
         fh.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + rows + '</urlset>\n')
 
@@ -700,6 +711,8 @@ def blog_form_template():
 if __name__ == '__main__':
     blog_form_template()
     page_home(); page_aper(); page_fin(); page_super(); page_ent(); page_coll(); page_devis(); page_legal()
+    import villes
+    villes.build()
     if '--sitemap' in sys.argv or not os.path.exists(blog.p('sitemap.xml')):
         sitemap_base()
     print('Pages générées.')
