@@ -48,7 +48,8 @@
    "/financement-ombriere-solaire",
    "/obligation-ombriere-parking"
   ],
-  "statut": "à faire"
+  "statut": "publié",
+  "date": "2026-10-19"
  },
  {
   "slug": "exemption-loi-aper-parking",
