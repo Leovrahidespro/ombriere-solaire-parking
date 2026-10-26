@@ -114,7 +114,8 @@
       '<div class="sa-done-ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>' +
       '<h3>Demande bien reçue</h3>' +
       '<p>Un installateur partenaire vous recontacte sous 48 h ouvrées pour étudier votre parking et préparer une étude chiffrée.</p>' +
-      '<p>Une question d\'ici là ? <a href="' + TEL + '">' + PHONE + '</a></p></div>';
+      '<p>Une question d\'ici là ? <a href="' + TEL + '">' + PHONE + '</a></p>' +
+      '<p style="font-weight:700;color:#0c2238;margin:0">— L\'équipe Ombrière Solaire Parking</p></div>';
   }
 
   function enhance(form) {

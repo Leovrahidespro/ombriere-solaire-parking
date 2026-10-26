@@ -34,6 +34,8 @@ ICONS = {
     'bolt': '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
     'sun': '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
     'car': '<path d="M5 17h14v-4l-2-5H7l-2 5z"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/>',
+    'lock': '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+    'one': '<circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/>',
     'doc': '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 14h6M9 18h4"/>',
 }
 
@@ -99,7 +101,7 @@ def form_card(prefix, subject, preselect=None, title='Votre étude gratuite', su
         <div class="form-group"><label for="{prefix}-cp">Code postal du parking</label><input type="text" id="{prefix}-cp" name="code_postal" placeholder="Ex : 69007" inputmode="numeric" maxlength="5" autocomplete="postal-code"/></div>
         <button type="submit" class="btn btn-submit">Recevoir mon étude gratuite {ARROW}</button>
         <p class="reassure"><span>Gratuit</span><span>Sans engagement</span><span>Partout en France</span></p>
-        <p class="privacy">Vos coordonnées sont transmises à un installateur partenaire, uniquement pour l'étude de votre projet. <a href="/politique-confidentialite">Confidentialité</a></p>
+        <p class="privacy">Vos coordonnées sont transmises à un seul installateur partenaire, uniquement pour votre projet, et ne sont jamais revendues. <a href="/politique-confidentialite">Confidentialité</a></p>
       </form>
     </div>'''
 
@@ -131,6 +133,24 @@ TRUST = [('clock', 'Étude gratuite', "Un premier retour sous 48 h ouvrées, sa
 def trust():
     items = ''.join(f'<div class="trust-item"><span class="trust-ic">{ic(i, 20)}</span><div><strong>{t}</strong><p>{d}</p></div></div>' for i, t, d in TRUST)
     return f'<section class="trust"><div class="trust-grid">{items}</div></section>\n'
+
+
+ENGAGEMENTS = [('euro', 'Gratuit, sans engagement', "L'étude ne vous coûte rien. Vous restez libre de ne pas donner suite."),
+               ('one', 'Un seul installateur', "Votre demande est confiée à un seul installateur partenaire, pas diffusée à une liste."),
+               ('lock', 'Données jamais revendues', "Vos coordonnées servent uniquement à l'étude de votre projet."),
+               ('shield', 'Pas de démarchage', "Seul l'installateur à qui votre demande est confiée vous contacte, et uniquement pour votre projet.")]
+
+
+def engagements(title='Nos engagements', alt=False):
+    items = ''.join(f'<div class="trust-item"><span class="trust-ic">{ic(i, 20)}</span><div><strong>{t}</strong><p>{d}</p></div></div>' for i, t, d in ENGAGEMENTS)
+    return f'''<section class="section{' alt' if alt else ''}">
+  <div class="wrap">
+    <div class="s-head"><span class="kicker">Confiance</span><h2>{title}</h2></div>
+    <div class="trust-grid" style="padding:1.6rem 0 0">{items}</div>
+    <p class="signature">— L'équipe Ombrière Solaire Parking</p>
+  </div>
+</section>
+'''
 
 
 def cta_row(label='Recevoir mon étude gratuite', note='Gratuit · sans engagement · partout en France'):
@@ -250,10 +270,10 @@ def page_home():
   <div class="wrap">
     <div class="s-head"><span class="kicker">Comment ça marche</span><h2>De votre demande à la mise en service</h2></div>
     <div class="steps">
-      <div class="step"><h3>Vous décrivez votre parking</h3><p>Type de site, surface approximative, localisation : le formulaire prend une minute.</p></div>
-      <div class="step"><h3>Un installateur vous rappelle</h3><p>Il vérifie la surface concernée, vos échéances et vos priorités : conformité, économies, recharge.</p></div>
-      <div class="step"><h3>Étude de faisabilité</h3><p>Implantation, production estimée, raccordement, autorisations et modes de financement possibles.</p></div>
-      <div class="step"><h3>Vous décidez</h3><p>Si la proposition vous convient, l'installateur conduit le projet jusqu'à la mise en service. Sinon, vous n'êtes engagé à rien.</p></div>
+      <div class="step"><h3>Vous décrivez votre parking</h3><p>Type de site, surface approximative, code postal : une minute suffit. Nous confions votre demande à un seul installateur qui intervient dans votre secteur.</p></div>
+      <div class="step"><h3>Un appel sous 48&nbsp;h ouvrées</h3><p>L'installateur vous rappelle pour comprendre votre site : surface concernée, échéance loi APER, priorités (conformité, économies, recharge).</p></div>
+      <div class="step"><h3>Visite et étude de faisabilité</h3><p>Si le projet est pertinent, il étudie votre parking : implantation, production estimée, raccordement, autorisations, financement.</p></div>
+      <div class="step"><h3>Vous décidez, librement</h3><p>Vous recevez une proposition chiffrée. Tout ce qui précède est gratuit et ne vous engage à rien.</p></div>
     </div>
     {cta_row()}
   </div>
@@ -287,6 +307,7 @@ def page_home():
   </div>
 </section>
 '''
+    main += engagements(alt=True)
     main += faq(HOME_FAQ)
     main += final()
     write('/', "Ombrière Solaire Parking : Loi APER & Étude Gratuite",
@@ -563,6 +584,62 @@ def page_coll():
         COLL_FAQ, ['/obligation-ombriere-parking', '/financement-ombriere-solaire', '/ombriere-solaire-entreprise'])
 
 
+ABOUT_FAQ = [
+    ("Ombrière Solaire Parking est-il un installateur ?", "Non. Nous informons, nous qualifions votre projet et nous le confions à un installateur partenaire qui intervient dans votre secteur. C'est lui qui réalise l'étude, puis les travaux si vous donnez suite, sous sa propre responsabilité."),
+    ("Ma demande sera-t-elle envoyée à plusieurs entreprises ?", "Non. Votre demande est confiée à un seul installateur partenaire. Vous n'êtes pas sollicité par une série d'entreprises."),
+    ("Puis-je refuser la proposition ?", "Oui, à tout moment. L'appel, la visite et l'étude sont gratuits et sans engagement : vous restez libre de ne pas donner suite."),
+]
+
+
+def page_about():
+    main = f'''<section class="post-hero"><div class="post-hero-inner">
+  <span class="post-tag">Qui sommes-nous</span>
+  <h1>Un interlocuteur pour votre projet d'ombrières, du premier appel à la décision</h1>
+  <p class="post-meta">Ombrière Solaire Parking aide les propriétaires et gestionnaires de parkings à répondre à la loi APER, sans y passer des semaines.</p>
+</div></section>
+<article class="content">
+<h2>Pourquoi ce service existe</h2>
+<p>Avec la loi APER, des milliers de parkings extérieurs de plus de 1&nbsp;500&nbsp;m² doivent s'équiper d'ombrières photovoltaïques. Pour un directeur de magasin, un gestionnaire de site ou une collectivité, les questions s'accumulent vite : mon parking est-il concerné ? Quelle est mon échéance ? Faut-il investir ou passer par un tiers-investisseur ? À qui faire confiance ?</p>
+<p>Nous avons créé Ombrière Solaire Parking pour répondre à ces questions simplement, et pour vous mettre en relation avec un installateur sérieux qui intervient près de chez vous.</p>
+
+<h2>Ce que nous faisons, et ce que nous ne faisons pas</h2>
+<ul>
+<li><strong>Nous vous informons</strong> : obligation, échéances, exemptions, financement. Nos <a href="/obligation-ombriere-parking">guides</a> et notre <a href="/blog">blog</a> sont mis à jour au fil des textes.</li>
+<li><strong>Nous qualifions votre projet</strong> : type de site, surface, localisation, pour que l'installateur vous rappelle en connaissant déjà l'essentiel.</li>
+<li><strong>Nous confions votre demande à un seul installateur partenaire</strong>, qui intervient dans votre secteur.</li>
+<li><strong>Nous ne vendons pas de panneaux et ne réalisons pas les travaux.</strong> L'étude et le chantier sont réalisés par l'installateur, sous sa propre responsabilité.</li>
+</ul>
+
+<h2>Votre demande, étape par étape</h2>
+<ol>
+<li><strong>Vous décrivez votre parking</strong> en une minute dans le formulaire : type de site, surface approximative, code postal, coordonnées.</li>
+<li><strong>Nous transmettons votre demande</strong> à un installateur partenaire qui intervient dans votre secteur, et à lui seul.</li>
+<li><strong>Il vous rappelle sous 48&nbsp;h ouvrées</strong> pour un premier échange : surface concernée, échéance, priorités.</li>
+<li><strong>Si le projet est pertinent, il étudie votre site</strong> : implantation, production estimée, raccordement, autorisations et modes de financement.</li>
+<li><strong>Vous recevez une proposition</strong> et vous décidez librement. Jusque-là, tout est gratuit et sans engagement.</li>
+</ol>
+
+<h2>Nos engagements</h2>
+<ul>
+<li><strong>Gratuit et sans engagement</strong> : vous ne payez rien pour l'appel, la visite ou l'étude.</li>
+<li><strong>Un seul installateur</strong> : votre demande n'est pas diffusée à une liste d'entreprises.</li>
+<li><strong>Vos données ne sont jamais revendues</strong> : elles servent uniquement à l'étude de votre projet. Voir notre <a href="/politique-confidentialite">politique de confidentialité</a>.</li>
+<li><strong>Pas de démarchage</strong> : seul l'installateur à qui votre demande est confiée vous contacte, et uniquement pour votre projet.</li>
+</ul>
+<p>Une question avant de vous lancer ? Appelez-nous au <a href="tel:0647326572">06&nbsp;47&nbsp;32&nbsp;65&nbsp;72</a>.</p>
+<p class="signature">— L'équipe Ombrière Solaire Parking</p>
+{cta_row('Demander mon étude gratuite')}
+</article>
+'''
+    main = main.replace('href="#devis"', 'href="/devis-ombriere-solaire"')
+    main += faq(ABOUT_FAQ)
+    main += links(['/obligation-ombriere-parking', '/financement-ombriere-solaire', '/zones-intervention', '/devis-ombriere-solaire'])
+    main += final().replace('href="#devis"', 'href="/devis-ombriere-solaire"')
+    write('/qui-sommes-nous', "Qui Sommes-Nous | Ombrière Solaire Parking",
+          "Ombrière Solaire Parking aide les propriétaires de parkings à répondre à la loi APER : information, étude gratuite, un seul installateur partenaire, données jamais revendues.",
+          main, crumb='Qui sommes-nous', faqs=ABOUT_FAQ)
+
+
 DEVIS_FAQ = [
     ("Que faut-il préparer pour l'étude ?", "L'adresse du parking, sa surface approximative, si possible un plan ou une capture d'une vue aérienne, et vos factures d'électricité si vous envisagez l'autoconsommation."),
     ("Combien de temps pour être recontacté ?", "Un installateur partenaire vous recontacte en général sous 48 heures ouvrées pour un premier échange, puis organise l'étude si le projet est pertinent."),
@@ -587,6 +664,7 @@ def page_devis():
   </div>
 </section>
 '''
+    main += engagements(alt=True)
     main += faq(DEVIS_FAQ)
     write('/devis-ombriere-solaire', "Devis Ombrière Solaire Parking : Étude Gratuite",
           "Demandez une étude gratuite d'ombrières photovoltaïques pour votre parking : obligation loi APER, faisabilité, financement. Réponse sous 48 h ouvrées.",
@@ -677,7 +755,7 @@ def page_legal():
 SITEMAP_PAGES = [('/', '1.0', 'weekly'), ('/obligation-ombriere-parking', '0.9', 'monthly'), ('/financement-ombriere-solaire', '0.8', 'monthly'),
                  ('/ombriere-solaire-supermarche', '0.8', 'monthly'), ('/ombriere-solaire-entreprise', '0.8', 'monthly'),
                  ('/ombriere-solaire-collectivite', '0.8', 'monthly'), ('/devis-ombriere-solaire', '0.7', 'monthly'),
-                 ('/mentions-legales', '0.2', 'yearly'), ('/politique-confidentialite', '0.2', 'yearly')]
+                 ('/qui-sommes-nous', '0.5', 'monthly'), ('/mentions-legales', '0.2', 'yearly'), ('/politique-confidentialite', '0.2', 'yearly')]
 
 
 def sitemap_base():
@@ -710,7 +788,7 @@ def blog_form_template():
 
 if __name__ == '__main__':
     blog_form_template()
-    page_home(); page_aper(); page_fin(); page_super(); page_ent(); page_coll(); page_devis(); page_legal()
+    page_home(); page_aper(); page_fin(); page_super(); page_ent(); page_coll(); page_devis(); page_about(); page_legal()
     import villes
     villes.build()
     if '--sitemap' in sys.argv or not os.path.exists(blog.p('sitemap.xml')):

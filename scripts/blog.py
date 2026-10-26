@@ -33,6 +33,7 @@ PAGES_SITE = {
     '/ombriere-solaire-collectivite': "Ombrières pour collectivités et parkings publics",
     '/devis-ombriere-solaire': "Demande d'étude gratuite",
     '/zones-intervention': "Zones d'intervention : ombrières autour de Lyon, par ville",
+    '/qui-sommes-nous': "Qui sommes-nous : notre rôle et nos engagements",
 }
 
 
