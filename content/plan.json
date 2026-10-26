@@ -61,7 +61,8 @@
    "/obligation-ombriere-parking",
    "/devis-ombriere-solaire"
   ],
-  "statut": "à faire"
+  "statut": "publié",
+  "date": "2026-10-26"
  },
  {
   "slug": "ombrage-vegetal-loi-huwart-parking",

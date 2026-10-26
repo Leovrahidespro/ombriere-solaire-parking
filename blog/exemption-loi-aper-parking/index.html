@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemption loi APER parking : les cas et les preuves</title>
+<meta name="description" content="Exemption loi APER parking : contraintes techniques, coût, arbres, aménagement. Les cas admis et comment les justifier avec des preuves.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.ombriere-solaire-parking.fr/blog/exemption-loi-aper-parking">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ombrière Solaire Parking">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://www.ombriere-solaire-parking.fr/blog/exemption-loi-aper-parking">
+<meta property="og:title" content="Exemption loi APER parking : les cas et les preuves">
+<meta property="og:description" content="Exemption loi APER parking : contraintes techniques, coût, arbres, aménagement. Les cas admis et comment les justifier avec des preuves.">
+<meta property="og:image" content="https://www.ombriere-solaire-parking.fr/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:published_time" content="2026-10-26">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0c2238">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --font: 'Inter', system-ui, -apple-system, sans-serif;
+    --ink: #0c2238;
+    --ink-2: #13324f;
+    --text: #1f2937;
+    --muted: #5b6676;
+    --line: #e3e8ef;
+    --soft: #f5f7fa;
+    --sun: #f59e0b;
+    --sun-hover: #e08a00;
+    --sun-soft: #fff4dc;
+    --leaf: #0f9d6b;
+    --radius: 14px;
+  }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
+  body { font-family: var(--font); color: var(--text); background: #fff; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.25rem; }
+
+  /* EN-TÊTE */
+  header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  nav { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 1.25rem; height: 66px; }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.0625rem; letter-spacing: -0.02em; color: var(--ink); }
+  .logo-mark { width: 34px; height: 34px; border-radius: 9px; background: var(--sun); overflow: hidden; display: grid; place-items: center; color: var(--sun); flex-shrink: 0; }
+  .logo b { color: var(--sun-hover); font-weight: 800; }
+  .nav-links { display: none; list-style: none; gap: 1.75rem; }
+  .nav-links a { font-size: .875rem; font-weight: 500; color: var(--muted); }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-actions { display: none; align-items: center; gap: 1rem; }
+  .nav-phone { display: flex; align-items: center; gap: 6px; font-size: .875rem; font-weight: 600; color: var(--ink); }
+  .nav-phone svg { color: var(--sun-hover); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-family: var(--font); font-weight: 700; border-radius: 10px; cursor: pointer; border: none; white-space: nowrap; transition: background .15s, transform .15s; }
+  .btn-sun { background: var(--sun); color: var(--ink); height: 42px; padding: 0 1.25rem; font-size: .875rem; }
+  .btn-sun:hover { background: var(--sun-hover); }
+  .btn-lg { height: 54px; padding: 0 1.75rem; font-size: 1rem; }
+  .btn-ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.35); }
+  .btn-ghost:hover { background: rgba(255,255,255,.08); }
+  .btn-ink { background: var(--ink); color: #fff; }
+  .btn-ink:hover { background: var(--ink-2); }
+  .hamburger { display: flex; width: 42px; height: 42px; align-items: center; justify-content: center; background: none; border: 0; cursor: pointer; color: var(--ink); }
+  .mobile-menu { display: none; flex-direction: column; gap: 2px; padding: .75rem 1.25rem 1rem; border-top: 1px solid var(--line); background: #fff; }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { padding: 10px 8px; font-weight: 500; border-radius: 8px; }
+  .mobile-menu a:hover { background: var(--soft); }
+  .mobile-menu .btn { margin-top: 8px; height: 46px; }
+
+  .breadcrumb { max-width: 1200px; margin: 0 auto; padding: .9rem 1.25rem; font-size: .8125rem; color: var(--muted); }
+  .breadcrumb a { color: var(--ink); font-weight: 500; }
+  .breadcrumb span { margin: 0 6px; }
+  .breadcrumb .bc-tag { margin: 0; }
+
+  /* HERO AVEC FORMULAIRE */
+  .hero { background: var(--ink); color: #fff; position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(900px 420px at 85% -10%, rgba(245,158,11,.28), transparent 60%), radial-gradient(700px 380px at -10% 110%, rgba(15,157,107,.18), transparent 60%); pointer-events: none; }
+  .hero-grid { position: relative; max-width: 1200px; margin: 0 auto; padding: 2.25rem 1.25rem 2.5rem; display: grid; gap: 2rem; align-items: center; }
+  .hero-grid > * { min-width: 0; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); font-size: .8125rem; font-weight: 600; }
+  .eyebrow i { width: 8px; height: 8px; border-radius: 50%; background: var(--sun); box-shadow: 0 0 0 4px rgba(245,158,11,.25); }
+  .hero h1 { margin-top: 1rem; font-size: clamp(1.85rem, 4.6vw, 3.1rem); line-height: 1.08; letter-spacing: -0.035em; font-weight: 800; max-width: 640px; }
+  .hero h1 em { font-style: normal; color: var(--sun); }
+  .hero-sub { margin-top: 1rem; font-size: 1.0625rem; color: rgba(255,255,255,.82); max-width: 560px; }
+  .hero-points { list-style: none; margin-top: 1.4rem; display: grid; gap: 10px; }
+  .hero-points li { display: flex; gap: 10px; align-items: flex-start; font-weight: 500; font-size: .9375rem; }
+  .tick { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--sun); color: var(--ink); display: grid; place-items: center; margin-top: 1px; }
+  .hero-phone { display: inline-flex; gap: 10px; align-items: center; margin-top: 1.5rem; color: rgba(255,255,255,.8); font-size: .9375rem; }
+  .hero-phone strong { color: #fff; }
+  .hero-phone svg { color: var(--sun); }
+  .hero-art { margin-top: 1.75rem; max-width: 520px; opacity: .95; }
+
+  /* CARTE FORMULAIRE */
+  .form-card { background: #fff; color: var(--text); border-radius: 16px; padding: 1.4rem 1.15rem; box-shadow: 0 30px 70px rgba(3,12,24,.45); scroll-margin-top: 86px; }
+  .form-card .fc-title { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; color: var(--ink); line-height: 1.2; }
+  .form-card .fc-sub { margin-top: 4px; font-size: .875rem; color: var(--muted); }
+  .chips { border: 0; margin: 1.1rem 0 .9rem; display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips legend { font-size: .875rem; font-weight: 600; color: var(--ink); margin-bottom: 8px; padding: 0; }
+  .chip { cursor: pointer; }
+  .chip input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .chip span { display: inline-block; padding: 7px 11px; border: 1.5px solid var(--line); border-radius: 999px; font-size: .8125rem; font-weight: 600; color: var(--ink); background: #fff; transition: border-color .15s, background .15s; }
+  .chip:hover span { border-color: #f8c76b; }
+  .chip input:checked + span { border-color: var(--sun); background: var(--sun-soft); color: #92400e; }
+  .chip input:focus-visible + span { outline: 3px solid var(--ink); outline-offset: 2px; }
+  .form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: .8rem; }
+  .form-group label { font-size: .8125rem; font-weight: 600; color: var(--ink); }
+  .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 11px 14px; border: 1.5px solid var(--line); border-radius: 9px; font: 400 .9375rem var(--font); color: var(--text); background: #fff; outline: none; transition: border-color .15s, box-shadow .15s; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--sun); box-shadow: 0 0 0 3px rgba(245,158,11,.2); }
+  .form-row { display: grid; grid-template-columns: 1fr; }
+  .btn-submit { width: 100%; height: 54px; margin-top: .2rem; background: var(--sun); color: var(--ink); font-size: 1.0313rem; box-shadow: 0 10px 22px rgba(245,158,11,.35); }
+  .btn-submit:hover { background: var(--sun-hover); }
+  .reassure { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; margin-top: 11px; font-size: .8125rem; font-weight: 600; color: var(--ink); }
+  .reassure span::before { content: "✓ "; color: var(--leaf); }
+  .privacy { margin-top: 9px; font-size: .75rem; line-height: 1.5; color: var(--muted); text-align: center; }
+  .privacy a { text-decoration: underline; }
+  @keyframes flash { 0% { box-shadow: 0 0 0 0 rgba(245,158,11,.9); } 100% { box-shadow: 0 0 0 18px rgba(245,158,11,0); } }
+  .form-card.flash { animation: flash .9s ease-out 1; }
+
+  /* BANDEAU CONFIANCE */
+  .trust { background: var(--soft); border-bottom: 1px solid var(--line); }
+  .trust-grid { max-width: 1200px; margin: 0 auto; padding: 1.5rem 1.25rem; display: grid; gap: 1.1rem; }
+  .trust-item { display: flex; gap: 12px; align-items: flex-start; }
+  .trust-ic { width: 40px; height: 40px; flex-shrink: 0; border-radius: 10px; background: #fff; border: 1px solid var(--line); display: grid; place-items: center; color: var(--sun-hover); }
+  .trust-item strong { display: block; font-size: .9rem; color: var(--ink); }
+  .trust-item p { font-size: .85rem; color: var(--muted); line-height: 1.45; }
+
+  /* SECTIONS */
+  .section { padding: 4rem 0; }
+  .section.alt { background: var(--soft); }
+  .section.dark { background: var(--ink); color: #fff; }
+  .s-head { max-width: 720px; }
+  .s-head.center { margin: 0 auto; text-align: center; }
+  .kicker { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--sun-hover); }
+  .s-head h2 { margin-top: .4rem; font-size: clamp(1.6rem, 3.2vw, 2.25rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.15; color: var(--ink); }
+  .section.dark .s-head h2 { color: #fff; }
+  .s-head p { margin-top: .8rem; font-size: 1.0625rem; color: var(--muted); }
+  .section.dark .s-head p { color: rgba(255,255,255,.78); }
+  .cards { margin-top: 2.25rem; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(210px,100%), 1fr)); }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem; display: flex; flex-direction: column; transition: border-color .15s, box-shadow .15s, transform .15s; }
+  a.card:hover { border-color: #f8c76b; box-shadow: 0 12px 30px rgba(12,34,56,.08); transform: translateY(-2px); }
+  .card-ic { width: 44px; height: 44px; border-radius: 11px; background: var(--sun-soft); color: #b45309; display: grid; place-items: center; }
+  .card h3 { margin-top: 1rem; font-size: 1.0625rem; font-weight: 700; color: var(--ink); }
+  .card p { margin-top: .4rem; font-size: .9rem; color: var(--muted); flex: 1; }
+  .card .more { margin-top: 1rem; font-size: .875rem; font-weight: 700; color: #b45309; }
+  .steps { margin-top: 2.25rem; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(230px,100%), 1fr)); counter-reset: step; }
+  .step { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem; }
+  .step::before { counter-increment: step; content: counter(step); display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--ink); color: var(--sun); font-weight: 800; }
+  .step h3 { margin-top: .9rem; font-size: 1.03rem; color: var(--ink); }
+  .step p { margin-top: .35rem; font-size: .9rem; color: var(--muted); }
+  .split { display: grid; gap: 2rem; align-items: center; }
+  .checklist { list-style: none; margin-top: 1.25rem; display: grid; gap: 10px; }
+  .checklist li { display: flex; gap: 10px; align-items: flex-start; font-size: .95rem; }
+  .checklist .tick { width: 20px; height: 20px; }
+  .note { margin-top: 1rem; font-size: .8125rem; color: var(--muted); }
+  .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 2rem; }
+  .cta-row span { font-size: .875rem; color: var(--muted); }
+  .section.dark .cta-row span { color: rgba(255,255,255,.7); }
+  .timeline { margin-top: 2rem; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(260px,100%), 1fr)); }
+  .tl { border-radius: var(--radius); padding: 1.4rem; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); }
+  .tl b { display: block; font-size: 1.5rem; font-weight: 800; color: var(--sun); letter-spacing: -0.02em; }
+  .tl span { display: block; margin-top: .25rem; font-weight: 700; }
+  .tl p { margin-top: .35rem; font-size: .9rem; color: rgba(255,255,255,.75); }
+
+  /* CONTENU ÉDITORIAL */
+  .content { max-width: 820px; margin: 0 auto; padding: 3.5rem 1.25rem; }
+  .content h2 { margin-top: 2.4rem; font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.25; color: var(--ink); }
+  .content h2:first-child { margin-top: 0; }
+  .content h3 { margin-top: 1.6rem; font-size: 1.15rem; font-weight: 700; color: var(--ink); }
+  .content p { margin-top: .9rem; color: #374151; line-height: 1.75; }
+  .content ul, .content ol { margin-top: .9rem; padding-left: 1.25rem; color: #374151; }
+  .content li { margin-top: .45rem; line-height: 1.65; }
+  .content a { color: #b45309; text-decoration: underline; font-weight: 500; }
+  .content strong { color: var(--ink); }
+  .content table { width: 100%; border-collapse: collapse; margin-top: 1.1rem; font-size: .9rem; display: block; overflow-x: auto; }
+  .content th, .content td { border: 1px solid var(--line); padding: .65rem .8rem; text-align: left; vertical-align: top; }
+  .content th { background: var(--soft); color: var(--ink); }
+  .content blockquote { margin-top: 1.2rem; border-left: 4px solid var(--sun); background: var(--sun-soft); padding: .9rem 1.1rem; border-radius: 0 10px 10px 0; }
+  .content blockquote p { margin-top: 0; }
+  .callout { margin-top: 1.4rem; padding: 1.1rem 1.25rem; border-radius: 12px; background: var(--soft); border: 1px solid var(--line); font-size: .9rem; color: var(--muted); }
+  .callout strong { color: var(--ink); }
+
+  /* FAQ */
+  .faq-list { max-width: 820px; margin: 2rem auto 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; }
+  .faq-item { border-top: 1px solid var(--line); }
+  .faq-item:first-child { border-top: 0; }
+  .faq-btn { display: flex; width: 100%; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.1rem 1.3rem; background: none; border: 0; cursor: pointer; text-align: left; font: 600 1rem var(--font); color: var(--ink); }
+  .faq-chevron { flex-shrink: 0; color: var(--sun-hover); transition: transform .25s; }
+  .faq-item.open .faq-chevron { transform: rotate(180deg); }
+  .faq-answer { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+  .faq-item.open .faq-answer { max-height: 480px; }
+  .faq-answer p { padding: 0 1.3rem 1.15rem; font-size: .9375rem; color: var(--muted); line-height: 1.65; }
+
+  /* SECTION FORMULAIRE (articles) */
+  .form-section { background: var(--ink); color: #fff; padding: 3.5rem 1.25rem; }
+  .form-inner { max-width: 1000px; margin: 0 auto; display: grid; gap: 2rem; align-items: center; }
+  .form-inner > * { min-width: 0; }
+  .form-left h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.15; }
+  .form-left p { margin-top: .8rem; color: rgba(255,255,255,.8); }
+  .form-left ul { list-style: none; margin-top: 1.2rem; display: grid; gap: 10px; }
+  .form-left li { display: flex; gap: 10px; align-items: center; font-weight: 500; }
+
+  /* LIENS */
+  .links { padding: 3rem 0; border-top: 1px solid var(--line); }
+  .links h3 { font-size: 1.05rem; font-weight: 700; color: var(--ink); }
+  .links-grid { margin-top: 1rem; display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(240px,100%), 1fr)); }
+  .link-card { display: block; padding: .85rem 1rem; border: 1px solid var(--line); border-radius: 10px; font-size: .875rem; font-weight: 600; color: var(--ink); line-height: 1.4; }
+  .link-card:hover { border-color: var(--sun); background: var(--sun-soft); }
+
+  /* BANDEAU FINAL */
+  .final { background: var(--ink); color: #fff; text-align: center; padding: 4rem 1.25rem; }
+  .final h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); font-weight: 800; letter-spacing: -0.03em; }
+  .final p { margin: .8rem auto 0; max-width: 620px; color: rgba(255,255,255,.8); }
+  .final .ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 1.6rem; }
+
+  /* PIED DE PAGE */
+  footer { background: #071726; color: rgba(255,255,255,.7); padding: 3rem 1.25rem 1.5rem; font-size: .875rem; }
+  .foot-grid { max-width: 1200px; margin: 0 auto; display: grid; gap: 2rem; }
+  .foot-grid h4 { color: #fff; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .8rem; }
+  .foot-grid ul { list-style: none; display: grid; gap: .45rem; }
+  .foot-grid a:hover { color: #fff; }
+  .foot-brand .logo { color: #fff; }
+  .foot-brand p { margin-top: .8rem; max-width: 340px; line-height: 1.6; }
+  .foot-legal { max-width: 1200px; margin: 2rem auto 0; padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,.1); display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; justify-content: space-between; font-size: .78rem; color: rgba(255,255,255,.5); }
+  .foot-legal nav { all: unset; display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+  .foot-legal a:hover { color: #fff; }
+
+  /* LÉGAL */
+  .legal h1 { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 800; letter-spacing: -0.02em; color: var(--ink); }
+  .legal .updated { margin-top: .4rem; font-size: .875rem; color: var(--muted); }
+  .legal h2 { font-size: 1.25rem; }
+  .todo { background: #fef3c7; color: #92400e; padding: 0 .25rem; border-radius: 3px; font-weight: 600; }
+
+  /* BLOG */
+  .post-hero { background: var(--ink); color: #fff; padding: 3rem 1.25rem 2.5rem; }
+  .post-hero-inner { max-width: 820px; margin: 0 auto; }
+  .post-tag { display: inline-block; font-size: .78rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; background: rgba(245,158,11,.16); color: var(--sun); border: 1px solid rgba(245,158,11,.35); }
+  .post-hero h1 { margin-top: 1rem; font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.15; }
+  .post-meta { margin-top: 1rem; font-size: .875rem; color: rgba(255,255,255,.7); }
+  .content.post .lead p { font-size: 1.125rem; color: var(--text); }
+  .cta-box { margin: 2.4rem 0 .5rem; padding: 1.5rem; border-radius: var(--radius); background: var(--ink); color: #fff; }
+  .content .cta-row .btn { text-decoration: none; color: var(--ink); }
+  .cta-box strong { display: block; font-size: 1.125rem; color: #fff; }
+  .content .cta-box p { margin-top: .4rem; color: rgba(255,255,255,.8); }
+  .content .cta-box .btn { margin-top: 1rem; text-decoration: none; color: var(--ink); }
+  .blog-hero { background: var(--ink); color: #fff; padding: 3.5rem 1.25rem; text-align: center; }
+  .blog-hero-inner { max-width: 760px; margin: 0 auto; }
+  .blog-hero h1 { margin-top: 1rem; font-size: clamp(1.75rem, 4vw, 2.6rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.15; }
+  .blog-hero p { margin: .8rem auto 0; color: rgba(255,255,255,.8); max-width: 620px; }
+  .blog-list { max-width: 1100px; margin: 0 auto; padding: 3rem 1.25rem 4rem; display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fill, minmax(min(320px,100%), 1fr)); }
+  .blog-card { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; background: #fff; transition: border-color .15s, box-shadow .15s; }
+  .blog-card:hover { border-color: #f8c76b; box-shadow: 0 10px 26px rgba(12,34,56,.07); }
+  .blog-card-tag { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #b45309; }
+  .blog-card h2 { margin: .5rem 0; font-size: 1.125rem; line-height: 1.35; color: var(--ink); }
+  .blog-card p { font-size: .9375rem; color: var(--muted); flex: 1; }
+  .blog-card-meta { margin-top: 1rem; display: flex; justify-content: space-between; gap: 1rem; font-size: .8125rem; color: var(--muted); }
+  .blog-card-link { color: #b45309; font-weight: 700; }
+
+  @media (min-width: 480px) { .form-row { grid-template-columns: 1fr 1fr; gap: 10px; } }
+  @media (min-width: 720px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } .foot-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
+  @media (min-width: 1024px) {
+    .nav-links, .nav-actions { display: flex; }
+    .hamburger { display: none; }
+    .hero-grid { grid-template-columns: 1.1fr 1fr; gap: 3.5rem; padding: 3.75rem 1.25rem 4rem; }
+    .form-card { padding: 1.9rem; }
+    .trust-grid { grid-template-columns: repeat(4, 1fr); }
+    .split { grid-template-columns: 1fr 1fr; gap: 3.5rem; }
+    .form-inner { grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .foot-grid { grid-template-columns: 1.6fr 1fr 1fr 1fr; }
+  }
+  @media (max-width: 639px) {
+    .hero-grid { padding: 1.5rem 1rem 1.75rem; gap: 1.4rem; }
+    .hero-points, .hero-phone, .hero-art { display: none; }
+    .breadcrumb:has(.bc-tag) { display: none; }
+    .form-card { padding: 1.2rem 1rem; }
+    .section { padding: 3rem 0; }
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://www.ombriere-solaire-parking.fr/#organisation",
+   "name": "Ombrière Solaire Parking",
+   "url": "https://www.ombriere-solaire-parking.fr",
+   "telephone": "+33647326572",
+   "logo": "https://www.ombriere-solaire-parking.fr/apple-touch-icon.png"
+  },
+  {
+   "@type": "BlogPosting",
+   "headline": "Exemption loi APER parking : dans quels cas votre parking peut y échapper",
+   "description": "Exemption loi APER parking : contraintes techniques, coût, arbres, aménagement. Les cas admis et comment les justifier avec des preuves.",
+   "datePublished": "2026-10-26",
+   "dateModified": "2026-10-26",
+   "inLanguage": "fr-FR",
+   "mainEntityOfPage": "https://www.ombriere-solaire-parking.fr/blog/exemption-loi-aper-parking",
+   "url": "https://www.ombriere-solaire-parking.fr/blog/exemption-loi-aper-parking",
+   "image": "https://www.ombriere-solaire-parking.fr/og-image.png",
+   "author": {
+    "@id": "https://www.ombriere-solaire-parking.fr/#organisation"
+   },
+   "publisher": {
+    "@id": "https://www.ombriere-solaire-parking.fr/#organisation"
+   },
+   "keywords": "exemption loi APER parking"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Accueil",
+     "item": "https://www.ombriere-solaire-parking.fr/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://www.ombriere-solaire-parking.fr/blog"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Exemption loi APER parking : dans quels cas votre parking peut y échapper",
+     "item": "https://www.ombriere-solaire-parking.fr/blog/exemption-loi-aper-parking"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Une exemption à la loi APER est-elle automatique ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Non. Aucune exemption ne se présume. Vous devez pouvoir démontrer, pièces à l'appui, que votre parking relève de l'un des cas prévus. À défaut, l'obligation continue de s'appliquer."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Un coût élevé suffit-il à justifier une exemption ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Non. Le texte vise un coût économiquement inacceptable, ce qui suppose une démonstration argumentée. Plusieurs chiffrages comparables et l'étude des modes de financement sont généralement attendus pour soutenir ce motif."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Mon parking est arboré : suis-je dispensé ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Seulement si des arbres ombragent déjà plus de la moitié de sa surface. Il faut le prouver par un relevé, un plan et des photographies, et s'assurer que cet ombrage est durable."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quelles preuves rassembler pour une contrainte technique ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Une étude de sol ou de structure, un plan des réseaux, un avis motivé des services concernés et, selon le cas, une analyse de sécurité. Les documents doivent être datés et rédigés par des professionnels compétents."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Que risque un parking non conforme et non exempté ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Une amende annuelle, tant que le parking n'est pas conforme. Vérifiez votre situation au regard des textes en vigueur, car ils sont récents et peuvent évoluer."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<script src="/assets/consent.js" defer></script>
+<script src="/assets/site.js" defer></script>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="/" class="logo" aria-label="Ombrière Solaire Parking, accueil">
+      <span class="logo-mark"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path d="M9 29 L55 21" stroke="#0c2238" stroke-width="8" stroke-linecap="round" fill="none"/><path d="M20 27 V52 M44 23 V52" stroke="#0c2238" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M25 47 L28 40 H36 L39 47 Z" fill="#fff" stroke="none"/><rect x="23" y="46" width="18" height="6" rx="2" fill="#fff" stroke="none"/></svg></span>
+      <span>Ombrière <b>Solaire</b> Parking</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/obligation-ombriere-parking">Loi APER</a></li>
+      <li><a href="/financement-ombriere-solaire">Financement</a></li>
+      <li><a href="/ombriere-solaire-supermarche">Commerces</a></li>
+      <li><a href="/ombriere-solaire-entreprise">Entreprises</a></li>
+      <li><a href="/ombriere-solaire-collectivite">Collectivités</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:0647326572" class="nav-phone"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>06 47 32 65 72</a>
+      <a href="/devis-ombriere-solaire" class="btn btn-sun">Étude gratuite</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/" onclick="closeMenu()">Accueil</a>
+    <a href="/obligation-ombriere-parking" onclick="closeMenu()">Obligation loi APER</a>
+    <a href="/financement-ombriere-solaire" onclick="closeMenu()">Financement</a>
+    <a href="/ombriere-solaire-supermarche" onclick="closeMenu()">Commerces et supermarchés</a>
+    <a href="/ombriere-solaire-entreprise" onclick="closeMenu()">Entreprises</a>
+    <a href="/ombriere-solaire-collectivite" onclick="closeMenu()">Collectivités</a>
+    <a href="/zones-intervention" onclick="closeMenu()">Zones d'intervention</a>
+    <a href="/blog" onclick="closeMenu()">Blog</a>
+    <a href="tel:0647326572">06 47 32 65 72</a>
+    <a href="/devis-ombriere-solaire" class="btn btn-sun" onclick="closeMenu()">Étude gratuite</a>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="/">Accueil</a><span>›</span><a href="/blog">Blog</a><span>›</span>Exemption loi APER parking : dans quels cas votre parking peut y échapper
+</div>
+<section class="post-hero">
+  <div class="post-hero-inner">
+    <span class="post-tag">Réglementation</span>
+    <h1>Exemption loi APER parking : dans quels cas votre parking peut y échapper</h1>
+    <p class="post-meta">Publié le <time datetime="2026-10-26">26 octobre 2026</time> · 7 min de lecture</p>
+  </div>
+</section>
+<article class="content post">
+<div class="lead"><p>Vous gérez un grand parking extérieur et vous vous demandez s'il peut être dispensé d'ombrières photovoltaïques. La loi APER prévoit en effet des cas d'exemption. Mais ils sont encadrés, et ils ne s'appliquent pas parce que le projet vous paraît compliqué ou coûteux.</p><p>Cet article passe en revue chaque cas d'exemption loi APER parking, les éléments qui permettent de le justifier, et les raisons pour lesquelles une dispense ne se présume jamais. Ces textes sont récents : vérifiez toujours votre situation au regard des textes en vigueur.</p></div>
+<h2>Le principe : l&#x27;obligation est la règle, l&#x27;exemption l&#x27;exception</h2>
+<p>L'article 40 de la loi n° 2023-175 du 10 mars 2023 impose des ombrières intégrant un procédé de production d'énergie renouvelable sur les parcs de stationnement extérieurs de plus de 1 500 m². Elles doivent couvrir au moins la moitié de la surface du parking.</p><p>Pour les parkings non concédés, les échéances sont fixées au 1er juillet 2026 au-delà de 10 000 m², et au 1er juillet 2028 entre 1 500 et 10 000 m². Pour les parkings en concession ou en délégation de service public, c'est la conclusion ou le renouvellement du contrat qui déclenche l'obligation.</p><p>Les exemptions viennent en complément. Elles reconnaissent que certains sites ne peuvent pas, ou ne doivent pas, accueillir ce type d'équipement. Pour le panorama complet des parkings concernés, consultez notre page sur <a href="/obligation-ombriere-parking">l'obligation d'ombrières sur les parkings</a>.</p>
+<h2>Contraintes techniques, de sécurité, architecturales, patrimoniales ou environnementales</h2>
+<p>C'est le motif le plus large, et donc le plus exigeant à démontrer. Il recouvre plusieurs situations distinctes :</p><ul><li><strong>Contrainte technique</strong> : sous-sol inadapté aux fondations, réseaux enterrés impossibles à déplacer, dalle ou structure qui ne supporte pas la charge, raccordement irréalisable.</li><li><strong>Contrainte de sécurité</strong> : circulation des secours, accès des poids lourds, risques particuliers liés à l'activité du site.</li><li><strong>Contrainte architecturale ou patrimoniale</strong> : parking situé dans un périmètre protégé ou en covisibilité avec un monument, où les ombrières seraient refusées.</li><li><strong>Contrainte environnementale</strong> : zone sensible, milieu naturel à préserver, risque d'inondation incompatible avec les structures.</li></ul><p>Une contrainte qui touche seulement une partie du parking n'exonère pas le reste. Il faut alors examiner ce qui reste réalisable.</p><h3>Comment le justifier</h3><p>Constituez un dossier écrit et daté. Selon le cas, il peut contenir :</p><ul><li>une étude de sol ou de structure réalisée par un professionnel compétent ;</li><li>un plan des réseaux et des contraintes d'implantation ;</li><li>un avis ou un refus motivé des services compétents en matière de patrimoine ou d'urbanisme ;</li><li>une analyse de sécurité, validée par les personnes en charge de la sécurité du site ;</li><li>les documents réglementaires qui protègent la zone (plan de prévention, périmètre de protection).</li></ul>
+<div class="cta-box"><strong>Votre parking est-il concerné ?</strong><p>Décrivez votre site en une minute : un installateur partenaire vérifie l'obligation, la faisabilité et les modes de financement. Étude gratuite et sans engagement.</p><a href="#devis" class="btn btn-sun">Recevoir mon étude gratuite</a></div>
+<h2>Le coût économiquement inacceptable : le motif le plus fragile</h2>
+<p>La loi admet qu'un projet puisse présenter un coût économiquement inacceptable. Cette formule ne signifie pas « trop cher pour notre budget » ou « pas assez rentable à notre goût ». Elle suppose une démonstration chiffrée et argumentée.</p><p>Plusieurs éléments font varier le coût d'une ombrière : la nature du sol, la hauteur et la structure des ombrières, la distance et les conditions de raccordement au réseau, l'accessibilité du chantier, ou encore la configuration du parking. Les revenus dépendent, eux, de l'ensemble de la production, de l'autoconsommation possible et du mode de valorisation de l'électricité. Notre article sur <a href="/blog/prix-ombriere-photovoltaique-parking">ce qui fait vraiment le budget d'une ombrière</a> détaille ces paramètres.</p><h3>Comment le justifier</h3><ul><li>Faites établir plusieurs chiffrages détaillés par des installateurs différents, sur la base du même cahier des charges.</li><li>Examinez les modes de financement possibles (achat, tiers-investissement, location) avant de conclure : un projet jugé inacceptable en investissement direct peut se présenter autrement avec un tiers.</li><li>Documentez les surcoûts spécifiques du site, pièces à l'appui.</li><li>Conservez les échanges et les études, pour pouvoir les produire en cas de contrôle.</li></ul><p>Un seul devis élevé ne suffit pas. Ce motif sera d'autant plus recevable que vous aurez cherché des solutions et que vous pourrez le montrer.</p>
+<h2>Parking déjà ombragé par des arbres sur plus de la moitié de sa surface</h2>
+<p>Si des arbres ombragent déjà plus de la moitié de la surface du parking, l'objectif d'ombrage est considéré comme rempli. Ce cas concerne surtout des parkings anciens et plantés.</p><p>Attention : il se constate, il ne se déclare pas. Les arbres doivent réellement couvrir la surface concernée, et leur ombrage doit être durable.</p><h3>Comment le justifier</h3><ul><li>Un relevé précis de la surface ombragée, à partir d'un plan de masse et de vues aériennes récentes.</li><li>Un inventaire des arbres : essences, état sanitaire, développement de la couronne.</li><li>Des photographies datées, à différentes saisons si nécessaire.</li><li>Le calcul de la surface du parking, car tout part de là. Notre article sur <a href="/blog/calculer-surface-parking-loi-aper">le calcul de la surface de parking</a> vous aide à la déterminer correctement.</li></ul><p>Pensez aussi à la pérennité. Des arbres malades, voués à être abattus ou trop jeunes fragilisent votre dossier.</p>
+<h2>Parking appelé à disparaître dans une opération d&#x27;aménagement</h2>
+<p>Un parking qui doit être supprimé ou transformé dans le cadre d'une opération d'aménagement peut être dispensé. L'idée est simple : il serait absurde d'équiper un site voué à disparaître.</p><p>Là encore, l'intention ne suffit pas. L'opération doit être réelle, identifiée et suffisamment avancée.</p><h3>Comment le justifier</h3><ul><li>Les documents qui actent l'opération : délibération, autorisation d'urbanisme, convention, programme d'aménagement.</li><li>Le calendrier prévisionnel, qui montre que la disparition du parking est prévue et cohérente avec les échéances de la loi.</li><li>Un plan qui situe précisément le parking dans le périmètre de l'opération.</li></ul><p>Un projet simplement envisagé, sans décision ni calendrier, sera difficile à faire valoir.</p>
+<h2>Pourquoi une exemption ne se présume pas</h2>
+<p>Aucune dispense n'est automatique. C'est à vous, propriétaire ou gestionnaire, de démontrer que votre parking entre dans l'un des cas prévus. En l'absence de preuves, il reste soumis à l'obligation, et l'amende annuelle peut s'appliquer tant que le parking n'est pas conforme.</p><p>Quelques bonnes pratiques :</p><ol><li><strong>Anticipez.</strong> Un dossier solide demande des études, parfois des avis extérieurs. Ne le préparez pas à la dernière minute.</li><li><strong>Écrivez tout.</strong> Chaque motif doit reposer sur des documents datés et signés.</li><li><strong>Testez d'abord la faisabilité.</strong> Une étude technique peut révéler qu'une partie du parking reste équipable.</li><li><strong>Regardez les alternatives.</strong> La loi du 26 novembre 2025 de simplification de l'urbanisme permet de combiner ombrières photovoltaïques et ombrage végétal, avec une part minimale de photovoltaïque. Ce n'est pas une exemption, mais cela peut débloquer un site contraint.</li><li><strong>Surveillez les textes.</strong> Un décret de 2026 prévoit des délais supplémentaires sous conditions pour les projets engagés. Cela ne dispense pas, mais peut modifier votre calendrier.</li></ol><p>Selon la nature de votre site, les enjeux diffèrent. Les <a href="/ombriere-solaire-collectivite">collectivités et gestionnaires de parkings publics</a> ont par exemple des contraintes propres, notamment patrimoniales.</p>
+<h2>Réunir un dossier solide avant de renoncer à un projet</h2>
+<p>Avant de vous appuyer sur une exemption loi APER parking, posez-vous trois questions. Le motif est-il réel et documenté ? Une partie du parking peut-elle quand même être équipée ? Le projet a-t-il été étudié sérieusement, avec plusieurs interlocuteurs ?</p><p>Une étude de faisabilité réalisée par un installateur partenaire vous donne des éléments concrets : état du sol, implantation possible, raccordement, contraintes du site. Elle permet soit de lancer un projet réaliste, soit de constituer un dossier d'exemption argumenté. Vous pouvez demander <a href="/devis-ombriere-solaire">une étude gratuite</a> pour y voir plus clair.</p><p>Dans tous les cas, confirmez votre situation au regard des textes en vigueur, qui sont récents et susceptibles d'évoluer.</p>
+</article>
+<section class="form-section">
+  <div class="form-inner">
+    <div class="form-left">
+      <h2>Faites étudier votre parking gratuitement</h2>
+      <p>Un installateur partenaire qui intervient dans votre région vous recontacte sous 48&nbsp;h ouvrées pour une première analyse, sans engagement.</p>
+      <ul><li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Vérification de l'obligation loi APER</li><li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Faisabilité, production et raccordement</li><li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Comparaison des modes de financement</li></ul>
+    </div>
+    <div class="form-card" id="devis">
+      <form action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="hidden" name="access_key" value="2e53f8a9-5573-446d-98e3-cc33d5558802">
+        <input type="hidden" name="subject" value="Ombrière solaire — article du blog">
+        <input type="hidden" name="redirect" value="false">
+        <p class="fc-title">Votre étude gratuite</p>
+        <p class="fc-sub">Un installateur partenaire vous recontacte sous 48&nbsp;h ouvrées</p>
+        <fieldset class="chips">
+          <legend>Votre parking appartient à…</legend>
+          <label class="chip"><input type="radio" name="type_site" value="Commerce / supermarché" checked><span>Commerce / supermarché</span></label>
+          <label class="chip"><input type="radio" name="type_site" value="Entreprise / site industriel"><span>Entreprise / site industriel</span></label>
+          <label class="chip"><input type="radio" name="type_site" value="Collectivité / établissement public"><span>Collectivité / établissement public</span></label>
+          <label class="chip"><input type="radio" name="type_site" value="Copropriété / bailleur"><span>Copropriété / bailleur</span></label>
+          <label class="chip"><input type="radio" name="type_site" value="Autre"><span>Autre</span></label>
+        </fieldset>
+        <div class="form-group"><label for="b-surface">Surface du parking</label>
+          <select id="b-surface" name="surface_parking">
+            <option>Je ne sais pas encore</option>
+            <option>Moins de 1 500 m²</option>
+            <option>De 1 500 à 10 000 m²</option>
+            <option>Plus de 10 000 m²</option>
+          </select></div>
+        <div class="form-row">
+          <div class="form-group"><label for="b-name">Nom et fonction</label><input type="text" id="b-name" name="name" placeholder="Ex : Julie Martin, directrice" autocomplete="name"/></div>
+          <div class="form-group"><label for="b-org">Société ou organisme</label><input type="text" id="b-org" name="societe" placeholder="Ex : Supermarché du Centre" autocomplete="organization"/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="b-phone">Téléphone</label><input type="tel" id="b-phone" name="phone" placeholder="06 00 00 00 00" autocomplete="tel"/></div>
+          <div class="form-group"><label for="b-email">E-mail</label><input type="email" id="b-email" name="email" placeholder="vous@societe.fr" autocomplete="email"/></div>
+        </div>
+        <div class="form-group"><label for="b-cp">Code postal du parking</label><input type="text" id="b-cp" name="code_postal" placeholder="Ex : 69007" inputmode="numeric" maxlength="5" autocomplete="postal-code"/></div>
+        <button type="submit" class="btn btn-submit">Recevoir mon étude gratuite <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+        <p class="reassure"><span>Gratuit</span><span>Sans engagement</span><span>Partout en France</span></p>
+        <p class="privacy">Vos coordonnées sont transmises à un installateur partenaire, uniquement pour l'étude de votre projet. <a href="/politique-confidentialite">Confidentialité</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+<section class="section alt">
+  <div class="wrap">
+    <div class="s-head center"><h2>Questions fréquentes</h2></div>
+    <div class="faq-list"><div class="faq-item open">
+      <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="true">
+        <span>Une exemption à la loi APER est-elle automatique ?</span>
+        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Non. Aucune exemption ne se présume. Vous devez pouvoir démontrer, pièces à l'appui, que votre parking relève de l'un des cas prévus. À défaut, l'obligation continue de s'appliquer.</p></div>
+    </div><div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>Un coût élevé suffit-il à justifier une exemption ?</span>
+        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Non. Le texte vise un coût économiquement inacceptable, ce qui suppose une démonstration argumentée. Plusieurs chiffrages comparables et l'étude des modes de financement sont généralement attendus pour soutenir ce motif.</p></div>
+    </div><div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>Mon parking est arboré : suis-je dispensé ?</span>
+        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Seulement si des arbres ombragent déjà plus de la moitié de sa surface. Il faut le prouver par un relevé, un plan et des photographies, et s'assurer que cet ombrage est durable.</p></div>
+    </div><div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>Quelles preuves rassembler pour une contrainte technique ?</span>
+        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Une étude de sol ou de structure, un plan des réseaux, un avis motivé des services concernés et, selon le cas, une analyse de sécurité. Les documents doivent être datés et rédigés par des professionnels compétents.</p></div>
+    </div><div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>Que risque un parking non conforme et non exempté ?</span>
+        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Une amende annuelle, tant que le parking n'est pas conforme. Vérifiez votre situation au regard des textes en vigueur, car ils sont récents et peuvent évoluer.</p></div>
+    </div></div>
+  </div>
+</section>
+<section class="links">
+  <div class="wrap">
+    <h3>À lire aussi</h3>
+    <div class="links-grid"><a href="/obligation-ombriere-parking" class="link-card">Obligation loi APER : parkings concernés, échéances, exemptions</a><a href="/devis-ombriere-solaire" class="link-card">Demande d&#x27;étude gratuite</a><a href="/blog/tiers-investissement-ombriere-parking" class="link-card">Tiers-investissement pour une ombrière de parking : fonctionnement et points de vigilance</a><a href="/blog/prix-ombriere-photovoltaique-parking" class="link-card">Prix d&#x27;une ombrière photovoltaïque de parking : ce qui fait vraiment le budget</a><a href="/blog/loi-aper-parking-echeance-2028" class="link-card">Loi APER parking 2028 : le rétroplanning pour un parking de 1 500 à 10 000 m²</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a href="/" class="logo"><span class="logo-mark"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path d="M9 29 L55 21" stroke="#0c2238" stroke-width="8" stroke-linecap="round" fill="none"/><path d="M20 27 V52 M44 23 V52" stroke="#0c2238" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M25 47 L28 40 H36 L39 47 Z" fill="#fff" stroke="none"/><rect x="23" y="46" width="18" height="6" rx="2" fill="#fff" stroke="none"/></svg></span><span>Ombrière <b>Solaire</b> Parking</span></a>
+      <p>Ombrière Solaire Parking met en relation les propriétaires et gestionnaires de parkings avec des installateurs d'ombrières photovoltaïques, partout en France. Étude gratuite et sans engagement.</p>
+    </div>
+    <div>
+      <h4>Comprendre</h4>
+      <ul>
+        <li><a href="/obligation-ombriere-parking">Obligation loi APER</a></li>
+        <li><a href="/financement-ombriere-solaire">Financer son ombrière</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Votre parking</h4>
+      <ul>
+        <li><a href="/ombriere-solaire-supermarche">Commerces et supermarchés</a></li>
+        <li><a href="/ombriere-solaire-entreprise">Entreprises</a></li>
+        <li><a href="/ombriere-solaire-collectivite">Collectivités</a></li>
+        <li><a href="/zones-intervention">Zones d'intervention</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:0647326572">06 47 32 65 72</a></li>
+        <li><a href="/devis-ombriere-solaire">Demander une étude</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-legal">
+    <span>© 2026 Ombrière Solaire Parking</span>
+    <nav><a href="/mentions-legales">Mentions légales</a><a href="/politique-confidentialite">Politique de confidentialité</a><a href="#" onclick="saManageCookies();return false;">Gérer les cookies</a></nav>
+  </div>
+</footer>
+<script>
+  function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+  function toggleFaq(btn) {
+    var item = btn.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); i.querySelector('.faq-btn').setAttribute('aria-expanded','false'); });
+    if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+  }
+  // Liens vers le formulaire : présélection éventuelle et mise en avant
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href="#devis"]');
+    if (!a) return;
+    var card = document.getElementById('devis');
+    if (!card) return;
+    var t = a.getAttribute('data-type');
+    if (t) { var r = card.querySelector('input[name="type_site"][value="' + t + '"]'); if (r) r.checked = true; }
+    card.classList.remove('flash'); void card.offsetWidth; card.classList.add('flash');
+    var first = card.querySelector('input[name="name"]');
+    if (first) setTimeout(function () { first.focus({ preventScroll: true }); }, 600);
+  });
+</script>
+</body>
+</html>

@@ -194,9 +194,15 @@
   </url>
   <url>
     <loc>https://www.ombriere-solaire-parking.fr/blog</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ombriere-solaire-parking.fr/blog/exemption-loi-aper-parking</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ombriere-solaire-parking.fr/blog/tiers-investissement-ombriere-parking</loc>
