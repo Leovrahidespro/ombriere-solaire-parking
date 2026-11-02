@@ -74,7 +74,8 @@
    "/obligation-ombriere-parking",
    "/ombriere-solaire-collectivite"
   ],
-  "statut": "à faire"
+  "statut": "publié",
+  "date": "2026-11-02"
  },
  {
   "slug": "ombriere-solaire-borne-recharge",
