@@ -10,6 +10,11 @@ on:
     - cron: '37 14 * * 1'   # lundi, tentative de rattrapage
     - cron: '13 7 * * 2'    # mardi matin, secours
   workflow_dispatch:        # bouton « Run workflow » pour publier à la demande
+    inputs:
+      rattrapage:
+        description: "Ne publier que si aucun article n'est encore paru cette semaine"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,6 +39,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MODEL: ${{ vars.CLAUDE_MODEL }}
+          RATTRAPAGE: ${{ inputs.rattrapage }}
         run: python scripts/generate_article.py
 
       - name: Publier sur le site

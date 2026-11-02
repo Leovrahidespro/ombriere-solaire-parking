@@ -175,8 +175,11 @@ def deja_publie_cette_semaine():
 
 def main():
     # Lancements planifiés multiples : on ne publie qu'une fois par semaine.
-    # Un lancement manuel (« Run workflow ») publie toujours.
-    if os.environ.get('GITHUB_EVENT_NAME') == 'schedule' and deja_publie_cette_semaine():
+    # Un lancement manuel (« Run workflow ») publie toujours, sauf en mode rattrapage
+    # (relais hebdomadaire qui ne publie que si rien n'est encore paru cette semaine).
+    une_fois = (os.environ.get('GITHUB_EVENT_NAME') == 'schedule'
+                or os.environ.get('RATTRAPAGE', '').lower() == 'true')
+    if une_fois and deja_publie_cette_semaine():
         print('Article de la semaine déjà publié : rien à faire.')
         return
     with open(PLAN, encoding='utf-8') as fh:
