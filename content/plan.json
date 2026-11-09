@@ -87,7 +87,8 @@
    "/ombriere-solaire-entreprise",
    "/ombriere-solaire-supermarche"
   ],
-  "statut": "à faire"
+  "statut": "publié",
+  "date": "2026-11-09"
  },
  {
   "slug": "autoconsommation-ombriere-entreprise",

@@ -1,0 +1,70 @@
+{
+ "title": "Ombrière solaire et borne de recharge : bien les coupler",
+ "meta_description": "Ombrière solaire et borne de recharge : intérêt du couplage, dimensionnement, pilotage, fourreaux et usages pour salariés, clients et flotte.",
+ "h1": "Ombrière solaire et borne de recharge : bien coupler les deux sur votre parking",
+ "excerpt": "Coupler ombrières photovoltaïques et recharge de véhicules électriques : dimensionnement, pilotage, fourreaux et usages à anticiper dès l'étude.",
+ "intro_html": "<p>Une ombrière photovoltaïque produit de l'électricité à l'endroit même où les véhicules stationnent. Il est donc logique de s'en servir pour les recharger. Pourtant, l'association d'une ombrière solaire et d'une borne de recharge ne se résume pas à poser deux équipements côte à côte.</p><p>Dimensionnement, pilotage, réseau électrique, génie civil : ces choix s'anticipent dès le départ, car ils coûtent beaucoup plus cher à corriger après coup. Voici les points à examiner avant de lancer votre projet.</p>",
+ "sections": [
+  {
+   "h2": "Pourquoi associer production solaire et recharge de véhicules",
+   "html": "<p>Le couplage répond à une logique simple : produire et consommer au même endroit. L'énergie produite par la toiture de l'ombrière peut alimenter directement les bornes, sans transiter longtemps par le réseau.</p><p>Pour un gestionnaire de parking, l'intérêt est triple :</p><ul><li><strong>Un usage concret de l'électricité produite</strong> : la recharge est une consommation sur site, qui s'ajoute à celle du bâtiment.</li><li><strong>Un service visible</strong> pour les salariés, les visiteurs ou les clients, qui trouvent à la fois de l'ombre et de la recharge.</li><li><strong>Un seul chantier</strong> : terrassement, tranchées et raccordement peuvent être mutualisés, ce qui évite d'ouvrir deux fois le même parking.</li></ul><p>Attention toutefois : la production solaire et la recharge ne sont pas toujours synchrones. Un véhicule de salarié se recharge souvent en journée, quand le soleil est présent. Une flotte utilitaire, elle, se recharge plutôt la nuit. Le projet doit tenir compte de ces écarts.</p>"
+  },
+  {
+   "h2": "Partir des usages pour dimensionner l'ensemble",
+   "html": "<p>Le bon dimensionnement ne commence pas par le nombre de places, mais par la manière dont le parking est utilisé. Trois grands profils reviennent, avec des besoins différents.</p><table><thead><tr><th>Usage</th><th>Durée de stationnement</th><th>Conséquence pour le projet</th></tr></thead><tbody><tr><td>Salariés</td><td>Longue, en journée</td><td>Recharge lente, bien alignée avec la production solaire</td></tr><tr><td>Clients et visiteurs</td><td>Courte à moyenne</td><td>Rotation élevée, besoin de simplicité d'accès et de paiement</td></tr><tr><td>Flotte de véhicules</td><td>Variable, souvent la nuit</td><td>Recharge planifiée, éventuellement complétée par le réseau</td></tr></tbody></table><p>Pour chaque profil, posez-vous quelques questions :</p><ol><li>Combien de véhicules électriques utilisent déjà le parking, et combien d'ici quelques années ?</li><li>Quelle est la durée moyenne de stationnement ?</li><li>Quelle part de la consommation voulez-vous couvrir avec la production de l'ombrière ?</li><li>Le site dispose-t-il d'une puissance de raccordement suffisante, ou faut-il la renforcer ?</li></ol><p>Les réponses déterminent la puissance de l'ombrière, le type de bornes et la puissance de raccordement. Un site tertiaire ouvert en journée n'a pas les mêmes besoins qu'un site logistique qui fonctionne en horaires décalés. Pour les parkings d'entreprise, la page consacrée aux <a href=\"/ombriere-solaire-entreprise\">ombrières pour parkings d'entreprise et sites industriels</a> détaille ces contextes.</p>"
+  },
+  {
+   "h2": "Piloter la recharge pour tirer parti du solaire",
+   "html": "<p>Sans pilotage, les bornes tirent la puissance demandée au moment où les véhicules se branchent, quelle que soit la production. Avec un système de supervision, la recharge s'adapte.</p><h3>Ce que permet un pilotage de la recharge</h3><ul><li><strong>Répartir la puissance disponible</strong> entre les véhicules branchés, plutôt que de surdimensionner le raccordement.</li><li><strong>Privilégier les heures de production solaire</strong> quand les véhicules ne sont pas pressés de repartir.</li><li><strong>Tenir compte de la consommation du bâtiment</strong> pour éviter de dépasser la puissance souscrite.</li><li><strong>Planifier les recharges de flotte</strong> selon les besoins de départ du lendemain.</li><li><strong>Suivre les consommations</strong> par utilisateur ou par borne, utile pour la facturation ou la refacturation.</li></ul><h3>Quelques précautions</h3><p>Vérifiez que les bornes retenues sont communicantes et compatibles avec le système de pilotage envisagé. Un équipement fermé peut vous enfermer chez un seul fournisseur. Demandez aussi à l'installateur comment le système se comporte en cas de coupure de communication : les bornes doivent rester utilisables en mode sécurisé.</p><p>Le solaire ne garantit pas une recharge « gratuite » ou entièrement décarbonée à toute heure. Une partie de l'électricité viendra du réseau, notamment le soir et l'hiver. C'est normal, et le dimensionnement doit l'assumer.</p>"
+  },
+  {
+   "h2": "Anticiper fourreaux, tranchées et raccordement",
+   "html": "<p>C'est le point le plus rentable à traiter tôt. Quand on réalise les fondations et les tranchées de l'ombrière, ajouter des fourreaux supplémentaires coûte peu en comparaison d'une réouverture ultérieure du revêtement.</p><p>Plusieurs réflexes sont utiles :</p><ul><li><strong>Prévoir des fourreaux en attente</strong> vers des places aujourd'hui non équipées, pour pouvoir ajouter des bornes plus tard.</li><li><strong>Dimensionner les cheminements</strong> en tenant compte d'un éventuel doublement du nombre de bornes.</li><li><strong>Réserver de la place</strong> dans le local ou le tableau électrique pour de futures protections.</li><li><strong>Faire valider le point de raccordement</strong> et la puissance disponible auprès du gestionnaire de réseau dès les premières étapes.</li><li><strong>Fixer l'emplacement des bornes</strong> par rapport aux poteaux, à la circulation et à l'accessibilité des places pour les personnes à mobilité réduite.</li></ul><p>Cette logique du « prêt à équiper » permet de démarrer avec peu de bornes et d'augmenter au rythme de l'électrification des véhicules, sans retravaux lourds. Le coût final dépend de la configuration du terrain, de la distance au point de raccordement et du nombre d'équipements ; l'article sur <a href=\"/blog/prix-ombriere-photovoltaique-parking\">ce qui fait le budget d'une ombrière</a> explique ces mécanismes.</p>"
+  },
+  {
+   "h2": "Adapter le couplage au type de site",
+   "html": "<p>Le contexte d'usage change les priorités.</p><h3>Parking d'entreprise ou site logistique</h3><p>La recharge des salariés se superpose aux heures de production. La flotte peut s'ajouter, avec des besoins plus réguliers. Un pilotage fin évite de dépasser la puissance du site aux heures de pointe.</p><h3>Commerce et grande surface</h3><p>Les clients restent un temps limité et attendent une recharge simple d'accès. La signalétique, la lisibilité du paiement et la disponibilité des places comptent autant que la puissance. Les spécificités de ces sites sont abordées sur la page <a href=\"/ombriere-solaire-supermarche\">ombrières pour supermarchés et commerces</a>.</p><h3>Collectivité, copropriété, bailleur</h3><p>Les usages sont plus mélangés : agents, habitants, visiteurs. La question de la gestion des accès, de la facturation et de la maintenance devient centrale. Précisez dès le départ qui exploite les bornes et qui supporte les coûts d'entretien.</p>"
+  },
+  {
+   "h2": "Cadre réglementaire et financement : ce qu'il faut vérifier",
+   "html": "<p>Si votre parking extérieur dépasse 1 500 m², la loi APER peut vous imposer d'équiper la moitié de sa surface d'ombrières intégrant une production d'énergie renouvelable. Dans ce cas, la recharge n'est pas l'objet de l'obligation, mais elle peut enrichir le projet que vous devez de toute façon étudier. Ces textes étant récents, vérifiez votre situation au regard des textes en vigueur.</p><p>Côté financement, le couplage peut modifier le montage : propriété directe, tiers-investissement ou location ne répartissent pas de la même façon les bornes, l'ombrière et les revenus éventuels de la recharge. Les différentes options sont présentées dans la page <a href=\"/financement-ombriere-solaire\">financer une ombrière</a>. Dans tous les cas, précisez par écrit qui est propriétaire des bornes, qui les exploite et qui les entretient.</p>"
+  },
+  {
+   "h2": "Préparer son projet : les bonnes questions à poser",
+   "html": "<p>Avant de comparer des propositions, rassemblez les informations utiles : plan du parking, puissance souscrite, courbes de consommation, nombre de véhicules électriques actuels et prévus, horaires d'usage.</p><p>Puis demandez aux installateurs :</p><ul><li>comment ils dimensionnent la recharge par rapport à la production solaire ;</li><li>quel système de pilotage est proposé, et s'il reste ouvert à d'autres équipements ;</li><li>quels fourreaux et réserves sont prévus pour l'évolution future ;</li><li>qui s'occupe des démarches de raccordement ;</li><li>comment sont assurés la maintenance et le suivi des bornes.</li></ul><p>Une <a href=\"/devis-ombriere-solaire\">étude gratuite</a> permet de cadrer ces points avec un installateur partenaire, selon la configuration réelle de votre parking, sans engagement.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Faut-il installer les bornes en même temps que l'ombrière ?",
+   "a": "Ce n'est pas obligatoire, mais prévoir au moins les fourreaux et la capacité électrique lors du chantier de l'ombrière évite de rouvrir le parking plus tard. Vous pouvez ensuite équiper les places progressivement, selon la demande."
+  },
+  {
+   "q": "Les bornes fonctionnent-elles uniquement avec l'énergie de l'ombrière ?",
+   "a": "Non. Les bornes restent raccordées au réseau électrique du site. Le solaire couvre une partie des besoins quand le soleil brille, et le réseau prend le relais le reste du temps. La part couverte dépend du dimensionnement et des horaires de recharge."
+  },
+  {
+   "q": "À quoi sert le pilotage de la recharge ?",
+   "a": "Il répartit la puissance disponible entre les véhicules, privilégie si possible les heures d'ensoleillement et évite de dépasser la puissance du site. Il peut aussi suivre les consommations par borne ou par utilisateur."
+  },
+  {
+   "q": "La loi APER impose-t-elle d'installer des bornes de recharge ?",
+   "a": "L'article 40 de la loi APER porte sur les ombrières intégrant une production d'énergie renouvelable, pas sur les bornes. Les obligations liées à la recharge relèvent d'autres textes : vérifiez votre situation au regard des textes en vigueur."
+  },
+  {
+   "q": "Qui doit exploiter les bornes sur un parking partagé ?",
+   "a": "Cela dépend du montage retenu : le propriétaire du parking, un exploitant dédié ou un prestataire peut s'en charger. Définissez par écrit la propriété, l'exploitation, la facturation et la maintenance avant le démarrage du projet."
+  }
+ ],
+ "related": [
+  "/financement-ombriere-solaire",
+  "/obligation-ombriere-parking",
+  "/devis-ombriere-solaire",
+  "/blog/prix-ombriere-photovoltaique-parking"
+ ],
+ "slug": "ombriere-solaire-borne-recharge",
+ "date": "2026-11-09",
+ "category": "Technique",
+ "keyword": "ombrière solaire borne de recharge",
+ "model": "claude-sonnet-5-5"
+}

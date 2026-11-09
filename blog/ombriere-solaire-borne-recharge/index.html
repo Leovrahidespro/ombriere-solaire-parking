@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ombrière solaire et borne de recharge : bien les coupler</title>
+<meta name="description" content="Ombrière solaire et borne de recharge : intérêt du couplage, dimensionnement, pilotage, fourreaux et usages pour salariés, clients et flotte.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.ombriere-solaire-parking.fr/blog/ombriere-solaire-borne-recharge">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ombrière Solaire Parking">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://www.ombriere-solaire-parking.fr/blog/ombriere-solaire-borne-recharge">
+<meta property="og:title" content="Ombrière solaire et borne de recharge : bien les coupler">
+<meta property="og:description" content="Ombrière solaire et borne de recharge : intérêt du couplage, dimensionnement, pilotage, fourreaux et usages pour salariés, clients et flotte.">
+<meta property="og:image" content="https://www.ombriere-solaire-parking.fr/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:published_time" content="2026-11-09">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0c2238">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --font: 'Inter', system-ui, -apple-system, sans-serif;
+    --ink: #0c2238;
+    --ink-2: #13324f;
+    --text: #1f2937;
+    --muted: #5b6676;
+    --line: #e3e8ef;
+    --soft: #f5f7fa;
+    --sun: #f59e0b;
+    --sun-hover: #e08a00;
+    --sun-soft: #fff4dc;
+    --leaf: #0f9d6b;
+    --radius: 14px;
+  }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
+  body { font-family: var(--font); color: var(--text); background: #fff; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.25rem; }
+
+  /* EN-TÊTE */
+  header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  nav { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 1.25rem; height: 66px; }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.0625rem; letter-spacing: -0.02em; color: var(--ink); }
+  .logo-mark { width: 34px; height: 34px; border-radius: 9px; background: var(--sun); overflow: hidden; display: grid; place-items: center; color: var(--sun); flex-shrink: 0; }
+  .logo b { color: var(--sun-hover); font-weight: 800; }
+  .nav-links { display: none; list-style: none; gap: 1.75rem; }
+  .nav-links a { font-size: .875rem; font-weight: 500; color: var(--muted); }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-links { align-items: center; }
+  .nav-links > li > a, .nav-dd > button { display: inline-flex; align-items: center; gap: 4px; padding: 8px 2px; font-family: inherit; font-size: .875rem; font-weight: 500; line-height: 1; color: var(--muted); background: none; border: 0; cursor: pointer; }
+  .nav-dd > button:hover, .nav-dd.open > button { color: var(--ink); }
+  .nav-dd { position: relative; }
+  .dd-chev { transition: transform .15s; }
+  .nav-dd.open .dd-chev { transform: rotate(180deg); }
+  .dd-menu { position: absolute; top: calc(100% + 10px); left: -16px; min-width: 300px; list-style: none; padding: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 16px 40px rgba(12,34,56,.14); opacity: 0; visibility: hidden; transform: translateY(-4px); transition: opacity .15s, transform .15s, visibility .15s; }
+  .dd-menu::before { content: ""; position: absolute; left: 0; right: 0; top: -12px; height: 12px; }
+  .nav-dd.open .dd-menu { opacity: 1; visibility: visible; transform: none; }
+  @media (hover: hover) { .nav-dd:hover .dd-menu { opacity: 1; visibility: visible; transform: none; } .nav-dd:hover .dd-chev { transform: rotate(180deg); } }
+  .dd-menu a { display: block; padding: 10px 12px; border-radius: 8px; }
+  .dd-menu a:hover, .dd-menu a:focus-visible { background: var(--sun-soft); }
+  .dd-menu strong { display: block; font-size: .875rem; font-weight: 700; color: var(--ink); }
+  .dd-menu span { display: block; margin-top: 2px; font-size: .78rem; color: var(--muted); font-weight: 400; }
+  .nav-links > li > a, .nav-dd > button, .logo, .nav-phone, .nav-actions .btn { white-space: nowrap; }
+  @media (max-width: 1199px) { .nav-links { gap: 1.1rem !important; } .nav-phone .np-txt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } .nav-actions { gap: .6rem !important; } }
+  .mm-title { margin: .9rem 8px .2rem; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .mm-title:first-child { margin-top: .2rem; }
+  .nav-actions { display: none; align-items: center; gap: 1rem; }
+  .nav-phone { display: flex; align-items: center; gap: 6px; font-size: .875rem; font-weight: 600; color: var(--ink); }
+  .nav-phone svg { color: var(--sun-hover); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-family: var(--font); font-weight: 700; border-radius: 10px; cursor: pointer; border: none; white-space: nowrap; transition: background .15s, transform .15s; }
+  .btn-sun { background: var(--sun); color: var(--ink); height: 42px; padding: 0 1.25rem; font-size: .875rem; }
+  .btn-sun:hover { background: var(--sun-hover); }
+  .btn-lg { height: 54px; padding: 0 1.75rem; font-size: 1rem; }
+  .btn-ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.35); }
+  .btn-ghost:hover { background: rgba(255,255,255,.08); }
+  .btn-ink { background: var(--ink); color: #fff; }
+  .btn-ink:hover { background: var(--ink-2); }
+  .hamburger { display: flex; width: 42px; height: 42px; align-items: center; justify-content: center; background: none; border: 0; cursor: pointer; color: var(--ink); }
+  .mobile-menu { display: none; flex-direction: column; gap: 2px; padding: .75rem 1.25rem 1rem; border-top: 1px solid var(--line); background: #fff; }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { padding: 10px 8px; font-weight: 500; border-radius: 8px; }
+  .mobile-menu a:hover { background: var(--soft); }
+  .mobile-menu .btn { margin-top: 8px; height: 46px; }
+
+  .breadcrumb { max-width: 1200px; margin: 0 auto; padding: .9rem 1.25rem; font-size: .8125rem; color: var(--muted); }
+  .breadcrumb a { color: var(--ink); font-weight: 500; }
+  .breadcrumb span { margin: 0 6px; }
+  .breadcrumb .bc-tag { margin: 0; }
+
+  /* HERO AVEC FORMULAIRE */
+  .hero { background: var(--ink); color: #fff; position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(900px 420px at 85% -10%, rgba(245,158,11,.28), transparent 60%), radial-gradient(700px 380px at -10% 110%, rgba(15,157,107,.18), transparent 60%); pointer-events: none; }
+  .hero-grid { position: relative; max-width: 1200px; margin: 0 auto; padding: 2.25rem 1.25rem 2.5rem; display: grid; gap: 2rem; align-items: center; }
+  .hero-grid > * { min-width: 0; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); font-size: .8125rem; font-weight: 600; }
+  .eyebrow i { width: 8px; height: 8px; border-radius: 50%; background: var(--sun); box-shadow: 0 0 0 4px rgba(245,158,11,.25); }
+  .hero h1 { margin-top: 1rem; font-size: clamp(1.85rem, 4.6vw, 3.1rem); line-height: 1.08; letter-spacing: -0.035em; font-weight: 800; max-width: 640px; }
+  .hero h1 em { font-style: normal; color: var(--sun); }
+  .hero-sub { margin-top: 1rem; font-size: 1.0625rem; color: rgba(255,255,255,.82); max-width: 560px; }
+  .hero-points { list-style: none; margin-top: 1.4rem; display: grid; gap: 10px; }
+  .hero-points li { display: flex; gap: 10px; align-items: flex-start; font-weight: 500; font-size: .9375rem; }
+  .tick { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--sun); color: var(--ink); display: grid; place-items: center; margin-top: 1px; }
+  .hero-phone { display: inline-flex; gap: 10px; align-items: center; margin-top: 1.5rem; color: rgba(255,255,255,.8); font-size: .9375rem; }
+  .hero-phone strong { color: #fff; }
+  .hero-phone svg { color: var(--sun); }
+  .hero-art { margin-top: 1.75rem; max-width: 520px; opacity: .95; }
+
+  /* CARTE FORMULAIRE */
+  .form-card { background: #fff; color: var(--text); border-radius: 16px; padding: 1.4rem 1.15rem; box-shadow: 0 30px 70px rgba(3,12,24,.45); scroll-margin-top: 86px; }
+  .form-card .fc-title { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; color: var(--ink); line-height: 1.2; }
+  .form-card .fc-sub { margin-top: 4px; font-size: .875rem; color: var(--muted); }
+  .chips { border: 0; margin: 1.1rem 0 .9rem; display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips legend { font-size: .875rem; font-weight: 600; color: var(--ink); margin-bottom: 8px; padding: 0; }
+  .chip { cursor: pointer; }
+  .chip input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .chip span { display: inline-block; padding: 7px 11px; border: 1.5px solid var(--line); border-radius: 999px; font-size: .8125rem; font-weight: 600; color: var(--ink); background: #fff; transition: border-color .15s, background .15s; }
+  .chip:hover span { border-color: #f8c76b; }
+  .chip input:checked + span { border-color: var(--sun); background: var(--sun-soft); color: #92400e; }
+  .chip input:focus-visible + span { outline: 3px solid var(--ink); outline-offset: 2px; }
+  .form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: .8rem; }
+  .form-group label { font-size: .8125rem; font-weight: 600; color: var(--ink); }
+  .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 11px 14px; border: 1.5px solid var(--line); border-radius: 9px; font: 400 .9375rem var(--font); color: var(--text); background: #fff; outline: none; transition: border-color .15s, box-shadow .15s; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--sun); box-shadow: 0 0 0 3px rgba(245,158,11,.2); }
+  .form-row { display: grid; grid-template-columns: 1fr; }
+  .btn-submit { width: 100%; height: 54px; margin-top: .2rem; background: var(--sun); color: var(--ink); font-size: 1.0313rem; box-shadow: 0 10px 22px rgba(245,158,11,.35); }
+  .btn-submit:hover { background: var(--sun-hover); }
+  .reassure { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; margin-top: 11px; font-size: .8125rem; font-weight: 600; color: var(--ink); }
+  .reassure span::before { content: "✓ "; color: var(--leaf); }
+  .privacy { margin-top: 9px; font-size: .75rem; line-height: 1.5; color: var(--muted); text-align: center; }
+  .privacy a { text-decoration: underline; }
+  @keyframes flash { 0% { box-shadow: 0 0 0 0 rgba(245,158,11,.9); } 100% { box-shadow: 0 0 0 18px rgba(245,158,11,0); } }
+  .form-card.flash { animation: flash .9s ease-out 1; }
+
+  /* BANDEAU CONFIANCE */
+  .trust { background: var(--soft); border-bottom: 1px solid var(--line); }
+  .trust-grid { max-width: 1200px; margin: 0 auto; padding: 1.5rem 1.25rem; display: grid; gap: 1.1rem; }
+  .trust-item { display: flex; gap: 12px; align-items: flex-start; }
+  .trust-ic { width: 40px; height: 40px; flex-shrink: 0; border-radius: 10px; background: #fff; border: 1px solid var(--line); display: grid; place-items: center; color: var(--sun-hover); }
+  .trust-item strong { display: block; font-size: .9rem; color: var(--ink); }
+  .trust-item p { font-size: .85rem; color: var(--muted); line-height: 1.45; }
+
+  /* SECTIONS */
+  .section { padding: 4rem 0; }
+  .section.alt { background: var(--soft); }
+  .section.dark { background: var(--ink); color: #fff; }
+  .s-head { max-width: 720px; }
+  .s-head.center { margin: 0 auto; text-align: center; }
+  .kicker { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--sun-hover); }
+  .s-head h2 { margin-top: .4rem; font-size: clamp(1.6rem, 3.2vw, 2.25rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.15; color: var(--ink); }
+  .section.dark .s-head h2 { color: #fff; }
+  .s-head p { margin-top: .8rem; font-size: 1.0625rem; color: var(--muted); }
+  .section.dark .s-head p { color: rgba(255,255,255,.78); }
+  .cards { margin-top: 2.25rem; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(210px,100%), 1fr)); }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem; display: flex; flex-direction: column; transition: border-color .15s, box-shadow .15s, transform .15s; }
+  a.card:hover { border-color: #f8c76b; box-shadow: 0 12px 30px rgba(12,34,56,.08); transform: translateY(-2px); }
+  .card-ic { width: 44px; height: 44px; border-radius: 11px; background: var(--sun-soft); color: #b45309; display: grid; place-items: center; }
+  .card h3 { margin-top: 1rem; font-size: 1.0625rem; font-weight: 700; color: var(--ink); }
+  .card p { margin-top: .4rem; font-size: .9rem; color: var(--muted); flex: 1; }
+  .card .more { margin-top: 1rem; font-size: .875rem; font-weight: 700; color: #b45309; }
+  .steps { margin-top: 2.25rem; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(230px,100%), 1fr)); counter-reset: step; }
+  .step { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem; }
+  .step::before { counter-increment: step; content: counter(step); display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--ink); color: var(--sun); font-weight: 800; }
+  .step h3 { margin-top: .9rem; font-size: 1.03rem; color: var(--ink); }
+  .step p { margin-top: .35rem; font-size: .9rem; color: var(--muted); }
+  .split { display: grid; gap: 2rem; align-items: center; }
+  .checklist { list-style: none; margin-top: 1.25rem; display: grid; gap: 10px; }
+  .checklist li { display: flex; gap: 10px; align-items: flex-start; font-size: .95rem; }
+  .checklist .tick { width: 20px; height: 20px; }
+  .note { margin-top: 1rem; font-size: .8125rem; color: var(--muted); }
+  .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 2rem; }
+  .cta-row span { font-size: .875rem; color: var(--muted); }
+  .section.dark .cta-row span { color: rgba(255,255,255,.7); }
+  .timeline { margin-top: 2rem; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(260px,100%), 1fr)); }
+  .tl { border-radius: var(--radius); padding: 1.4rem; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); }
+  .tl b { display: block; font-size: 1.5rem; font-weight: 800; color: var(--sun); letter-spacing: -0.02em; }
+  .tl span { display: block; margin-top: .25rem; font-weight: 700; }
+  .tl p { margin-top: .35rem; font-size: .9rem; color: rgba(255,255,255,.75); }
+
+  /* CONTENU ÉDITORIAL */
+  .content { max-width: 820px; margin: 0 auto; padding: 3.5rem 1.25rem; }
+  .content h2 { margin-top: 2.4rem; font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.25; color: var(--ink); }
+  .content h2:first-child { margin-top: 0; }
+  .content h3 { margin-top: 1.6rem; font-size: 1.15rem; font-weight: 700; color: var(--ink); }
+  .content p { margin-top: .9rem; color: #374151; line-height: 1.75; }
+  .content ul, .content ol { margin-top: .9rem; padding-left: 1.25rem; color: #374151; }
+  .content li { margin-top: .45rem; line-height: 1.65; }
+  .content a { color: #b45309; text-decoration: underline; font-weight: 500; }
+  .content strong { color: var(--ink); }
+  .content table { width: 100%; border-collapse: collapse; margin-top: 1.1rem; font-size: .9rem; display: block; overflow-x: auto; }
+  .content th, .content td { border: 1px solid var(--line); padding: .65rem .8rem; text-align: left; vertical-align: top; }
+  .content th { background: var(--soft); color: var(--ink); }
+  .content blockquote { margin-top: 1.2rem; border-left: 4px solid var(--sun); background: var(--sun-soft); padding: .9rem 1.1rem; border-radius: 0 10px 10px 0; }
+  .content blockquote p { margin-top: 0; }
+  .callout { margin-top: 1.4rem; padding: 1.1rem 1.25rem; border-radius: 12px; background: var(--soft); border: 1px solid var(--line); font-size: .9rem; color: var(--muted); }
+  .callout strong { color: var(--ink); }
+
+  /* FAQ */
+  .faq-list { max-width: 820px; margin: 2rem auto 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; }
+  .faq-item { border-top: 1px solid var(--line); }
+  .faq-item:first-child { border-top: 0; }
+  .faq-btn { display: flex; width: 100%; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.1rem 1.3rem; background: none; border: 0; cursor: pointer; text-align: left; font: 600 1rem var(--font); color: var(--ink); }
+  .faq-chevron { flex-shrink: 0; color: var(--sun-hover); transition: transform .25s; }
+  .faq-item.open .faq-chevron { transform: rotate(180deg); }
+  .faq-answer { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+  .faq-item.open .faq-answer { max-height: 480px; }
+  .faq-answer p { padding: 0 1.3rem 1.15rem; font-size: .9375rem; color: var(--muted); line-height: 1.65; }
+
+  /* SECTION FORMULAIRE (articles) */
+  .form-section { background: var(--ink); color: #fff; padding: 3.5rem 1.25rem; }
+  .form-inner { max-width: 1000px; margin: 0 auto; display: grid; gap: 2rem; align-items: center; }
+  .form-inner > * { min-width: 0; }
+  .form-left h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.15; }
+  .form-left p { margin-top: .8rem; color: rgba(255,255,255,.8); }
+  .form-left ul { list-style: none; margin-top: 1.2rem; display: grid; gap: 10px; }
+  .form-left li { display: flex; gap: 10px; align-items: center; font-weight: 500; }
+
+  /* LIENS */
+  .links { padding: 3rem 0; border-top: 1px solid var(--line); }
+  .links h3 { font-size: 1.05rem; font-weight: 700; color: var(--ink); }
+  .links-grid { margin-top: 1rem; display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(240px,100%), 1fr)); }
+  .link-card { display: block; padding: .85rem 1rem; border: 1px solid var(--line); border-radius: 10px; font-size: .875rem; font-weight: 600; color: var(--ink); line-height: 1.4; }
+  .link-card:hover { border-color: var(--sun); background: var(--sun-soft); }
+
+  /* BANDEAU FINAL */
+  .final { background: var(--ink); color: #fff; text-align: center; padding: 4rem 1.25rem; }
+  .final h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); font-weight: 800; letter-spacing: -0.03em; }
+  .final p { margin: .8rem auto 0; max-width: 620px; color: rgba(255,255,255,.8); }
+  .final .ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 1.6rem; }
+
+  /* PIED DE PAGE */
+  footer { background: #071726; color: rgba(255,255,255,.7); padding: 3rem 1.25rem 1.5rem; font-size: .875rem; }
+  .foot-grid { max-width: 1200px; margin: 0 auto; display: grid; gap: 2rem; }
+  .foot-grid h4 { color: #fff; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .8rem; }
+  .foot-grid ul { list-style: none; display: grid; gap: .45rem; }
+  .foot-grid a:hover { color: #fff; }
+  .foot-brand .logo { color: #fff; }
+  .foot-brand p { margin-top: .8rem; max-width: 340px; line-height: 1.6; }
+  .foot-legal { max-width: 1200px; margin: 2rem auto 0; padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,.1); display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; justify-content: space-between; font-size: .78rem; color: rgba(255,255,255,.5); }
+  .foot-legal nav { all: unset; display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+  .foot-legal a:hover { color: #fff; }
+
+  /* LÉGAL */
+  .legal h1 { font-size: clamp(1.75rem, 4vw, 2.25rem); font-weight: 800; letter-spacing: -0.02em; color: var(--ink); }
+  .legal .updated { margin-top: .4rem; font-size: .875rem; color: var(--muted); }
+  .legal h2 { font-size: 1.25rem; }
+  .todo { background: #fef3c7; color: #92400e; padding: 0 .25rem; border-radius: 3px; font-weight: 600; }
+
+  /* BLOG */
+  .post-hero { background: var(--ink); color: #fff; padding: 3rem 1.25rem 2.5rem; }
+  .post-hero-inner { max-width: 820px; margin: 0 auto; }
+  .post-tag { display: inline-block; font-size: .78rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; background: rgba(245,158,11,.16); color: var(--sun); border: 1px solid rgba(245,158,11,.35); }
+  .post-hero h1 { margin-top: 1rem; font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.15; }
+  .post-meta { margin-top: 1rem; font-size: .875rem; color: rgba(255,255,255,.7); }
+  .content.post .lead p { font-size: 1.125rem; color: var(--text); }
+  .cta-box { margin: 2.4rem 0 .5rem; padding: 1.5rem; border-radius: var(--radius); background: var(--ink); color: #fff; }
+  .content .cta-row .btn { text-decoration: none; color: var(--ink); }
+  .signature { margin-top: 1.4rem; font-weight: 700; color: var(--ink); font-style: italic; }
+  .cta-box strong { display: block; font-size: 1.125rem; color: #fff; }
+  .content .cta-box p { margin-top: .4rem; color: rgba(255,255,255,.8); }
+  .content .cta-box .btn { margin-top: 1rem; text-decoration: none; color: var(--ink); }
+  .blog-hero { background: var(--ink); color: #fff; padding: 3.5rem 1.25rem; text-align: center; }
+  .blog-hero-inner { max-width: 760px; margin: 0 auto; }
+  .blog-hero h1 { margin-top: 1rem; font-size: clamp(1.75rem, 4vw, 2.6rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.15; }
+  .blog-hero p { margin: .8rem auto 0; color: rgba(255,255,255,.8); max-width: 620px; }
+  .blog-list { max-width: 1100px; margin: 0 auto; padding: 3rem 1.25rem 4rem; display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fill, minmax(min(320px,100%), 1fr)); }
+  .blog-card { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; background: #fff; transition: border-color .15s, box-shadow .15s; }
+  .blog-card:hover { border-color: #f8c76b; box-shadow: 0 10px 26px rgba(12,34,56,.07); }
+  .blog-card-tag { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #b45309; }
+  .blog-card h2 { margin: .5rem 0; font-size: 1.125rem; line-height: 1.35; color: var(--ink); }
+  .blog-card p { font-size: .9375rem; color: var(--muted); flex: 1; }
+  .blog-card-meta { margin-top: 1rem; display: flex; justify-content: space-between; gap: 1rem; font-size: .8125rem; color: var(--muted); }
+  .blog-card-link { color: #b45309; font-weight: 700; }
+
+  @media (min-width: 480px) { .form-row { grid-template-columns: 1fr 1fr; gap: 10px; } }
+  @media (min-width: 720px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } .foot-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
+  @media (min-width: 1024px) {
+    .nav-links, .nav-actions { display: flex; }
+    .hamburger { display: none; }
+    .hero-grid { grid-template-columns: 1.1fr 1fr; gap: 3.5rem; padding: 3.75rem 1.25rem 4rem; }
+    .form-card { padding: 1.9rem; }
+    .trust-grid { grid-template-columns: repeat(4, 1fr); }
+    .split { grid-template-columns: 1fr 1fr; gap: 3.5rem; }
+    .form-inner { grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .foot-grid { grid-template-columns: 1.6fr 1fr 1fr 1fr; }
+  }
+  @media (max-width: 639px) {
+    .hero-grid { padding: 1.5rem 1rem 1.75rem; gap: 1.4rem; }
+    .hero-points, .hero-phone, .hero-art { display: none; }
+    .breadcrumb:has(.bc-tag) { display: none; }
+    .form-card { padding: 1.2rem 1rem; }
+    .section { padding: 3rem 0; }
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://www.ombriere-solaire-parking.fr/#organisation",
+   "name": "Ombrière Solaire Parking",
+   "url": "https://www.ombriere-solaire-parking.fr",
+   "telephone": "+33647326572",
+   "logo": "https://www.ombriere-solaire-parking.fr/apple-touch-icon.png"
+  },
+  {
+   "@type": "BlogPosting",
+   "headline": "Ombrière solaire et borne de recharge : bien coupler les deux sur votre parking",
+   "description": "Ombrière solaire et borne de recharge : intérêt du couplage, dimensionnement, pilotage, fourreaux et usages pour salariés, clients et flotte.",
+   "datePublished": "2026-11-09",
+   "dateModified": "2026-11-09",
+   "inLanguage": "fr-FR",
+   "mainEntityOfPage": "https://www.ombriere-solaire-parking.fr/blog/ombriere-solaire-borne-recharge",
+   "url": "https://www.ombriere-solaire-parking.fr/blog/ombriere-solaire-borne-recharge",
+   "image": "https://www.ombriere-solaire-parking.fr/og-image.png",
+   "author": {
+    "@id": "https://www.ombriere-solaire-parking.fr/#organisation"
+   },
+   "publisher": {
+    "@id": "https://www.ombriere-solaire-parking.fr/#organisation"
+   },
+   "keywords": "ombrière solaire borne de recharge"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Accueil",
+     "item": "https://www.ombriere-solaire-parking.fr/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://www.ombriere-solaire-parking.fr/blog"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Ombrière solaire et borne de recharge : bien coupler les deux sur votre parking",
+     "item": "https://www.ombriere-solaire-parking.fr/blog/ombriere-solaire-borne-recharge"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Faut-il installer les bornes en même temps que l'ombrière ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ce n'est pas obligatoire, mais prévoir au moins les fourreaux et la capacité électrique lors du chantier de l'ombrière évite de rouvrir le parking plus tard. Vous pouvez ensuite équiper les places progressivement, selon la demande."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Les bornes fonctionnent-elles uniquement avec l'énergie de l'ombrière ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Non. Les bornes restent raccordées au réseau électrique du site. Le solaire couvre une partie des besoins quand le soleil brille, et le réseau prend le relais le reste du temps. La part couverte dépend du dimensionnement et des horaires de recharge."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "À quoi sert le pilotage de la recharge ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Il répartit la puissance disponible entre les véhicules, privilégie si possible les heures d'ensoleillement et évite de dépasser la puissance du site. Il peut aussi suivre les consommations par borne ou par utilisateur."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "La loi APER impose-t-elle d'installer des bornes de recharge ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "L'article 40 de la loi APER porte sur les ombrières intégrant une production d'énergie renouvelable, pas sur les bornes. Les obligations liées à la recharge relèvent d'autres textes : vérifiez votre situation au regard des textes en vigueur."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Qui doit exploiter les bornes sur un parking partagé ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Cela dépend du montage retenu : le propriétaire du parking, un exploitant dédié ou un prestataire peut s'en charger. Définissez par écrit la propriété, l'exploitation, la facturation et la maintenance avant le démarrage du projet."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<script src="/assets/consent.js" defer></script>
+<script src="/assets/site.js" defer></script>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="/" class="logo" aria-label="Ombrière Solaire Parking, accueil">
+      <span class="logo-mark"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path d="M9 29 L55 21" stroke="#0c2238" stroke-width="8" stroke-linecap="round" fill="none"/><path d="M20 27 V52 M44 23 V52" stroke="#0c2238" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M25 47 L28 40 H36 L39 47 Z" fill="#fff" stroke="none"/><rect x="23" y="46" width="18" height="6" rx="2" fill="#fff" stroke="none"/></svg></span>
+      <span>Ombrière <b>Solaire</b> Parking</span>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-dd"><button type="button" aria-expanded="false" aria-controls="dd-comprendre">Comprendre<svg class="dd-chev" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <ul class="dd-menu" id="dd-comprendre">
+          <li><a href="/obligation-ombriere-parking"><strong>Obligation loi APER</strong><span>Parkings concernés, échéances, exemptions</span></a></li>
+          <li><a href="/financement-ombriere-solaire"><strong>Financement</strong><span>Achat, tiers-investissement ou location</span></a></li>
+          <li><a href="/blog"><strong>Guides et actualités</strong><span>Le blog des ombrières de parking</span></a></li>
+        </ul></li>
+      <li class="nav-dd"><button type="button" aria-expanded="false" aria-controls="dd-parking">Votre parking<svg class="dd-chev" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <ul class="dd-menu" id="dd-parking">
+          <li><a href="/ombriere-solaire-supermarche"><strong>Commerces et supermarchés</strong><span>Parkings clients, retail parks</span></a></li>
+          <li><a href="/ombriere-solaire-entreprise"><strong>Entreprises et logistique</strong><span>Parkings salariés, sites industriels</span></a></li>
+          <li><a href="/ombriere-solaire-collectivite"><strong>Collectivités</strong><span>Parkings publics, hôpitaux, écoles</span></a></li>
+        </ul></li>
+      <li><a href="/zones-intervention">Zones d'intervention</a></li>
+      <li><a href="/qui-sommes-nous">Qui sommes-nous</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:0647326572" class="nav-phone" aria-label="Appeler le 06 47 32 65 72"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg><span class="np-txt">06 47 32 65 72</span></a>
+      <a href="/devis-ombriere-solaire" class="btn btn-sun">Étude gratuite</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <p class="mm-title">Comprendre</p>
+    <a href="/obligation-ombriere-parking" onclick="closeMenu()">Obligation loi APER</a>
+    <a href="/financement-ombriere-solaire" onclick="closeMenu()">Financement</a>
+    <a href="/blog" onclick="closeMenu()">Guides et actualités</a>
+    <p class="mm-title">Votre parking</p>
+    <a href="/ombriere-solaire-supermarche" onclick="closeMenu()">Commerces et supermarchés</a>
+    <a href="/ombriere-solaire-entreprise" onclick="closeMenu()">Entreprises et logistique</a>
+    <a href="/ombriere-solaire-collectivite" onclick="closeMenu()">Collectivités</a>
+    <p class="mm-title">Nous connaître</p>
+    <a href="/zones-intervention" onclick="closeMenu()">Zones d'intervention</a>
+    <a href="/qui-sommes-nous" onclick="closeMenu()">Qui sommes-nous</a>
+    <a href="tel:0647326572">06 47 32 65 72</a>
+    <a href="/devis-ombriere-solaire" class="btn btn-sun" onclick="closeMenu()">Étude gratuite</a>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="/">Accueil</a><span>›</span><a href="/blog">Blog</a><span>›</span>Ombrière solaire et borne de recharge : bien coupler les deux sur votre parking
+</div>
+<section class="post-hero">
+  <div class="post-hero-inner">
+    <span class="post-tag">Technique</span>
+    <h1>Ombrière solaire et borne de recharge : bien coupler les deux sur votre parking</h1>
+    <p class="post-meta">Publié le <time datetime="2026-11-09">9 novembre 2026</time> · 7 min de lecture</p>
+  </div>
+</section>
+<article class="content post">
+<div class="lead"><p>Une ombrière photovoltaïque produit de l'électricité à l'endroit même où les véhicules stationnent. Il est donc logique de s'en servir pour les recharger. Pourtant, l'association d'une ombrière solaire et d'une borne de recharge ne se résume pas à poser deux équipements côte à côte.</p><p>Dimensionnement, pilotage, réseau électrique, génie civil : ces choix s'anticipent dès le départ, car ils coûtent beaucoup plus cher à corriger après coup. Voici les points à examiner avant de lancer votre projet.</p></div>
+<h2>Pourquoi associer production solaire et recharge de véhicules</h2>
+<p>Le couplage répond à une logique simple : produire et consommer au même endroit. L'énergie produite par la toiture de l'ombrière peut alimenter directement les bornes, sans transiter longtemps par le réseau.</p><p>Pour un gestionnaire de parking, l'intérêt est triple :</p><ul><li><strong>Un usage concret de l'électricité produite</strong> : la recharge est une consommation sur site, qui s'ajoute à celle du bâtiment.</li><li><strong>Un service visible</strong> pour les salariés, les visiteurs ou les clients, qui trouvent à la fois de l'ombre et de la recharge.</li><li><strong>Un seul chantier</strong> : terrassement, tranchées et raccordement peuvent être mutualisés, ce qui évite d'ouvrir deux fois le même parking.</li></ul><p>Attention toutefois : la production solaire et la recharge ne sont pas toujours synchrones. Un véhicule de salarié se recharge souvent en journée, quand le soleil est présent. Une flotte utilitaire, elle, se recharge plutôt la nuit. Le projet doit tenir compte de ces écarts.</p>
+<h2>Partir des usages pour dimensionner l&#x27;ensemble</h2>
+<p>Le bon dimensionnement ne commence pas par le nombre de places, mais par la manière dont le parking est utilisé. Trois grands profils reviennent, avec des besoins différents.</p><table><thead><tr><th>Usage</th><th>Durée de stationnement</th><th>Conséquence pour le projet</th></tr></thead><tbody><tr><td>Salariés</td><td>Longue, en journée</td><td>Recharge lente, bien alignée avec la production solaire</td></tr><tr><td>Clients et visiteurs</td><td>Courte à moyenne</td><td>Rotation élevée, besoin de simplicité d'accès et de paiement</td></tr><tr><td>Flotte de véhicules</td><td>Variable, souvent la nuit</td><td>Recharge planifiée, éventuellement complétée par le réseau</td></tr></tbody></table><p>Pour chaque profil, posez-vous quelques questions :</p><ol><li>Combien de véhicules électriques utilisent déjà le parking, et combien d'ici quelques années ?</li><li>Quelle est la durée moyenne de stationnement ?</li><li>Quelle part de la consommation voulez-vous couvrir avec la production de l'ombrière ?</li><li>Le site dispose-t-il d'une puissance de raccordement suffisante, ou faut-il la renforcer ?</li></ol><p>Les réponses déterminent la puissance de l'ombrière, le type de bornes et la puissance de raccordement. Un site tertiaire ouvert en journée n'a pas les mêmes besoins qu'un site logistique qui fonctionne en horaires décalés. Pour les parkings d'entreprise, la page consacrée aux <a href="/ombriere-solaire-entreprise">ombrières pour parkings d'entreprise et sites industriels</a> détaille ces contextes.</p>
+<div class="cta-box"><strong>Votre parking est-il concerné ?</strong><p>Décrivez votre site en une minute : un installateur partenaire vérifie l'obligation, la faisabilité et les modes de financement. Étude gratuite et sans engagement.</p><a href="#devis" class="btn btn-sun">Recevoir mon étude gratuite</a></div>
+<h2>Piloter la recharge pour tirer parti du solaire</h2>
+<p>Sans pilotage, les bornes tirent la puissance demandée au moment où les véhicules se branchent, quelle que soit la production. Avec un système de supervision, la recharge s'adapte.</p><h3>Ce que permet un pilotage de la recharge</h3><ul><li><strong>Répartir la puissance disponible</strong> entre les véhicules branchés, plutôt que de surdimensionner le raccordement.</li><li><strong>Privilégier les heures de production solaire</strong> quand les véhicules ne sont pas pressés de repartir.</li><li><strong>Tenir compte de la consommation du bâtiment</strong> pour éviter de dépasser la puissance souscrite.</li><li><strong>Planifier les recharges de flotte</strong> selon les besoins de départ du lendemain.</li><li><strong>Suivre les consommations</strong> par utilisateur ou par borne, utile pour la facturation ou la refacturation.</li></ul><h3>Quelques précautions</h3><p>Vérifiez que les bornes retenues sont communicantes et compatibles avec le système de pilotage envisagé. Un équipement fermé peut vous enfermer chez un seul fournisseur. Demandez aussi à l'installateur comment le système se comporte en cas de coupure de communication : les bornes doivent rester utilisables en mode sécurisé.</p><p>Le solaire ne garantit pas une recharge « gratuite » ou entièrement décarbonée à toute heure. Une partie de l'électricité viendra du réseau, notamment le soir et l'hiver. C'est normal, et le dimensionnement doit l'assumer.</p>
+<h2>Anticiper fourreaux, tranchées et raccordement</h2>
+<p>C'est le point le plus rentable à traiter tôt. Quand on réalise les fondations et les tranchées de l'ombrière, ajouter des fourreaux supplémentaires coûte peu en comparaison d'une réouverture ultérieure du revêtement.</p><p>Plusieurs réflexes sont utiles :</p><ul><li><strong>Prévoir des fourreaux en attente</strong> vers des places aujourd'hui non équipées, pour pouvoir ajouter des bornes plus tard.</li><li><strong>Dimensionner les cheminements</strong> en tenant compte d'un éventuel doublement du nombre de bornes.</li><li><strong>Réserver de la place</strong> dans le local ou le tableau électrique pour de futures protections.</li><li><strong>Faire valider le point de raccordement</strong> et la puissance disponible auprès du gestionnaire de réseau dès les premières étapes.</li><li><strong>Fixer l'emplacement des bornes</strong> par rapport aux poteaux, à la circulation et à l'accessibilité des places pour les personnes à mobilité réduite.</li></ul><p>Cette logique du « prêt à équiper » permet de démarrer avec peu de bornes et d'augmenter au rythme de l'électrification des véhicules, sans retravaux lourds. Le coût final dépend de la configuration du terrain, de la distance au point de raccordement et du nombre d'équipements ; l'article sur <a href="/blog/prix-ombriere-photovoltaique-parking">ce qui fait le budget d'une ombrière</a> explique ces mécanismes.</p>
+<h2>Adapter le couplage au type de site</h2>
+<p>Le contexte d'usage change les priorités.</p><h3>Parking d'entreprise ou site logistique</h3><p>La recharge des salariés se superpose aux heures de production. La flotte peut s'ajouter, avec des besoins plus réguliers. Un pilotage fin évite de dépasser la puissance du site aux heures de pointe.</p><h3>Commerce et grande surface</h3><p>Les clients restent un temps limité et attendent une recharge simple d'accès. La signalétique, la lisibilité du paiement et la disponibilité des places comptent autant que la puissance. Les spécificités de ces sites sont abordées sur la page <a href="/ombriere-solaire-supermarche">ombrières pour supermarchés et commerces</a>.</p><h3>Collectivité, copropriété, bailleur</h3><p>Les usages sont plus mélangés : agents, habitants, visiteurs. La question de la gestion des accès, de la facturation et de la maintenance devient centrale. Précisez dès le départ qui exploite les bornes et qui supporte les coûts d'entretien.</p>
+<h2>Cadre réglementaire et financement : ce qu&#x27;il faut vérifier</h2>
+<p>Si votre parking extérieur dépasse 1 500 m², la loi APER peut vous imposer d'équiper la moitié de sa surface d'ombrières intégrant une production d'énergie renouvelable. Dans ce cas, la recharge n'est pas l'objet de l'obligation, mais elle peut enrichir le projet que vous devez de toute façon étudier. Ces textes étant récents, vérifiez votre situation au regard des textes en vigueur.</p><p>Côté financement, le couplage peut modifier le montage : propriété directe, tiers-investissement ou location ne répartissent pas de la même façon les bornes, l'ombrière et les revenus éventuels de la recharge. Les différentes options sont présentées dans la page <a href="/financement-ombriere-solaire">financer une ombrière</a>. Dans tous les cas, précisez par écrit qui est propriétaire des bornes, qui les exploite et qui les entretient.</p>
+<h2>Préparer son projet : les bonnes questions à poser</h2>
+<p>Avant de comparer des propositions, rassemblez les informations utiles : plan du parking, puissance souscrite, courbes de consommation, nombre de véhicules électriques actuels et prévus, horaires d'usage.</p><p>Puis demandez aux installateurs :</p><ul><li>comment ils dimensionnent la recharge par rapport à la production solaire ;</li><li>quel système de pilotage est proposé, et s'il reste ouvert à d'autres équipements ;</li><li>quels fourreaux et réserves sont prévus pour l'évolution future ;</li><li>qui s'occupe des démarches de raccordement ;</li><li>comment sont assurés la maintenance et le suivi des bornes.</li></ul><p>Une <a href="/devis-ombriere-solaire">étude gratuite</a> permet de cadrer ces points avec un installateur partenaire, selon la configuration réelle de votre parking, sans engagement.</p>
+</article>
+<section class="form-section">
+  <div class="form-inner">
+    <div class="form-left">
+      <h2>Faites étudier votre parking gratuitement</h2>
+      <p>Un installateur partenaire qui intervient dans votre région vous recontacte sous 48&nbsp;h ouvrées pour une première analyse, sans engagement.</p>
+      <ul><li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Vérification de l'obligation loi APER</li><li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Faisabilité, production et raccordement</li><li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Comparaison des modes de financement</li></ul>
+    </div>
+    <div class="form-card" id="devis">
+      <form action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="hidden" name="access_key" value="2e53f8a9-5573-446d-98e3-cc33d5558802">
+        <input type="hidden" name="subject" value="Ombrière solaire — article du blog">
+        <input type="hidden" name="redirect" value="false">
+        <p class="fc-title">Votre étude gratuite</p>
+        <p class="fc-sub">Un installateur partenaire vous recontacte sous 48&nbsp;h ouvrées</p>
+        <fieldset class="chips">
+          <legend>Votre parking appartient à…</legend>
+          <label class="chip"><input type="radio" name="type_site" value="Commerce / supermarché" checked><span>Commerce / supermarché</span></label>
+          <label class="chip"><input type="radio" name="type_site" value="Entreprise / site industriel"><span>Entreprise / site industriel</span></label>
+          <label class="chip"><input type="radio" name="type_site" value="Collectivité / établissement public"><span>Collectivité / établissement public</span></label>
+          <label class="chip"><input type="radio" name="type_site" value="Copropriété / bailleur"><span>Copropriété / bailleur</span></label>
+          <label class="chip"><input type="radio" name="type_site" value="Autre"><span>Autre</span></label>
+        </fieldset>
+        <div class="form-group"><label for="b-surface">Surface du parking</label>
+          <select id="b-surface" name="surface_parking">
+            <option>Je ne sais pas encore</option>
+            <option>Moins de 1 500 m²</option>
+            <option>De 1 500 à 10 000 m²</option>
+            <option>Plus de 10 000 m²</option>
+          </select></div>
+        <div class="form-row">
+          <div class="form-group"><label for="b-name">Nom et fonction</label><input type="text" id="b-name" name="name" placeholder="Ex : Julie Martin, directrice" autocomplete="name"/></div>
+          <div class="form-group"><label for="b-org">Société ou organisme</label><input type="text" id="b-org" name="societe" placeholder="Ex : Supermarché du Centre" autocomplete="organization"/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="b-phone">Téléphone</label><input type="tel" id="b-phone" name="phone" placeholder="06 00 00 00 00" autocomplete="tel"/></div>
+          <div class="form-group"><label for="b-email">E-mail</label><input type="email" id="b-email" name="email" placeholder="vous@societe.fr" autocomplete="email"/></div>
+        </div>
+        <div class="form-group"><label for="b-cp">Code postal du parking</label><input type="text" id="b-cp" name="code_postal" placeholder="Ex : 69007" inputmode="numeric" maxlength="5" autocomplete="postal-code"/></div>
+        <button type="submit" class="btn btn-submit">Recevoir mon étude gratuite <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+        <p class="reassure"><span>Gratuit</span><span>Sans engagement</span><span>Partout en France</span></p>
+        <p class="privacy">Vos coordonnées sont transmises à un seul installateur partenaire, uniquement pour votre projet, et ne sont jamais revendues. <a href="/politique-confidentialite">Confidentialité</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+<section class="section alt">
+  <div class="wrap">
+    <div class="s-head center"><h2>Questions fréquentes</h2></div>
+    <div class="faq-list"><div class="faq-item open">
+      <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="true">
+        <span>Faut-il installer les bornes en même temps que l&#x27;ombrière ?</span>
+        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Ce n'est pas obligatoire, mais prévoir au moins les fourreaux et la capacité électrique lors du chantier de l'ombrière évite de rouvrir le parking plus tard. Vous pouvez ensuite équiper les places progressivement, selon la demande.</p></div>
+    </div><div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>Les bornes fonctionnent-elles uniquement avec l&#x27;énergie de l&#x27;ombrière ?</span>
+        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Non. Les bornes restent raccordées au réseau électrique du site. Le solaire couvre une partie des besoins quand le soleil brille, et le réseau prend le relais le reste du temps. La part couverte dépend du dimensionnement et des horaires de recharge.</p></div>
+    </div><div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>À quoi sert le pilotage de la recharge ?</span>
+        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Il répartit la puissance disponible entre les véhicules, privilégie si possible les heures d'ensoleillement et évite de dépasser la puissance du site. Il peut aussi suivre les consommations par borne ou par utilisateur.</p></div>
+    </div><div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>La loi APER impose-t-elle d&#x27;installer des bornes de recharge ?</span>
+        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>L'article 40 de la loi APER porte sur les ombrières intégrant une production d'énergie renouvelable, pas sur les bornes. Les obligations liées à la recharge relèvent d'autres textes : vérifiez votre situation au regard des textes en vigueur.</p></div>
+    </div><div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>Qui doit exploiter les bornes sur un parking partagé ?</span>
+        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Cela dépend du montage retenu : le propriétaire du parking, un exploitant dédié ou un prestataire peut s'en charger. Définissez par écrit la propriété, l'exploitation, la facturation et la maintenance avant le démarrage du projet.</p></div>
+    </div></div>
+  </div>
+</section>
+<section class="links">
+  <div class="wrap">
+    <h3>À lire aussi</h3>
+    <div class="links-grid"><a href="/financement-ombriere-solaire" class="link-card">Financer une ombrière : achat, tiers-investissement, location</a><a href="/obligation-ombriere-parking" class="link-card">Obligation loi APER : parkings concernés, échéances, exemptions</a><a href="/devis-ombriere-solaire" class="link-card">Demande d&#x27;étude gratuite</a><a href="/blog/ombrage-vegetal-loi-huwart-parking" class="link-card">Ombrage végétal et ombrières : ce que change la loi Huwart pour les parkings</a><a href="/blog/exemption-loi-aper-parking" class="link-card">Exemption loi APER parking : dans quels cas votre parking peut y échapper</a><a href="/blog/tiers-investissement-ombriere-parking" class="link-card">Tiers-investissement pour une ombrière de parking : fonctionnement et points de vigilance</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a href="/" class="logo"><span class="logo-mark"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path d="M9 29 L55 21" stroke="#0c2238" stroke-width="8" stroke-linecap="round" fill="none"/><path d="M20 27 V52 M44 23 V52" stroke="#0c2238" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M25 47 L28 40 H36 L39 47 Z" fill="#fff" stroke="none"/><rect x="23" y="46" width="18" height="6" rx="2" fill="#fff" stroke="none"/></svg></span><span>Ombrière <b>Solaire</b> Parking</span></a>
+      <p>Ombrière Solaire Parking met en relation les propriétaires et gestionnaires de parkings avec des installateurs d'ombrières photovoltaïques, partout en France. Étude gratuite et sans engagement.</p>
+    </div>
+    <div>
+      <h4>Comprendre</h4>
+      <ul>
+        <li><a href="/obligation-ombriere-parking">Obligation loi APER</a></li>
+        <li><a href="/financement-ombriere-solaire">Financer son ombrière</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/qui-sommes-nous">Qui sommes-nous</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Votre parking</h4>
+      <ul>
+        <li><a href="/ombriere-solaire-supermarche">Commerces et supermarchés</a></li>
+        <li><a href="/ombriere-solaire-entreprise">Entreprises</a></li>
+        <li><a href="/ombriere-solaire-collectivite">Collectivités</a></li>
+        <li><a href="/zones-intervention">Zones d'intervention</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:0647326572">06 47 32 65 72</a></li>
+        <li><a href="/devis-ombriere-solaire">Demander une étude</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-legal">
+    <span>© 2026 Ombrière Solaire Parking</span>
+    <nav><a href="/mentions-legales">Mentions légales</a><a href="/politique-confidentialite">Politique de confidentialité</a><a href="#" onclick="saManageCookies();return false;">Gérer les cookies</a></nav>
+  </div>
+</footer>
+<script>
+  function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+  (function () {
+    var dds = document.querySelectorAll('.nav-dd');
+    function closeAll(except) { dds.forEach(function (d) { if (d !== except) { d.classList.remove('open'); d.querySelector('button').setAttribute('aria-expanded', 'false'); } }); }
+    dds.forEach(function (d) {
+      var b = d.querySelector('button');
+      b.addEventListener('click', function (e) { e.stopPropagation(); var o = !d.classList.contains('open'); closeAll(d); d.classList.toggle('open', o); b.setAttribute('aria-expanded', o ? 'true' : 'false'); });
+      d.addEventListener('focusout', function (e) { if (!d.contains(e.relatedTarget)) { d.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); } });
+    });
+    document.addEventListener('click', function () { closeAll(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(); });
+  })();
+  function toggleFaq(btn) {
+    var item = btn.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); i.querySelector('.faq-btn').setAttribute('aria-expanded','false'); });
+    if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+  }
+  // Liens vers le formulaire : présélection éventuelle et mise en avant
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href="#devis"]');
+    if (!a) return;
+    var card = document.getElementById('devis');
+    if (!card) return;
+    var t = a.getAttribute('data-type');
+    if (t) { var r = card.querySelector('input[name="type_site"][value="' + t + '"]'); if (r) r.checked = true; }
+    card.classList.remove('flash'); void card.offsetWidth; card.classList.add('flash');
+    var first = card.querySelector('input[name="name"]');
+    if (first) setTimeout(function () { first.focus({ preventScroll: true }); }, 600);
+  });
+</script>
+</body>
+</html>
