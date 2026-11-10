@@ -44,6 +44,79 @@ def ic(name, size=22):
     return f'<svg width="{size}" height="{size}" viewBox="0 0 24 24" aria-hidden="true">{ICONS[name]}</svg>'
 
 
+# ---------------------------------------------------------------------------
+# PHOTOS (banques d'images libres de droits, illustrations non contractuelles)
+# Fichiers dans /images : nom.webp (1600 px) et nom-800.webp (800 px).
+# ---------------------------------------------------------------------------
+IMG = {
+ "vue-aerienne-ombrieres-solaires-parking-entreprise": [
+  1600,
+  1200,
+  "Vue aérienne d'un parking d'entreprise couvert d'ombrières photovoltaïques"
+ ],
+ "ombriere-solaire-parking-vehicule-protege": [
+  1600,
+  1200,
+  "Véhicule stationné à l'abri sous une ombrière solaire de parking"
+ ],
+ "technicien-client-visite-installation-solaire": [
+  1600,
+  1066,
+  "Un technicien et un client échangent devant une installation solaire"
+ ],
+ "etude-projet-solaire-reunion-bureau": [
+  1069,
+  1600,
+  "Réunion de travail autour de l'étude d'un projet solaire"
+ ],
+ "technicien-pose-panneaux-solaires": [
+  1600,
+  1069,
+  "Technicien avec casque fixant un panneau photovoltaïque"
+ ],
+ "vue-aerienne-grand-parking-ombrieres-photovoltaiques": [
+  1600,
+  1200,
+  "Vue aérienne d'un grand parking équipé de rangées d'ombrières photovoltaïques"
+ ],
+ "ombriere-photovoltaique-structure-contre-plongee": [
+  1600,
+  1200,
+  "Structure d'une ombrière photovoltaïque vue du dessous"
+ ],
+ "panneaux-photovoltaiques-grande-surface-parking": [
+  1600,
+  1200,
+  "Grande surface de panneaux photovoltaïques au-dessus d'un parking"
+ ],
+ "ombriere-solaire-parking-structure-acier": [
+  1600,
+  1200,
+  "Ombrière solaire à structure acier sur un parking d'entreprise"
+ ],
+ "ombriere-solaire-parking-voiture-portrait": [
+  1200,
+  1600,
+  "Voiture garée sous une ombrière photovoltaïque"
+ ]
+}
+PAGE_IMG = {"/obligation-ombriere-parking": "vue-aerienne-grand-parking-ombrieres-photovoltaiques", "/financement-ombriere-solaire": "ombriere-photovoltaique-structure-contre-plongee", "/ombriere-solaire-supermarche": "panneaux-photovoltaiques-grande-surface-parking", "/ombriere-solaire-entreprise": "ombriere-solaire-parking-structure-acier", "/ombriere-solaire-collectivite": "ombriere-solaire-parking-voiture-portrait"}
+
+
+def photo(name, sizes='(min-width: 860px) 780px, 100vw', caption=None, eager=False, cls='photo'):
+    w, h, alt = IMG[name]
+    load = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy"'
+    img = (f'<img src="/images/{name}.webp" srcset="/images/{name}-800.webp 800w, /images/{name}.webp {w}w" '
+           f'sizes="{sizes}" alt="{esc(alt)}" width="{w}" height="{h}" {load} decoding="async">')
+    cap = f'<figcaption>{caption}</figcaption>' if caption else ''
+    return f'<figure class="{cls}">{img}{cap}</figure>'
+
+
+def photo_row(items):
+    figs = ''.join(photo(n, sizes='(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw', caption=c) for n, c in items)
+    return f'<div class="photo-row">{figs}</div>'
+
+
 HERO_ART = '''<svg class="hero-art" viewBox="0 0 520 230" role="img" aria-label="Illustration d'une ombrière photovoltaïque au-dessus de places de parking">
   <defs><linearGradient id="pv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d6aa8"/><stop offset="1" stop-color="#173b63"/></linearGradient></defs>
   <g fill="none" stroke="none">
@@ -106,7 +179,7 @@ def form_card(prefix, subject, preselect=None, title='Votre étude gratuite', su
     </div>'''
 
 
-def hero(eyebrow, h1, sub, points, subject, preselect=None, art=False, form_title='Votre étude gratuite'):
+def hero(eyebrow, h1, sub, points, subject, preselect=None, art=False, img=None, form_title='Votre étude gratuite'):
     pts = ''.join(f'<li>{TICK}{p}</li>' for p in points)
     return f'''<section class="hero">
   <div class="hero-grid">
@@ -116,7 +189,7 @@ def hero(eyebrow, h1, sub, points, subject, preselect=None, art=False, form_titl
       <p class="hero-sub">{sub}</p>
       <ul class="hero-points">{pts}</ul>
       <a href="tel:0647326572" class="hero-phone">{PHONE_IC}<span>Une question ? <strong>06 47 32 65 72</strong></span></a>
-      {HERO_ART if art else ''}
+      {photo(img, sizes='(min-width: 1024px) 560px, 100vw', eager=True, cls='photo hero-photo') if img else (HERO_ART if art else '')}
     </div>
     {form_card('f', subject, preselect, title=form_title)}
   </div>
@@ -205,6 +278,8 @@ def graph(path, title, desc, faqs=None, crumbs=None, extra=None):
 
 def write(path, title, desc, main, crumb=None, faqs=None, noindex=False, extra=None):
     url = BASE + (path if path != '/' else '/')
+    if path in PAGE_IMG and '<article class="content">\n' in main:
+        main = main.replace('<article class="content">\n', '<article class="content">\n' + photo(PAGE_IMG[path]) + '\n', 1)
     page = blog.fill(blog.shell(), TITLE=esc(title), DESC=esc(desc), CANONICAL=url,
                      OG=blog.og_tags(url, title, desc, blog.DEFAULT_IMAGE, 'website'),
                      JSONLD=graph(path, title, desc, faqs, crumb, extra),
@@ -240,7 +315,7 @@ def page_home():
                 "Ombrières solaires pour votre parking : <em>conformité et énergie</em> en un seul projet",
                 "Votre parking dépasse 1 500 m² ? L'obligation d'ombrières approche. Décrivez votre site en une minute : un installateur partenaire étudie la faisabilité, le financement et le calendrier.",
                 ["Vérification de l'obligation loi APER et des échéances", "Comparaison achat, tiers-investissement et location", "Étude de faisabilité gratuite et sans engagement"],
-                'Ombrière solaire — accueil (haut de page)', art=True)
+                'Ombrière solaire — accueil (haut de page)', art=True, img='vue-aerienne-ombrieres-solaires-parking-entreprise')
     main += trust()
     cards = [('law', 'Obligation loi APER', "Surface concernée, échéances 2026 et 2028, exemptions et sanctions : ce que vous devez savoir.", '/obligation-ombriere-parking'),
              ('euro', 'Financement', "Investir vous-même, confier le projet à un tiers-investisseur ou louer votre parking : les trois modèles.", '/financement-ombriere-solaire'),
@@ -275,6 +350,7 @@ def page_home():
       <div class="step"><h3>Visite et étude de faisabilité</h3><p>Si le projet est pertinent, il étudie votre parking : implantation, production estimée, raccordement, autorisations, financement.</p></div>
       <div class="step"><h3>Vous décidez, librement</h3><p>Vous recevez une proposition chiffrée. Tout ce qui précède est gratuit et ne vous engage à rien.</p></div>
     </div>
+    {photo_row([('technicien-client-visite-installation-solaire', 'Un échange sur place pour comprendre votre site et vos priorités'), ('etude-projet-solaire-reunion-bureau', 'Une étude de faisabilité : implantation, production, financement'), ('technicien-pose-panneaux-solaires', 'Une pose réalisée par un installateur qualifié')])}
     {cta_row()}
   </div>
 </section>
@@ -290,7 +366,8 @@ def page_home():
         <li>{TICK}<span><strong>Valoriser votre site</strong> et vos engagements environnementaux auprès de vos clients et salariés.</span></li>
       </ul>
     </div>
-    <div class="callout" style="margin-top:0;background:#fff">
+    <div class="callout callout-photo" style="margin-top:0;background:#fff">
+      {photo('ombriere-solaire-parking-vehicule-protege', sizes="(min-width: 1024px) 560px, 100vw", cls="callout-img")}
       <strong>Pourquoi passer par Ombrière Solaire Parking ?</strong>
       <p style="margin-top:.6rem">Trouver le bon installateur, comparer les modèles de financement et comprendre la réglementation prend du temps. Nous transmettons votre demande à un professionnel qui intervient dans votre région, qui vous rappelle avec une première analyse. Le service est gratuit pour vous.</p>
       <div class="cta-row" style="margin-top:1.2rem"><a href="#devis" class="btn btn-ink btn-lg">Demander mon étude {ARROW}</a></div>

@@ -281,6 +281,17 @@
   .blog-card-meta { margin-top: 1rem; display: flex; justify-content: space-between; gap: 1rem; font-size: .8125rem; color: var(--muted); }
   .blog-card-link { color: #b45309; font-weight: 700; }
 
+  .photo { margin: 0; }
+  .photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius); background: var(--soft); }
+  .photo figcaption { margin-top: .6rem; font-size: .88rem; color: var(--muted); line-height: 1.5; }
+  .content > .photo { margin: 0 0 2.2rem; }
+  .content > .photo img { aspect-ratio: 16 / 9; }
+  .hero-photo { margin-top: 1.75rem; max-width: 560px; }
+  .hero-photo img { aspect-ratio: 16 / 10; box-shadow: 0 18px 40px -18px rgba(12,34,56,.45); }
+  .photo-row { margin-top: 2rem; display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(min(250px,100%), 1fr)); }
+  .callout-photo { overflow: hidden; }
+  .callout-img { margin: -1.1rem -1.25rem 1.1rem; }
+  .callout-img img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
   @media (min-width: 480px) { .form-row { grid-template-columns: 1fr 1fr; gap: 10px; } }
   @media (min-width: 720px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } .foot-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
   @media (min-width: 1024px) {
@@ -295,7 +306,7 @@
   }
   @media (max-width: 639px) {
     .hero-grid { padding: 1.5rem 1rem 1.75rem; gap: 1.4rem; }
-    .hero-points, .hero-phone, .hero-art { display: none; }
+    .hero-points, .hero-phone, .hero-art, .hero-photo { display: none; }
     .breadcrumb:has(.bc-tag) { display: none; }
     .form-card { padding: 1.2rem 1rem; }
     .section { padding: 3rem 0; }
@@ -481,6 +492,7 @@
   </div>
 </section>
 <article class="content">
+<figure class="photo"><img src="/images/panneaux-photovoltaiques-grande-surface-parking.webp" srcset="/images/panneaux-photovoltaiques-grande-surface-parking-800.webp 800w, /images/panneaux-photovoltaiques-grande-surface-parking.webp 1600w" sizes="(min-width: 860px) 780px, 100vw" alt="Grande surface de panneaux photovoltaïques au-dessus d&#x27;un parking" width="1600" height="1200" loading="lazy" decoding="async"></figure>
 <h2>Pourquoi les commerces sont en première ligne</h2>
 <p>Les supermarchés, hypermarchés, retail parks et centres commerciaux disposent souvent de parkings de plusieurs milliers de mètres carrés. Selon leur surface, ils relèvent de l'échéance du 1er juillet 2026 ou de celle du 1er juillet 2028. Pour une enseigne qui gère plusieurs magasins, la question se pose site par site.</p>
 <h2>Un projet qui sert aussi le magasin</h2>

@@ -281,6 +281,17 @@
   .blog-card-meta { margin-top: 1rem; display: flex; justify-content: space-between; gap: 1rem; font-size: .8125rem; color: var(--muted); }
   .blog-card-link { color: #b45309; font-weight: 700; }
 
+  .photo { margin: 0; }
+  .photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius); background: var(--soft); }
+  .photo figcaption { margin-top: .6rem; font-size: .88rem; color: var(--muted); line-height: 1.5; }
+  .content > .photo { margin: 0 0 2.2rem; }
+  .content > .photo img { aspect-ratio: 16 / 9; }
+  .hero-photo { margin-top: 1.75rem; max-width: 560px; }
+  .hero-photo img { aspect-ratio: 16 / 10; box-shadow: 0 18px 40px -18px rgba(12,34,56,.45); }
+  .photo-row { margin-top: 2rem; display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(min(250px,100%), 1fr)); }
+  .callout-photo { overflow: hidden; }
+  .callout-img { margin: -1.1rem -1.25rem 1.1rem; }
+  .callout-img img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
   @media (min-width: 480px) { .form-row { grid-template-columns: 1fr 1fr; gap: 10px; } }
   @media (min-width: 720px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } .foot-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
   @media (min-width: 1024px) {
@@ -295,7 +306,7 @@
   }
   @media (max-width: 639px) {
     .hero-grid { padding: 1.5rem 1rem 1.75rem; gap: 1.4rem; }
-    .hero-points, .hero-phone, .hero-art { display: none; }
+    .hero-points, .hero-phone, .hero-art, .hero-photo { display: none; }
     .breadcrumb:has(.bc-tag) { display: none; }
     .form-card { padding: 1.2rem 1rem; }
     .section { padding: 3rem 0; }
@@ -439,26 +450,7 @@
       <p class="hero-sub">Votre parking dépasse 1 500 m² ? L'obligation d'ombrières approche. Décrivez votre site en une minute : un installateur partenaire étudie la faisabilité, le financement et le calendrier.</p>
       <ul class="hero-points"><li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Vérification de l'obligation loi APER et des échéances</li><li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Comparaison achat, tiers-investissement et location</li><li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Étude de faisabilité gratuite et sans engagement</li></ul>
       <a href="tel:0647326572" class="hero-phone"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg><span>Une question ? <strong>06 47 32 65 72</strong></span></a>
-      <svg class="hero-art" viewBox="0 0 520 230" role="img" aria-label="Illustration d'une ombrière photovoltaïque au-dessus de places de parking">
-  <defs><linearGradient id="pv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d6aa8"/><stop offset="1" stop-color="#173b63"/></linearGradient></defs>
-  <g fill="none" stroke="none">
-    <circle cx="452" cy="44" r="26" fill="#f59e0b"/>
-    <g stroke="#f59e0b" stroke-width="4" stroke-linecap="round" opacity=".7"><path d="M452 6v-0M490 44h8M414 44h-8M479 17l6-6M425 17l-6-6"/></g>
-    <rect x="0" y="200" width="520" height="30" fill="#1b3a58"/>
-    <g stroke="#3d5f80" stroke-width="3"><path d="M40 204v22M150 204v22M260 204v22M370 204v22M480 204v22"/></g>
-    <g fill="#9fb3c8"><rect x="62" y="98" width="7" height="104" rx="2"/><rect x="246" y="98" width="7" height="104" rx="2"/><rect x="430" y="98" width="7" height="104" rx="2"/></g>
-    <path d="M18 104 L500 70 L504 92 L22 126 Z" fill="url(#pv)"/>
-    <g stroke="#7fb0e0" stroke-width="1.2" opacity=".55">
-      <path d="M78 100l3 22M138 96l3 22M198 92l3 22M258 88l3 22M318 83l3 22M378 79l3 22M438 75l3 22"/>
-      <path d="M20 115 L502 81"/>
-    </g>
-    <g>
-      <rect x="86" y="164" width="96" height="34" rx="9" fill="#f59e0b"/><path d="M100 164l12-18h46l14 18z" fill="#f8b84a"/><circle cx="108" cy="198" r="9" fill="#0c2238"/><circle cx="160" cy="198" r="9" fill="#0c2238"/>
-      <rect x="290" y="164" width="96" height="34" rx="9" fill="#e5edf5"/><path d="M304 164l12-18h46l14 18z" fill="#ffffff"/><circle cx="312" cy="198" r="9" fill="#0c2238"/><circle cx="364" cy="198" r="9" fill="#0c2238"/>
-      <rect x="196" y="176" width="22" height="24" rx="4" fill="#0f9d6b"/><path d="M207 182l-4 7h5l-3 7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </g>
-  </g>
-</svg>
+      <figure class="photo hero-photo"><img src="/images/vue-aerienne-ombrieres-solaires-parking-entreprise.webp" srcset="/images/vue-aerienne-ombrieres-solaires-parking-entreprise-800.webp 800w, /images/vue-aerienne-ombrieres-solaires-parking-entreprise.webp 1600w" sizes="(min-width: 1024px) 560px, 100vw" alt="Vue aérienne d&#x27;un parking d&#x27;entreprise couvert d&#x27;ombrières photovoltaïques" width="1600" height="1200" loading="eager" fetchpriority="high" decoding="async"></figure>
     </div>
     <div class="form-card" id="devis">
       <form action="https://api.web3forms.com/submit" method="POST" novalidate>
@@ -526,6 +518,7 @@
       <div class="step"><h3>Visite et étude de faisabilité</h3><p>Si le projet est pertinent, il étudie votre parking : implantation, production estimée, raccordement, autorisations, financement.</p></div>
       <div class="step"><h3>Vous décidez, librement</h3><p>Vous recevez une proposition chiffrée. Tout ce qui précède est gratuit et ne vous engage à rien.</p></div>
     </div>
+    <div class="photo-row"><figure class="photo"><img src="/images/technicien-client-visite-installation-solaire.webp" srcset="/images/technicien-client-visite-installation-solaire-800.webp 800w, /images/technicien-client-visite-installation-solaire.webp 1600w" sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw" alt="Un technicien et un client échangent devant une installation solaire" width="1600" height="1066" loading="lazy" decoding="async"><figcaption>Un échange sur place pour comprendre votre site et vos priorités</figcaption></figure><figure class="photo"><img src="/images/etude-projet-solaire-reunion-bureau.webp" srcset="/images/etude-projet-solaire-reunion-bureau-800.webp 800w, /images/etude-projet-solaire-reunion-bureau.webp 1069w" sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw" alt="Réunion de travail autour de l&#x27;étude d&#x27;un projet solaire" width="1069" height="1600" loading="lazy" decoding="async"><figcaption>Une étude de faisabilité : implantation, production, financement</figcaption></figure><figure class="photo"><img src="/images/technicien-pose-panneaux-solaires.webp" srcset="/images/technicien-pose-panneaux-solaires-800.webp 800w, /images/technicien-pose-panneaux-solaires.webp 1600w" sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw" alt="Technicien avec casque fixant un panneau photovoltaïque" width="1600" height="1069" loading="lazy" decoding="async"><figcaption>Une pose réalisée par un installateur qualifié</figcaption></figure></div>
     <div class="cta-row"><a href="#devis" class="btn btn-sun btn-lg">Recevoir mon étude gratuite <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><span>Gratuit · sans engagement · partout en France</span></div>
   </div>
 </section>
@@ -541,7 +534,8 @@
         <li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Valoriser votre site</strong> et vos engagements environnementaux auprès de vos clients et salariés.</span></li>
       </ul>
     </div>
-    <div class="callout" style="margin-top:0;background:#fff">
+    <div class="callout callout-photo" style="margin-top:0;background:#fff">
+      <figure class="callout-img"><img src="/images/ombriere-solaire-parking-vehicule-protege.webp" srcset="/images/ombriere-solaire-parking-vehicule-protege-800.webp 800w, /images/ombriere-solaire-parking-vehicule-protege.webp 1600w" sizes="(min-width: 1024px) 560px, 100vw" alt="Véhicule stationné à l&#x27;abri sous une ombrière solaire de parking" width="1600" height="1200" loading="lazy" decoding="async"></figure>
       <strong>Pourquoi passer par Ombrière Solaire Parking ?</strong>
       <p style="margin-top:.6rem">Trouver le bon installateur, comparer les modèles de financement et comprendre la réglementation prend du temps. Nous transmettons votre demande à un professionnel qui intervient dans votre région, qui vous rappelle avec une première analyse. Le service est gratuit pour vous.</p>
       <div class="cta-row" style="margin-top:1.2rem"><a href="#devis" class="btn btn-ink btn-lg">Demander mon étude <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
