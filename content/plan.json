@@ -100,7 +100,8 @@
    "/financement-ombriere-solaire",
    "/ombriere-solaire-entreprise"
   ],
-  "statut": "à faire"
+  "statut": "publié",
+  "date": "2026-11-16"
  },
  {
   "slug": "raccordement-ombriere-photovoltaique",

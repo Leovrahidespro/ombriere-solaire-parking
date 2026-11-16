@@ -1,0 +1,70 @@
+{
+ "title": "Autoconsommation ombrière photovoltaïque : pour qui ?",
+ "meta_description": "Autoconsommation ombrière photovoltaïque : profils favorables, analyse des factures et courbes de charge, comparaison avec la vente totale.",
+ "h1": "Autoconsommation avec une ombrière photovoltaïque : est-ce intéressant pour votre site ?",
+ "excerpt": "Votre site consomme-t-il assez en journée pour autoconsommer ? Méthode d'analyse, gestion du surplus et comparaison avec la vente totale.",
+ "intro_html": "<p>Une ombrière de parking produit de l'électricité en journée, sur une surface déjà disponible. La question n'est donc pas seulement « combien produire ? », mais « qui consomme cette électricité, et à quel moment ? ». C'est tout l'enjeu de l'autoconsommation avec une ombrière photovoltaïque.</p><p>Pour certains sites, consommer sur place l'essentiel de la production est un choix logique. Pour d'autres, la vente de la totalité de l'électricité est plus adaptée. Cet article vous donne les critères et une méthode simple pour y voir clair avant de lancer un projet.</p>",
+ "sections": [
+  {
+   "h2": "Autoconsommation, surplus, vente totale : de quoi parle-t-on ?",
+   "html": "<p>Trois modes de valorisation existent. Ils ne s'excluent pas toujours, mais ils répondent à des logiques différentes.</p><ul><li><strong>Autoconsommation totale :</strong> l'électricité produite est consommée sur place, sans injection sur le réseau public.</li><li><strong>Autoconsommation avec vente du surplus :</strong> vous consommez d'abord ce que produit l'ombrière. Ce que le site n'utilise pas à cet instant est injecté sur le réseau et peut être valorisé.</li><li><strong>Vente totale :</strong> toute la production est injectée sur le réseau. Le site ne consomme pas directement l'électricité de l'ombrière.</li></ul><p>L'autoconsommation vise à réduire la quantité d'électricité achetée à votre fournisseur. La vente totale vise à tirer un revenu de la production. Dans les deux cas, les conditions de raccordement, de contrat et de rémunération évoluent : il faut les vérifier au moment du projet, avec l'installateur.</p>"
+  },
+  {
+   "h2": "Les profils de consommation favorables à l'autoconsommation",
+   "html": "<p>Une ombrière produit surtout en journée, avec un pic autour du milieu de la journée et une variation selon les saisons. L'autoconsommation d'une ombrière photovoltaïque est donc d'autant plus pertinente que votre site consomme beaucoup à ces moments-là.</p><h3>Les situations généralement favorables</h3><ul><li><strong>Sites ouverts en journée, du lundi au vendredi ou toute la semaine :</strong> bureaux, sites tertiaires, établissements de santé, commerces.</li><li><strong>Activités avec froid ou climatisation :</strong> supermarchés, entrepôts frigorifiques, plateformes logistiques. La demande suit souvent l'ensoleillement.</li><li><strong>Sites industriels à production diurne :</strong> machines, compresseurs, ventilation, process fonctionnant en journée.</li><li><strong>Sites avec recharge de véhicules :</strong> flotte d'entreprise ou clientèle rechargeant pendant la présence sur le parking. Vous pouvez approfondir ce point dans notre article sur <a href=\"/blog/ombriere-solaire-borne-recharge\">le couplage entre ombrière et borne de recharge</a>.</li></ul><h3>Les situations plus délicates</h3><ul><li>Sites qui consomment surtout la nuit ou tôt le matin.</li><li>Sites fermés une grande partie de la semaine ou de l'année, sans consommation de fond.</li><li>Très faible consommation par rapport à la surface de parking : l'ombrière produirait bien plus que le site ne peut absorber.</li></ul><p>Ces cas ne ferment pas la porte à un projet. Ils orientent simplement vers un autre mode de valorisation, ou vers un dimensionnement différent.</p>"
+  },
+  {
+   "h2": "Analyser vos factures et votre courbe de charge : la méthode",
+   "html": "<p>Le bon réflexe est de partir de vos données réelles, pas d'une moyenne. Voici une démarche simple, que l'installateur reprend ensuite de façon plus fine.</p><ol><li><strong>Rassemblez les factures d'électricité d'une année complète</strong> pour chaque point de livraison concerné. Cela permet de voir les variations saisonnières.</li><li><strong>Relevez la consommation totale et sa répartition</strong> entre les différentes périodes tarifaires, si votre contrat les distingue.</li><li><strong>Demandez votre courbe de charge.</strong> Il s'agit de l'historique de consommation par pas de temps réduit, généralement disponible auprès du gestionnaire de réseau pour les sites équipés d'un compteur communicant. Elle montre vos consommations heure par heure.</li><li><strong>Repérez la consommation de jour</strong> : niveau de base, pics, jours d'ouverture, périodes d'arrêt.</li><li><strong>Superposez avec une estimation de production</strong> de l'ombrière, calculée par l'installateur selon la surface exploitable, l'orientation et l'ombrage environnant.</li></ol><h3>Ce que ce croisement révèle</h3><p>Deux notions sont à distinguer. Le <strong>taux d'autoconsommation</strong> indique quelle part de la production est consommée sur place. Le <strong>taux d'autoproduction</strong> indique quelle part de votre consommation est couverte par l'ombrière. Un site peut avoir un excellent taux d'autoconsommation et une couverture modeste de ses besoins, si l'ombrière est petite par rapport à sa consommation.</p><p>Si vous ne savez pas encore quelle surface de parking est exploitable, notre article sur <a href=\"/blog/calculer-surface-parking-loi-aper\">le calcul de la surface d'un parking</a> peut vous aider à cadrer le gisement.</p>"
+  },
+  {
+   "h2": "Que faire du surplus de production ?",
+   "html": "<p>Dans la plupart des projets, il existe des moments où la production dépasse la consommation : week-ends, jours fériés, congés, journées très ensoleillées. Ce surplus mérite d'être anticipé dès l'étude.</p><ul><li><strong>L'injecter sur le réseau :</strong> le surplus est vendu selon les conditions contractuelles en vigueur. C'est la solution la plus courante.</li><li><strong>Réduire le dimensionnement :</strong> une installation plus modeste limite le surplus, mais couvre une part moindre de vos besoins.</li><li><strong>Déplacer certaines consommations :</strong> programmer des usages flexibles (recharge, production de froid, pompage, process) sur les heures d'ensoleillement.</li><li><strong>Ajouter du stockage :</strong> une batterie permet de décaler l'usage, mais elle ajoute un investissement et une maintenance. Son intérêt dépend fortement de votre profil.</li><li><strong>Recharger des véhicules :</strong> une partie du surplus peut alimenter des bornes sur le parking lui-même.</li></ul><p>Un point de vigilance : l'ombrière ne se dimensionne pas toujours sur vos besoins. Lorsque la surface de parking est grande, la production potentielle peut dépasser largement la consommation du site. Le surplus devient alors structurel, et le choix du mode de valorisation en est directement affecté.</p>"
+  },
+  {
+   "h2": "Autoconsommation ou vente totale : comment comparer ?",
+   "html": "<p>Aucun mode n'est meilleur en soi. La comparaison porte sur votre situation : consommation, surface disponible, objectifs financiers et contraintes d'exploitation. L'autoconsommation d'une ombrière photovoltaïque se compare à la vente totale selon les critères suivants.</p><table><thead><tr><th>Critère</th><th>Autoconsommation (avec ou sans surplus)</th><th>Vente totale</th></tr></thead><tbody><tr><td>Logique économique</td><td>Réduction de la facture d'électricité</td><td>Revenu issu de la vente de la production</td></tr><tr><td>Dépendance au profil de consommation</td><td>Forte</td><td>Faible</td></tr><tr><td>Exposition à l'évolution du prix de l'électricité</td><td>Le gain varie avec le prix de l'électricité que vous évitez d'acheter</td><td>Revenu défini par les conditions de vente en vigueur</td></tr><tr><td>Complexité</td><td>Analyse des consommations, éventuel pilotage des usages</td><td>Plus simple côté site</td></tr><tr><td>Adaptation aux sites peu consommateurs</td><td>Limitée</td><td>Bien adaptée</td></tr></tbody></table><p>Un projet peut aussi combiner les deux : autoconsommer une partie de la production et vendre le reste. Les règles de rémunération et d'éligibilité évoluent régulièrement, d'où l'intérêt de faire chiffrer plusieurs scénarios avec les mêmes hypothèses.</p>"
+  },
+  {
+   "h2": "Ce qui fait varier les coûts et les revenus",
+   "html": "<p>Nous ne donnons pas de chiffres ici : ils dépendent trop de chaque site. En revanche, voici les paramètres qui font réellement bouger le résultat.</p><ul><li><strong>La taille et la structure de l'ombrière :</strong> surface couverte, hauteur, fondations, nature du sol.</li><li><strong>Le raccordement :</strong> distance au point de livraison, puissance à raccorder, travaux éventuels sur le réseau.</li><li><strong>Le mode de valorisation retenu :</strong> autoconsommation, surplus ou vente totale.</li><li><strong>Votre contrat d'électricité :</strong> le gain dépend de ce que vous évitez d'acheter.</li><li><strong>Le montage financier :</strong> achat, tiers-investissement ou location, avec des effets différents sur la trésorerie. Le détail figure dans notre page sur <a href=\"/financement-ombriere-solaire\">le financement d'une ombrière solaire</a>.</li><li><strong>L'exploitation :</strong> maintenance, assurance, suivi de production.</li></ul><p>Pour la partie investissement, l'article sur <a href=\"/blog/prix-ombriere-photovoltaique-parking\">ce qui fait le budget d'une ombrière</a> détaille les postes de dépense.</p>"
+  },
+  {
+   "h2": "Préparer votre projet : par où commencer ?",
+   "html": "<p>Si votre parking est concerné par la loi APER, l'ombrière n'est pas seulement une option économique : elle peut devenir une obligation selon la surface et l'échéance. L'enjeu est alors de choisir le meilleur modèle de valorisation, pas de savoir s'il faut agir. Pensez à vérifier votre situation au regard des textes en vigueur, car ils sont récents et susceptibles d'évoluer.</p><p>Pour avancer sans perdre de temps :</p><ul><li>constituez le dossier de vos factures et demandez votre courbe de charge ;</li><li>identifiez vos usages flexibles et vos projets à venir (recharge, extension, nouveaux équipements) ;</li><li>précisez la surface et la configuration du parking ;</li><li>demandez à comparer au moins un scénario d'autoconsommation et un scénario de vente totale.</li></ul><p>Les sites tertiaires et industriels trouveront des repères complémentaires sur notre page dédiée aux <a href=\"/ombriere-solaire-entreprise\">ombrières pour parkings d'entreprise et sites industriels</a>. Une étude gratuite permet ensuite de confronter vos données à un projet chiffré par un installateur partenaire.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Faut-il consommer beaucoup d'électricité pour autoconsommer avec une ombrière ?",
+   "a": "Ce n'est pas tant le volume total qui compte que la part consommée en journée. Un site qui consomme régulièrement aux heures d'ensoleillement valorise bien sa production. Un site très peu consommateur aura plutôt intérêt à étudier la vente totale."
+  },
+  {
+   "q": "Qu'est-ce qu'une courbe de charge et où l'obtenir ?",
+   "a": "C'est l'historique de votre consommation d'électricité relevée par pas de temps réduit. Elle est en général accessible auprès du gestionnaire de réseau pour les compteurs communicants, par le titulaire du contrat ou une personne mandatée. L'installateur peut vous aider dans la démarche."
+  },
+  {
+   "q": "Peut-on vendre le surplus d'une installation en autoconsommation ?",
+   "a": "Oui, dans de nombreux cas, sous réserve de remplir les conditions de raccordement et de contrat en vigueur. Les règles de rémunération évoluent : il faut les vérifier au moment du projet auprès de l'installateur."
+  },
+  {
+   "q": "Une batterie est-elle indispensable pour l'autoconsommation ?",
+   "a": "Non. Beaucoup de projets fonctionnent sans stockage, en s'appuyant sur une consommation diurne ou sur la vente du surplus. Une batterie peut se justifier dans certains profils, mais elle ajoute un investissement et un entretien à évaluer au cas par cas."
+  },
+  {
+   "q": "L'autoconsommation est-elle compatible avec l'obligation de la loi APER ?",
+   "a": "La loi impose d'équiper certains parkings d'ombrières intégrant un procédé de production d'énergie renouvelable, sans imposer le mode de valorisation. Autoconsommation, vente du surplus ou vente totale sont donc des choix à arbitrer, en vérifiant votre situation au regard des textes en vigueur."
+  }
+ ],
+ "related": [
+  "/financement-ombriere-solaire",
+  "/ombriere-solaire-entreprise",
+  "/blog/ombriere-solaire-borne-recharge",
+  "/blog/prix-ombriere-photovoltaique-parking"
+ ],
+ "slug": "autoconsommation-ombriere-entreprise",
+ "date": "2026-11-16",
+ "category": "Financement",
+ "keyword": "autoconsommation ombrière photovoltaïque",
+ "model": "claude-sonnet-5-5"
+}
